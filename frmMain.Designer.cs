@@ -24,7 +24,7 @@
         /// </summary>
         private void InitializeComponent() {
             System.Windows.Forms.ListViewGroup listViewGroup1 = new System.Windows.Forms.ListViewGroup("Mastery", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup2 = new System.Windows.Forms.ListViewGroup("Grunge (Lv. 0)", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup2 = new System.Windows.Forms.ListViewGroup("Grunge (Lv. 1)", System.Windows.Forms.HorizontalAlignment.Left);
             System.Windows.Forms.ListViewGroup listViewGroup3 = new System.Windows.Forms.ListViewGroup("Liquid (Lv. 5)", System.Windows.Forms.HorizontalAlignment.Left);
             System.Windows.Forms.ListViewGroup listViewGroup4 = new System.Windows.Forms.ListViewGroup("Brushstroke (Lv. 10)", System.Windows.Forms.HorizontalAlignment.Left);
             System.Windows.Forms.ListViewGroup listViewGroup5 = new System.Windows.Forms.ListViewGroup("Vintage (Lv. 20)", System.Windows.Forms.HorizontalAlignment.Left);
@@ -71,7 +71,7 @@
             System.Windows.Forms.ListViewItem listViewItem37 = new System.Windows.Forms.ListViewItem("Plague Diamond");
             System.Windows.Forms.ListViewItem listViewItem38 = new System.Windows.Forms.ListViewItem("Dark Aether");
             System.Windows.Forms.ListViewGroup listViewGroup9 = new System.Windows.Forms.ListViewGroup("Mastery", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup10 = new System.Windows.Forms.ListViewGroup("Spray (Lv. 0)", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup10 = new System.Windows.Forms.ListViewGroup("Spray (Lv. 1)", System.Windows.Forms.HorizontalAlignment.Left);
             System.Windows.Forms.ListViewGroup listViewGroup11 = new System.Windows.Forms.ListViewGroup("Stripes (Lv. 5)", System.Windows.Forms.HorizontalAlignment.Left);
             System.Windows.Forms.ListViewGroup listViewGroup12 = new System.Windows.Forms.ListViewGroup("Classic (Lv. 10)", System.Windows.Forms.HorizontalAlignment.Left);
             System.Windows.Forms.ListViewGroup listViewGroup13 = new System.Windows.Forms.ListViewGroup("Geometric (Lv. 20)", System.Windows.Forms.HorizontalAlignment.Left);
@@ -320,7 +320,7 @@
             this.radioButton1.Location = new System.Drawing.Point(20, 48);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(70, 23);
-            this.radioButton1.TabIndex = 10;
+            this.radioButton1.TabIndex = 9;
             this.radioButton1.Text = "Weapon 1";
             this.radioButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.radioButton1.UseVisualStyleBackColor = true;
@@ -334,7 +334,7 @@
             this.radioButton2.Location = new System.Drawing.Point(96, 48);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(70, 23);
-            this.radioButton2.TabIndex = 9;
+            this.radioButton2.TabIndex = 10;
             this.radioButton2.Text = "Weapon 2";
             this.radioButton2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.radioButton2.UseVisualStyleBackColor = true;
@@ -389,7 +389,7 @@
             this.gbZM.Location = new System.Drawing.Point(293, 108);
             this.gbZM.Name = "gbZM";
             this.gbZM.Size = new System.Drawing.Size(273, 353);
-            this.gbZM.TabIndex = 16;
+            this.gbZM.TabIndex = 17;
             this.gbZM.TabStop = false;
             this.gbZM.Text = "Zombies";
             this.gbZM.Visible = false;
@@ -403,7 +403,7 @@
             this.lvZombieCamo.FullRowSelect = true;
             listViewGroup1.Header = "Mastery";
             listViewGroup1.Name = "listViewGroup8";
-            listViewGroup2.Header = "Grunge (Lv. 0)";
+            listViewGroup2.Header = "Grunge (Lv. 1)";
             listViewGroup2.Name = "listViewGroup1";
             listViewGroup3.Header = "Liquid (Lv. 5)";
             listViewGroup3.Name = "listViewGroup2";
@@ -562,7 +562,7 @@
             this.gbMP.Location = new System.Drawing.Point(21, 108);
             this.gbMP.Name = "gbMP";
             this.gbMP.Size = new System.Drawing.Size(273, 353);
-            this.gbMP.TabIndex = 15;
+            this.gbMP.TabIndex = 16;
             this.gbMP.TabStop = false;
             this.gbMP.Text = "Multiplayer";
             this.gbMP.Visible = false;
@@ -576,7 +576,7 @@
             this.lvMultiplayerCamo.FullRowSelect = true;
             listViewGroup9.Header = "Mastery";
             listViewGroup9.Name = "listViewGroup8";
-            listViewGroup10.Header = "Spray (Lv. 0)";
+            listViewGroup10.Header = "Spray (Lv. 1)";
             listViewGroup10.Name = "listViewGroup1";
             listViewGroup11.Header = "Stripes (Lv. 5)";
             listViewGroup11.Name = "listViewGroup2";
@@ -735,7 +735,7 @@
             this.lbIsGold.Location = new System.Drawing.Point(27, 468);
             this.lbIsGold.Name = "lbIsGold";
             this.lbIsGold.Size = new System.Drawing.Size(261, 22);
-            this.lbIsGold.TabIndex = 17;
+            this.lbIsGold.TabIndex = 48;
             this.lbIsGold.Text = "GOLD";
             this.lbIsGold.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lbIsGold.Visible = false;
@@ -746,7 +746,7 @@
             this.lbIsGoldenViper.Location = new System.Drawing.Point(299, 468);
             this.lbIsGoldenViper.Name = "lbIsGoldenViper";
             this.lbIsGoldenViper.Size = new System.Drawing.Size(261, 22);
-            this.lbIsGoldenViper.TabIndex = 18;
+            this.lbIsGoldenViper.TabIndex = 49;
             this.lbIsGoldenViper.Text = "GOLDEN VIPER";
             this.lbIsGoldenViper.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lbIsGoldenViper.Visible = false;
@@ -758,7 +758,7 @@
             this.lbHowToUnlock.Location = new System.Drawing.Point(24, 498);
             this.lbHowToUnlock.Name = "lbHowToUnlock";
             this.lbHowToUnlock.Size = new System.Drawing.Size(282, 17);
-            this.lbHowToUnlock.TabIndex = 19;
+            this.lbHowToUnlock.TabIndex = 50;
             this.lbHowToUnlock.Text = "HEY! Select a camo to learn how to complete it";
             this.lbHowToUnlock.Visible = false;
             // 
@@ -767,7 +767,7 @@
             this.btnSave.Location = new System.Drawing.Point(727, 491);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 23);
-            this.btnSave.TabIndex = 22;
+            this.btnSave.TabIndex = 51;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
@@ -778,7 +778,7 @@
             this.lbDiamondUnlocked.Location = new System.Drawing.Point(27, 80);
             this.lbDiamondUnlocked.Name = "lbDiamondUnlocked";
             this.lbDiamondUnlocked.Size = new System.Drawing.Size(261, 22);
-            this.lbDiamondUnlocked.TabIndex = 23;
+            this.lbDiamondUnlocked.TabIndex = 14;
             this.lbDiamondUnlocked.Text = "Diamond Unlocked";
             this.lbDiamondUnlocked.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lbDiamondUnlocked.Visible = false;
@@ -789,58 +789,58 @@
             this.lbPlagueDiamondUnlocked.Location = new System.Drawing.Point(299, 80);
             this.lbPlagueDiamondUnlocked.Name = "lbPlagueDiamondUnlocked";
             this.lbPlagueDiamondUnlocked.Size = new System.Drawing.Size(261, 22);
-            this.lbPlagueDiamondUnlocked.TabIndex = 24;
+            this.lbPlagueDiamondUnlocked.TabIndex = 14;
             this.lbPlagueDiamondUnlocked.Text = "Plague Diamond Unlocked";
             this.lbPlagueDiamondUnlocked.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lbPlagueDiamondUnlocked.Visible = false;
             // 
             // txtTier0MP
             // 
-            this.txtTier0MP.Location = new System.Drawing.Point(614, 151);
+            this.txtTier0MP.Location = new System.Drawing.Point(583, 155);
             this.txtTier0MP.MaxLength = 4;
             this.txtTier0MP.Name = "txtTier0MP";
             this.txtTier0MP.Size = new System.Drawing.Size(62, 22);
-            this.txtTier0MP.TabIndex = 25;
+            this.txtTier0MP.TabIndex = 21;
             this.txtTier0MP.Text = "0";
             this.txtTier0MP.Visible = false;
             this.txtTier0MP.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTier_KeyPress);
             // 
             // txtTier1MP
             // 
-            this.txtTier1MP.Location = new System.Drawing.Point(614, 200);
+            this.txtTier1MP.Location = new System.Drawing.Point(583, 204);
             this.txtTier1MP.MaxLength = 4;
             this.txtTier1MP.Name = "txtTier1MP";
             this.txtTier1MP.Size = new System.Drawing.Size(62, 22);
-            this.txtTier1MP.TabIndex = 26;
+            this.txtTier1MP.TabIndex = 23;
             this.txtTier1MP.Text = "0";
             this.txtTier1MP.Visible = false;
             this.txtTier1MP.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTier_KeyPress);
             // 
             // txtTier2MP
             // 
-            this.txtTier2MP.Location = new System.Drawing.Point(614, 249);
+            this.txtTier2MP.Location = new System.Drawing.Point(583, 253);
             this.txtTier2MP.MaxLength = 4;
             this.txtTier2MP.Name = "txtTier2MP";
             this.txtTier2MP.Size = new System.Drawing.Size(62, 22);
-            this.txtTier2MP.TabIndex = 27;
+            this.txtTier2MP.TabIndex = 25;
             this.txtTier2MP.Text = "0";
             this.txtTier2MP.Visible = false;
             this.txtTier2MP.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTier_KeyPress);
             // 
             // txtTier3MP
             // 
-            this.txtTier3MP.Location = new System.Drawing.Point(614, 298);
+            this.txtTier3MP.Location = new System.Drawing.Point(583, 302);
             this.txtTier3MP.MaxLength = 4;
             this.txtTier3MP.Name = "txtTier3MP";
             this.txtTier3MP.Size = new System.Drawing.Size(62, 22);
-            this.txtTier3MP.TabIndex = 28;
+            this.txtTier3MP.TabIndex = 27;
             this.txtTier3MP.Text = "0";
             this.txtTier3MP.Visible = false;
             this.txtTier3MP.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTier_KeyPress);
             // 
             // txtTier4MP
             // 
-            this.txtTier4MP.Location = new System.Drawing.Point(614, 347);
+            this.txtTier4MP.Location = new System.Drawing.Point(583, 351);
             this.txtTier4MP.MaxLength = 4;
             this.txtTier4MP.Name = "txtTier4MP";
             this.txtTier4MP.Size = new System.Drawing.Size(62, 22);
@@ -851,22 +851,22 @@
             // 
             // txtTier5MP
             // 
-            this.txtTier5MP.Location = new System.Drawing.Point(614, 396);
+            this.txtTier5MP.Location = new System.Drawing.Point(583, 400);
             this.txtTier5MP.MaxLength = 4;
             this.txtTier5MP.Name = "txtTier5MP";
             this.txtTier5MP.Size = new System.Drawing.Size(62, 22);
-            this.txtTier5MP.TabIndex = 30;
+            this.txtTier5MP.TabIndex = 31;
             this.txtTier5MP.Text = "0";
             this.txtTier5MP.Visible = false;
             this.txtTier5MP.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTier_KeyPress);
             // 
             // txtTier6MP
             // 
-            this.txtTier6MP.Location = new System.Drawing.Point(614, 445);
+            this.txtTier6MP.Location = new System.Drawing.Point(583, 449);
             this.txtTier6MP.MaxLength = 4;
             this.txtTier6MP.Name = "txtTier6MP";
             this.txtTier6MP.Size = new System.Drawing.Size(62, 22);
-            this.txtTier6MP.TabIndex = 31;
+            this.txtTier6MP.TabIndex = 33;
             this.txtTier6MP.Text = "0";
             this.txtTier6MP.Visible = false;
             this.txtTier6MP.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTier_KeyPress);
@@ -874,168 +874,168 @@
             // lbTier0MP
             // 
             this.lbTier0MP.AutoSize = true;
-            this.lbTier0MP.Location = new System.Drawing.Point(609, 131);
+            this.lbTier0MP.Location = new System.Drawing.Point(578, 135);
             this.lbTier0MP.Name = "lbTier0MP";
-            this.lbTier0MP.Size = new System.Drawing.Size(35, 13);
-            this.lbTier0MP.TabIndex = 32;
-            this.lbTier0MP.Text = "Spray";
+            this.lbTier0MP.Size = new System.Drawing.Size(65, 13);
+            this.lbTier0MP.TabIndex = 20;
+            this.lbTier0MP.Text = "Spray (Lv. 1)";
             this.lbTier0MP.Visible = false;
             // 
             // lbTier1MP
             // 
             this.lbTier1MP.AutoSize = true;
-            this.lbTier1MP.Location = new System.Drawing.Point(611, 180);
+            this.lbTier1MP.Location = new System.Drawing.Point(580, 184);
             this.lbTier1MP.Name = "lbTier1MP";
-            this.lbTier1MP.Size = new System.Drawing.Size(42, 13);
-            this.lbTier1MP.TabIndex = 33;
-            this.lbTier1MP.Text = "Stripes";
+            this.lbTier1MP.Size = new System.Drawing.Size(72, 13);
+            this.lbTier1MP.TabIndex = 22;
+            this.lbTier1MP.Text = "Stripes (Lv. 5)";
             this.lbTier1MP.Visible = false;
             // 
             // lbTier2MP
             // 
             this.lbTier2MP.AutoSize = true;
-            this.lbTier2MP.Location = new System.Drawing.Point(611, 229);
+            this.lbTier2MP.Location = new System.Drawing.Point(580, 233);
             this.lbTier2MP.Name = "lbTier2MP";
-            this.lbTier2MP.Size = new System.Drawing.Size(41, 13);
-            this.lbTier2MP.TabIndex = 34;
-            this.lbTier2MP.Text = "Classic";
+            this.lbTier2MP.Size = new System.Drawing.Size(77, 13);
+            this.lbTier2MP.TabIndex = 24;
+            this.lbTier2MP.Text = "Classic (Lv. 10)";
             this.lbTier2MP.Visible = false;
             // 
             // lbTier3MP
             // 
             this.lbTier3MP.AutoSize = true;
-            this.lbTier3MP.Location = new System.Drawing.Point(611, 278);
+            this.lbTier3MP.Location = new System.Drawing.Point(580, 282);
             this.lbTier3MP.Name = "lbTier3MP";
-            this.lbTier3MP.Size = new System.Drawing.Size(59, 13);
-            this.lbTier3MP.TabIndex = 35;
-            this.lbTier3MP.Text = "Geometric";
+            this.lbTier3MP.Size = new System.Drawing.Size(95, 13);
+            this.lbTier3MP.TabIndex = 26;
+            this.lbTier3MP.Text = "Geometric (Lv. 20)";
             this.lbTier3MP.Visible = false;
             // 
             // lbTier4MP
             // 
             this.lbTier4MP.AutoSize = true;
-            this.lbTier4MP.Location = new System.Drawing.Point(611, 327);
+            this.lbTier4MP.Location = new System.Drawing.Point(580, 331);
             this.lbTier4MP.Name = "lbTier4MP";
-            this.lbTier4MP.Size = new System.Drawing.Size(33, 13);
-            this.lbTier4MP.TabIndex = 36;
-            this.lbTier4MP.Text = "Flora";
+            this.lbTier4MP.Size = new System.Drawing.Size(69, 13);
+            this.lbTier4MP.TabIndex = 28;
+            this.lbTier4MP.Text = "Flora (Lv. 30)";
             this.lbTier4MP.Visible = false;
             // 
             // lbTier5MP
             // 
             this.lbTier5MP.AutoSize = true;
-            this.lbTier5MP.Location = new System.Drawing.Point(611, 376);
+            this.lbTier5MP.Location = new System.Drawing.Point(580, 380);
             this.lbTier5MP.Name = "lbTier5MP";
-            this.lbTier5MP.Size = new System.Drawing.Size(45, 13);
-            this.lbTier5MP.TabIndex = 37;
-            this.lbTier5MP.Text = "Science";
+            this.lbTier5MP.Size = new System.Drawing.Size(81, 13);
+            this.lbTier5MP.TabIndex = 30;
+            this.lbTier5MP.Text = "Science (Lv. 40)";
             this.lbTier5MP.Visible = false;
             // 
             // lbTier6MP
             // 
             this.lbTier6MP.AutoSize = true;
-            this.lbTier6MP.Location = new System.Drawing.Point(611, 425);
+            this.lbTier6MP.Location = new System.Drawing.Point(580, 429);
             this.lbTier6MP.Name = "lbTier6MP";
-            this.lbTier6MP.Size = new System.Drawing.Size(65, 13);
-            this.lbTier6MP.TabIndex = 38;
-            this.lbTier6MP.Text = "Psychedelic";
+            this.lbTier6MP.Size = new System.Drawing.Size(101, 13);
+            this.lbTier6MP.TabIndex = 32;
+            this.lbTier6MP.Text = "Psychedelic (Lv. 50)";
             this.lbTier6MP.Visible = false;
             // 
             // lbTier6ZM
             // 
             this.lbTier6ZM.AutoSize = true;
-            this.lbTier6ZM.Location = new System.Drawing.Point(711, 425);
+            this.lbTier6ZM.Location = new System.Drawing.Point(716, 429);
             this.lbTier6ZM.Name = "lbTier6ZM";
-            this.lbTier6ZM.Size = new System.Drawing.Size(53, 13);
-            this.lbTier6ZM.TabIndex = 52;
-            this.lbTier6ZM.Text = "Infection";
+            this.lbTier6ZM.Size = new System.Drawing.Size(89, 13);
+            this.lbTier6ZM.TabIndex = 46;
+            this.lbTier6ZM.Text = "Infection (Lv. 50)";
             this.lbTier6ZM.Visible = false;
             // 
             // lbTier5ZM
             // 
             this.lbTier5ZM.AutoSize = true;
-            this.lbTier5ZM.Location = new System.Drawing.Point(711, 376);
+            this.lbTier5ZM.Location = new System.Drawing.Point(716, 380);
             this.lbTier5ZM.Name = "lbTier5ZM";
-            this.lbTier5ZM.Size = new System.Drawing.Size(69, 13);
-            this.lbTier5ZM.TabIndex = 51;
-            this.lbTier5ZM.Text = "Topography";
+            this.lbTier5ZM.Size = new System.Drawing.Size(105, 13);
+            this.lbTier5ZM.TabIndex = 44;
+            this.lbTier5ZM.Text = "Topography (Lv. 40)";
             this.lbTier5ZM.Visible = false;
             // 
             // lbTier4ZM
             // 
             this.lbTier4ZM.AutoSize = true;
-            this.lbTier4ZM.Location = new System.Drawing.Point(711, 327);
+            this.lbTier4ZM.Location = new System.Drawing.Point(716, 331);
             this.lbTier4ZM.Name = "lbTier4ZM";
-            this.lbTier4ZM.Size = new System.Drawing.Size(39, 13);
-            this.lbTier4ZM.TabIndex = 50;
-            this.lbTier4ZM.Text = "Fauna";
+            this.lbTier4ZM.Size = new System.Drawing.Size(75, 13);
+            this.lbTier4ZM.TabIndex = 42;
+            this.lbTier4ZM.Text = "Fauna (Lv. 30)";
             this.lbTier4ZM.Visible = false;
             // 
             // lbTier3ZM
             // 
             this.lbTier3ZM.AutoSize = true;
-            this.lbTier3ZM.Location = new System.Drawing.Point(711, 278);
+            this.lbTier3ZM.Location = new System.Drawing.Point(716, 282);
             this.lbTier3ZM.Name = "lbTier3ZM";
-            this.lbTier3ZM.Size = new System.Drawing.Size(47, 13);
-            this.lbTier3ZM.TabIndex = 49;
-            this.lbTier3ZM.Text = "Vintage";
+            this.lbTier3ZM.Size = new System.Drawing.Size(83, 13);
+            this.lbTier3ZM.TabIndex = 40;
+            this.lbTier3ZM.Text = "Vintage (Lv. 20)";
             this.lbTier3ZM.Visible = false;
             // 
             // lbTier2ZM
             // 
             this.lbTier2ZM.AutoSize = true;
-            this.lbTier2ZM.Location = new System.Drawing.Point(711, 229);
+            this.lbTier2ZM.Location = new System.Drawing.Point(716, 233);
             this.lbTier2ZM.Name = "lbTier2ZM";
-            this.lbTier2ZM.Size = new System.Drawing.Size(68, 13);
-            this.lbTier2ZM.TabIndex = 48;
-            this.lbTier2ZM.Text = "Brushstroke";
+            this.lbTier2ZM.Size = new System.Drawing.Size(104, 13);
+            this.lbTier2ZM.TabIndex = 38;
+            this.lbTier2ZM.Text = "Brushstroke (Lv. 10)";
             this.lbTier2ZM.Visible = false;
             // 
             // lbTier1ZM
             // 
             this.lbTier1ZM.AutoSize = true;
-            this.lbTier1ZM.Location = new System.Drawing.Point(711, 180);
+            this.lbTier1ZM.Location = new System.Drawing.Point(716, 184);
             this.lbTier1ZM.Name = "lbTier1ZM";
-            this.lbTier1ZM.Size = new System.Drawing.Size(39, 13);
-            this.lbTier1ZM.TabIndex = 47;
-            this.lbTier1ZM.Text = "Liquid";
+            this.lbTier1ZM.Size = new System.Drawing.Size(69, 13);
+            this.lbTier1ZM.TabIndex = 36;
+            this.lbTier1ZM.Text = "Liquid (Lv. 5)";
             this.lbTier1ZM.Visible = false;
             // 
             // lbTier0ZM
             // 
             this.lbTier0ZM.AutoSize = true;
-            this.lbTier0ZM.Location = new System.Drawing.Point(711, 131);
+            this.lbTier0ZM.Location = new System.Drawing.Point(716, 135);
             this.lbTier0ZM.Name = "lbTier0ZM";
-            this.lbTier0ZM.Size = new System.Drawing.Size(46, 13);
-            this.lbTier0ZM.TabIndex = 46;
-            this.lbTier0ZM.Text = "Grunge";
+            this.lbTier0ZM.Size = new System.Drawing.Size(76, 13);
+            this.lbTier0ZM.TabIndex = 34;
+            this.lbTier0ZM.Text = "Grunge (Lv. 1)";
             this.lbTier0ZM.Visible = false;
             // 
             // txtTier6ZM
             // 
-            this.txtTier6ZM.Location = new System.Drawing.Point(714, 445);
+            this.txtTier6ZM.Location = new System.Drawing.Point(719, 449);
             this.txtTier6ZM.MaxLength = 4;
             this.txtTier6ZM.Name = "txtTier6ZM";
             this.txtTier6ZM.Size = new System.Drawing.Size(62, 22);
-            this.txtTier6ZM.TabIndex = 45;
+            this.txtTier6ZM.TabIndex = 47;
             this.txtTier6ZM.Text = "0";
             this.txtTier6ZM.Visible = false;
             this.txtTier6ZM.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTier_KeyPress);
             // 
             // txtTier5ZM
             // 
-            this.txtTier5ZM.Location = new System.Drawing.Point(714, 396);
+            this.txtTier5ZM.Location = new System.Drawing.Point(719, 400);
             this.txtTier5ZM.MaxLength = 4;
             this.txtTier5ZM.Name = "txtTier5ZM";
             this.txtTier5ZM.Size = new System.Drawing.Size(62, 22);
-            this.txtTier5ZM.TabIndex = 44;
+            this.txtTier5ZM.TabIndex = 45;
             this.txtTier5ZM.Text = "0";
             this.txtTier5ZM.Visible = false;
             this.txtTier5ZM.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTier_KeyPress);
             // 
             // txtTier4ZM
             // 
-            this.txtTier4ZM.Location = new System.Drawing.Point(714, 347);
+            this.txtTier4ZM.Location = new System.Drawing.Point(719, 351);
             this.txtTier4ZM.MaxLength = 4;
             this.txtTier4ZM.Name = "txtTier4ZM";
             this.txtTier4ZM.Size = new System.Drawing.Size(62, 22);
@@ -1046,66 +1046,66 @@
             // 
             // txtTier3ZM
             // 
-            this.txtTier3ZM.Location = new System.Drawing.Point(714, 298);
+            this.txtTier3ZM.Location = new System.Drawing.Point(719, 302);
             this.txtTier3ZM.MaxLength = 4;
             this.txtTier3ZM.Name = "txtTier3ZM";
             this.txtTier3ZM.Size = new System.Drawing.Size(62, 22);
-            this.txtTier3ZM.TabIndex = 42;
+            this.txtTier3ZM.TabIndex = 41;
             this.txtTier3ZM.Text = "0";
             this.txtTier3ZM.Visible = false;
             this.txtTier3ZM.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTier_KeyPress);
             // 
             // txtTier2ZM
             // 
-            this.txtTier2ZM.Location = new System.Drawing.Point(714, 249);
+            this.txtTier2ZM.Location = new System.Drawing.Point(719, 253);
             this.txtTier2ZM.MaxLength = 4;
             this.txtTier2ZM.Name = "txtTier2ZM";
             this.txtTier2ZM.Size = new System.Drawing.Size(62, 22);
-            this.txtTier2ZM.TabIndex = 41;
+            this.txtTier2ZM.TabIndex = 39;
             this.txtTier2ZM.Text = "0";
             this.txtTier2ZM.Visible = false;
             this.txtTier2ZM.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTier_KeyPress);
             // 
             // txtTier1ZM
             // 
-            this.txtTier1ZM.Location = new System.Drawing.Point(714, 200);
+            this.txtTier1ZM.Location = new System.Drawing.Point(719, 204);
             this.txtTier1ZM.MaxLength = 4;
             this.txtTier1ZM.Name = "txtTier1ZM";
             this.txtTier1ZM.Size = new System.Drawing.Size(62, 22);
-            this.txtTier1ZM.TabIndex = 40;
+            this.txtTier1ZM.TabIndex = 37;
             this.txtTier1ZM.Text = "0";
             this.txtTier1ZM.Visible = false;
             this.txtTier1ZM.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTier_KeyPress);
             // 
             // txtTier0ZM
             // 
-            this.txtTier0ZM.Location = new System.Drawing.Point(714, 151);
+            this.txtTier0ZM.Location = new System.Drawing.Point(719, 155);
             this.txtTier0ZM.MaxLength = 4;
             this.txtTier0ZM.Name = "txtTier0ZM";
             this.txtTier0ZM.Size = new System.Drawing.Size(62, 22);
-            this.txtTier0ZM.TabIndex = 39;
+            this.txtTier0ZM.TabIndex = 35;
             this.txtTier0ZM.Text = "0";
             this.txtTier0ZM.Visible = false;
             this.txtTier0ZM.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTier_KeyPress);
             // 
             // lbWeaponLevel
             // 
-            this.lbWeaponLevel.AutoSize = true;
-            this.lbWeaponLevel.Location = new System.Drawing.Point(672, 87);
+            this.lbWeaponLevel.Location = new System.Drawing.Point(648, 91);
             this.lbWeaponLevel.Name = "lbWeaponLevel";
-            this.lbWeaponLevel.Size = new System.Drawing.Size(32, 13);
-            this.lbWeaponLevel.TabIndex = 54;
+            this.lbWeaponLevel.Size = new System.Drawing.Size(65, 15);
+            this.lbWeaponLevel.TabIndex = 18;
             this.lbWeaponLevel.Text = "Level";
+            this.lbWeaponLevel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lbWeaponLevel.Visible = false;
             // 
             // txtWeaponLevel
             // 
-            this.txtWeaponLevel.Location = new System.Drawing.Point(659, 106);
+            this.txtWeaponLevel.Location = new System.Drawing.Point(651, 112);
             this.txtWeaponLevel.MaxLength = 4;
             this.txtWeaponLevel.Name = "txtWeaponLevel";
             this.txtWeaponLevel.Size = new System.Drawing.Size(62, 22);
-            this.txtWeaponLevel.TabIndex = 53;
-            this.txtWeaponLevel.Text = "0";
+            this.txtWeaponLevel.TabIndex = 19;
+            this.txtWeaponLevel.Text = "1";
             this.txtWeaponLevel.Visible = false;
             this.txtWeaponLevel.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTier_KeyPress);
             // 
@@ -1173,6 +1173,7 @@
             this.MaximizeBox = false;
             this.Name = "frmMain";
             this.Text = "Cold War Camos";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmMain_FormClosing);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.gbZM.ResumeLayout(false);
