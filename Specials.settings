@@ -35,5 +35,80 @@
     <Setting Name="M79_STATS_ZM" Type="System.String" Scope="User">
       <Value Profile="(Default)">0,0,0,0,0,0,0</Value>
     </Setting>
+    <Setting Name="SLEDGEHAMMER_LEVEL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="SLEDGEHAMMER_CAMO_MP" Type="System.String" Scope="User">
+      <Value Profile="(Default)">00000000000000000000000000000000000000</Value>
+    </Setting>
+    <Setting Name="SLEDGEHAMMER_CAMO_ZM" Type="System.String" Scope="User">
+      <Value Profile="(Default)">00000000000000000000000000000000000000</Value>
+    </Setting>
+    <Setting Name="SLEDGEHAMMER_STATS_MP" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0,0,0,0,0,0,0</Value>
+    </Setting>
+    <Setting Name="SLEDGEHAMMER_STATS_ZM" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0,0,0,0,0,0,0</Value>
+    </Setting>
+    <Setting Name="WAKIZASHI_LEVEL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="WAKIZASHI_CAMO_MP" Type="System.String" Scope="User">
+      <Value Profile="(Default)">00000000000000000000000000000000000000</Value>
+    </Setting>
+    <Setting Name="WAKIZASHI_CAMO_ZM" Type="System.String" Scope="User">
+      <Value Profile="(Default)">00000000000000000000000000000000000000</Value>
+    </Setting>
+    <Setting Name="WAKIZASHI_STATS_MP" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0,0,0,0,0,0,0</Value>
+    </Setting>
+    <Setting Name="WAKIZASHI_STATS_ZM" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0,0,0,0,0,0,0</Value>
+    </Setting>
+    <Setting Name="MACHETE_LEVEL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="MACHETE_CAMO_MP" Type="System.String" Scope="User">
+      <Value Profile="(Default)">00000000000000000000000000000000000000</Value>
+    </Setting>
+    <Setting Name="MACHETE_CAMO_ZM" Type="System.String" Scope="User">
+      <Value Profile="(Default)">00000000000000000000000000000000000000</Value>
+    </Setting>
+    <Setting Name="MACHETE_STATS_MP" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0,0,0,0,0,0,0</Value>
+    </Setting>
+    <Setting Name="MACHETE_STATS_ZM" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0,0,0,0,0,0,0</Value>
+    </Setting>
+    <Setting Name="ETOOL_LEVEL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="ETOOL_CAMO_MP" Type="System.String" Scope="User">
+      <Value Profile="(Default)">00000000000000000000000000000000000000</Value>
+    </Setting>
+    <Setting Name="ETOOL_CAMO_ZM" Type="System.String" Scope="User">
+      <Value Profile="(Default)">00000000000000000000000000000000000000</Value>
+    </Setting>
+    <Setting Name="ETOOL_STATS_MP" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0,0,0,0,0,0,0</Value>
+    </Setting>
+    <Setting Name="ETOOL_STATS_ZM" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0,0,0,0,0,0,0</Value>
+    </Setting>
+    <Setting Name="R1SHADOWHUNTER_LEVEL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="R1SHADOWHUNTER_CAMO_MP" Type="System.String" Scope="User">
+      <Value Profile="(Default)">00000000000000000000000000000000000000</Value>
+    </Setting>
+    <Setting Name="R1SHADOWHUNTER_CAMO_ZM" Type="System.String" Scope="User">
+      <Value Profile="(Default)">00000000000000000000000000000000000000</Value>
+    </Setting>
+    <Setting Name="R1SHADOWHUNTER_STATS_MP" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0,0,0,0,0,0,0</Value>
+    </Setting>
+    <Setting Name="R1SHADOWHUNTER_STATS_ZM" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0,0,0,0,0,0,0</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

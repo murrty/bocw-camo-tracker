@@ -214,5 +214,65 @@ namespace ColdWarCamo {
                 this["M82_STATS_ZM"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
+        public string ZRG20MM_LEVEL {
+            get {
+                return ((string)(this["ZRG20MM_LEVEL"]));
+            }
+            set {
+                this["ZRG20MM_LEVEL"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("00000000000000000000000000000000000000")]
+        public string ZRG20MM_CAMO_MP {
+            get {
+                return ((string)(this["ZRG20MM_CAMO_MP"]));
+            }
+            set {
+                this["ZRG20MM_CAMO_MP"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("00000000000000000000000000000000000000")]
+        public string ZRG20MM_CAMO_ZM {
+            get {
+                return ((string)(this["ZRG20MM_CAMO_ZM"]));
+            }
+            set {
+                this["ZRG20MM_CAMO_ZM"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0,0,0,0,0,0,0")]
+        public string ZRG20MM_STATS_MP {
+            get {
+                return ((string)(this["ZRG20MM_STATS_MP"]));
+            }
+            set {
+                this["ZRG20MM_STATS_MP"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0,0,0,0,0,0,0")]
+        public string ZRG20MM_STATS_ZM {
+            get {
+                return ((string)(this["ZRG20MM_STATS_ZM"]));
+            }
+            set {
+                this["ZRG20MM_STATS_ZM"] = value;
+            }
+        }
     }
 }

@@ -23,99 +23,99 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
-            System.Windows.Forms.ListViewGroup listViewGroup1 = new System.Windows.Forms.ListViewGroup("Mastery", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup2 = new System.Windows.Forms.ListViewGroup("Grunge (Lv. 1)", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup3 = new System.Windows.Forms.ListViewGroup("Liquid (Lv. 5)", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup4 = new System.Windows.Forms.ListViewGroup("Brushstroke (Lv. 10)", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup5 = new System.Windows.Forms.ListViewGroup("Vintage (Lv. 20)", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup6 = new System.Windows.Forms.ListViewGroup("Fauna (Lv. 30)", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup7 = new System.Windows.Forms.ListViewGroup("Topography (Lv. 40)", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup8 = new System.Windows.Forms.ListViewGroup("Infection (Lv. 50)", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("Stroke");
-            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem("Glacier");
-            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem("Grudge");
-            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem("Bloodshed");
-            System.Windows.Forms.ListViewItem listViewItem5 = new System.Windows.Forms.ListViewItem("Rotten");
-            System.Windows.Forms.ListViewItem listViewItem6 = new System.Windows.Forms.ListViewItem("Wasteland");
-            System.Windows.Forms.ListViewItem listViewItem7 = new System.Windows.Forms.ListViewItem("Amphibian");
-            System.Windows.Forms.ListViewItem listViewItem8 = new System.Windows.Forms.ListViewItem("Boundary");
-            System.Windows.Forms.ListViewItem listViewItem9 = new System.Windows.Forms.ListViewItem("Threshold");
-            System.Windows.Forms.ListViewItem listViewItem10 = new System.Windows.Forms.ListViewItem("Banished");
-            System.Windows.Forms.ListViewItem listViewItem11 = new System.Windows.Forms.ListViewItem("Extortion");
-            System.Windows.Forms.ListViewItem listViewItem12 = new System.Windows.Forms.ListViewItem("Degeneration");
-            System.Windows.Forms.ListViewItem listViewItem13 = new System.Windows.Forms.ListViewItem("Downfall");
-            System.Windows.Forms.ListViewItem listViewItem14 = new System.Windows.Forms.ListViewItem("Drench");
-            System.Windows.Forms.ListViewItem listViewItem15 = new System.Windows.Forms.ListViewItem("Chemical");
-            System.Windows.Forms.ListViewItem listViewItem16 = new System.Windows.Forms.ListViewItem("Decadence");
-            System.Windows.Forms.ListViewItem listViewItem17 = new System.Windows.Forms.ListViewItem("Bravado");
-            System.Windows.Forms.ListViewItem listViewItem18 = new System.Windows.Forms.ListViewItem("Funkadelic");
-            System.Windows.Forms.ListViewItem listViewItem19 = new System.Windows.Forms.ListViewItem("Boutique");
-            System.Windows.Forms.ListViewItem listViewItem20 = new System.Windows.Forms.ListViewItem("Maniac");
-            System.Windows.Forms.ListViewItem listViewItem21 = new System.Windows.Forms.ListViewItem("Growl");
-            System.Windows.Forms.ListViewItem listViewItem22 = new System.Windows.Forms.ListViewItem("Scavenger");
-            System.Windows.Forms.ListViewItem listViewItem23 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewGroup listViewGroup49 = new System.Windows.Forms.ListViewGroup("Mastery", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup50 = new System.Windows.Forms.ListViewGroup("Grunge (Lv. 1)", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup51 = new System.Windows.Forms.ListViewGroup("Liquid (Lv. 5)", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup52 = new System.Windows.Forms.ListViewGroup("Brushstroke (Lv. 10)", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup53 = new System.Windows.Forms.ListViewGroup("Vintage (Lv. 20)", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup54 = new System.Windows.Forms.ListViewGroup("Fauna (Lv. 30)", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup55 = new System.Windows.Forms.ListViewGroup("Topography (Lv. 40)", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup56 = new System.Windows.Forms.ListViewGroup("Infection (Lv. 50)", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewItem listViewItem229 = new System.Windows.Forms.ListViewItem("Stroke");
+            System.Windows.Forms.ListViewItem listViewItem230 = new System.Windows.Forms.ListViewItem("Glacier");
+            System.Windows.Forms.ListViewItem listViewItem231 = new System.Windows.Forms.ListViewItem("Grudge");
+            System.Windows.Forms.ListViewItem listViewItem232 = new System.Windows.Forms.ListViewItem("Bloodshed");
+            System.Windows.Forms.ListViewItem listViewItem233 = new System.Windows.Forms.ListViewItem("Rotten");
+            System.Windows.Forms.ListViewItem listViewItem234 = new System.Windows.Forms.ListViewItem("Wasteland");
+            System.Windows.Forms.ListViewItem listViewItem235 = new System.Windows.Forms.ListViewItem("Amphibian");
+            System.Windows.Forms.ListViewItem listViewItem236 = new System.Windows.Forms.ListViewItem("Boundary");
+            System.Windows.Forms.ListViewItem listViewItem237 = new System.Windows.Forms.ListViewItem("Threshold");
+            System.Windows.Forms.ListViewItem listViewItem238 = new System.Windows.Forms.ListViewItem("Banished");
+            System.Windows.Forms.ListViewItem listViewItem239 = new System.Windows.Forms.ListViewItem("Extortion");
+            System.Windows.Forms.ListViewItem listViewItem240 = new System.Windows.Forms.ListViewItem("Degeneration");
+            System.Windows.Forms.ListViewItem listViewItem241 = new System.Windows.Forms.ListViewItem("Downfall");
+            System.Windows.Forms.ListViewItem listViewItem242 = new System.Windows.Forms.ListViewItem("Drench");
+            System.Windows.Forms.ListViewItem listViewItem243 = new System.Windows.Forms.ListViewItem("Chemical");
+            System.Windows.Forms.ListViewItem listViewItem244 = new System.Windows.Forms.ListViewItem("Decadence");
+            System.Windows.Forms.ListViewItem listViewItem245 = new System.Windows.Forms.ListViewItem("Bravado");
+            System.Windows.Forms.ListViewItem listViewItem246 = new System.Windows.Forms.ListViewItem("Funkadelic");
+            System.Windows.Forms.ListViewItem listViewItem247 = new System.Windows.Forms.ListViewItem("Boutique");
+            System.Windows.Forms.ListViewItem listViewItem248 = new System.Windows.Forms.ListViewItem("Maniac");
+            System.Windows.Forms.ListViewItem listViewItem249 = new System.Windows.Forms.ListViewItem("Growl");
+            System.Windows.Forms.ListViewItem listViewItem250 = new System.Windows.Forms.ListViewItem("Scavenger");
+            System.Windows.Forms.ListViewItem listViewItem251 = new System.Windows.Forms.ListViewItem(new string[] {
             "Zebra"}, -1, System.Drawing.SystemColors.WindowText, System.Drawing.Color.Empty, null);
-            System.Windows.Forms.ListViewItem listViewItem24 = new System.Windows.Forms.ListViewItem("Blue Tiger");
-            System.Windows.Forms.ListViewItem listViewItem25 = new System.Windows.Forms.ListViewItem("Rising Tiger");
-            System.Windows.Forms.ListViewItem listViewItem26 = new System.Windows.Forms.ListViewItem("Acidic");
-            System.Windows.Forms.ListViewItem listViewItem27 = new System.Windows.Forms.ListViewItem("Gunrunner");
-            System.Windows.Forms.ListViewItem listViewItem28 = new System.Windows.Forms.ListViewItem("Forecast");
-            System.Windows.Forms.ListViewItem listViewItem29 = new System.Windows.Forms.ListViewItem("Cartographer");
-            System.Windows.Forms.ListViewItem listViewItem30 = new System.Windows.Forms.ListViewItem("Sunder");
-            System.Windows.Forms.ListViewItem listViewItem31 = new System.Windows.Forms.ListViewItem("Corrosion");
-            System.Windows.Forms.ListViewItem listViewItem32 = new System.Windows.Forms.ListViewItem("Corrosion (again)");
-            System.Windows.Forms.ListViewItem listViewItem33 = new System.Windows.Forms.ListViewItem("Entropy");
-            System.Windows.Forms.ListViewItem listViewItem34 = new System.Windows.Forms.ListViewItem("Glitch");
-            System.Windows.Forms.ListViewItem listViewItem35 = new System.Windows.Forms.ListViewItem("Conviction");
-            System.Windows.Forms.ListViewItem listViewItem36 = new System.Windows.Forms.ListViewItem("Golden Viper");
-            System.Windows.Forms.ListViewItem listViewItem37 = new System.Windows.Forms.ListViewItem("Plague Diamond");
-            System.Windows.Forms.ListViewItem listViewItem38 = new System.Windows.Forms.ListViewItem("Dark Aether");
-            System.Windows.Forms.ListViewGroup listViewGroup9 = new System.Windows.Forms.ListViewGroup("Mastery", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup10 = new System.Windows.Forms.ListViewGroup("Spray (Lv. 1)", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup11 = new System.Windows.Forms.ListViewGroup("Stripes (Lv. 5)", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup12 = new System.Windows.Forms.ListViewGroup("Classic (Lv. 10)", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup13 = new System.Windows.Forms.ListViewGroup("Geometric (Lv. 20)", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup14 = new System.Windows.Forms.ListViewGroup("Flora (Lv. 30)", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup15 = new System.Windows.Forms.ListViewGroup("Science (Lv. 40)", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup16 = new System.Windows.Forms.ListViewGroup("Psyechedelic (Lv. 50)", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewItem listViewItem39 = new System.Windows.Forms.ListViewItem("Shards");
-            System.Windows.Forms.ListViewItem listViewItem40 = new System.Windows.Forms.ListViewItem("Ambush");
-            System.Windows.Forms.ListViewItem listViewItem41 = new System.Windows.Forms.ListViewItem("Frozen Lake");
-            System.Windows.Forms.ListViewItem listViewItem42 = new System.Windows.Forms.ListViewItem("Debris");
-            System.Windows.Forms.ListViewItem listViewItem43 = new System.Windows.Forms.ListViewItem("Prosper");
-            System.Windows.Forms.ListViewItem listViewItem44 = new System.Windows.Forms.ListViewItem("Gravel");
-            System.Windows.Forms.ListViewItem listViewItem45 = new System.Windows.Forms.ListViewItem("Graze");
-            System.Windows.Forms.ListViewItem listViewItem46 = new System.Windows.Forms.ListViewItem("Frost");
-            System.Windows.Forms.ListViewItem listViewItem47 = new System.Windows.Forms.ListViewItem("Thrash");
-            System.Windows.Forms.ListViewItem listViewItem48 = new System.Windows.Forms.ListViewItem("Bengal");
-            System.Windows.Forms.ListViewItem listViewItem49 = new System.Windows.Forms.ListViewItem("Platoon");
-            System.Windows.Forms.ListViewItem listViewItem50 = new System.Windows.Forms.ListViewItem("Ash");
-            System.Windows.Forms.ListViewItem listViewItem51 = new System.Windows.Forms.ListViewItem("Checkpoint");
-            System.Windows.Forms.ListViewItem listViewItem52 = new System.Windows.Forms.ListViewItem("Coercion");
-            System.Windows.Forms.ListViewItem listViewItem53 = new System.Windows.Forms.ListViewItem("Ransom");
-            System.Windows.Forms.ListViewItem listViewItem54 = new System.Windows.Forms.ListViewItem("Blockade");
-            System.Windows.Forms.ListViewItem listViewItem55 = new System.Windows.Forms.ListViewItem("Warsaw");
-            System.Windows.Forms.ListViewItem listViewItem56 = new System.Windows.Forms.ListViewItem("Transform");
-            System.Windows.Forms.ListViewItem listViewItem57 = new System.Windows.Forms.ListViewItem("Fraction");
-            System.Windows.Forms.ListViewItem listViewItem58 = new System.Windows.Forms.ListViewItem("Bloodline");
-            System.Windows.Forms.ListViewItem listViewItem59 = new System.Windows.Forms.ListViewItem("Frith");
-            System.Windows.Forms.ListViewItem listViewItem60 = new System.Windows.Forms.ListViewItem("Old Growth");
-            System.Windows.Forms.ListViewItem listViewItem61 = new System.Windows.Forms.ListViewItem("Nectar");
-            System.Windows.Forms.ListViewItem listViewItem62 = new System.Windows.Forms.ListViewItem("Lumber");
-            System.Windows.Forms.ListViewItem listViewItem63 = new System.Windows.Forms.ListViewItem("Cherry Blossom");
-            System.Windows.Forms.ListViewItem listViewItem64 = new System.Windows.Forms.ListViewItem("Teleport");
-            System.Windows.Forms.ListViewItem listViewItem65 = new System.Windows.Forms.ListViewItem("Cosmonaut");
-            System.Windows.Forms.ListViewItem listViewItem66 = new System.Windows.Forms.ListViewItem("Decipher");
-            System.Windows.Forms.ListViewItem listViewItem67 = new System.Windows.Forms.ListViewItem("Integer");
-            System.Windows.Forms.ListViewItem listViewItem68 = new System.Windows.Forms.ListViewItem("Policia");
-            System.Windows.Forms.ListViewItem listViewItem69 = new System.Windows.Forms.ListViewItem("Groovy");
-            System.Windows.Forms.ListViewItem listViewItem70 = new System.Windows.Forms.ListViewItem("Seducer");
-            System.Windows.Forms.ListViewItem listViewItem71 = new System.Windows.Forms.ListViewItem("Blush");
-            System.Windows.Forms.ListViewItem listViewItem72 = new System.Windows.Forms.ListViewItem("Melancholy");
-            System.Windows.Forms.ListViewItem listViewItem73 = new System.Windows.Forms.ListViewItem("Bliss");
-            System.Windows.Forms.ListViewItem listViewItem74 = new System.Windows.Forms.ListViewItem("Gold");
-            System.Windows.Forms.ListViewItem listViewItem75 = new System.Windows.Forms.ListViewItem("Diamond");
-            System.Windows.Forms.ListViewItem listViewItem76 = new System.Windows.Forms.ListViewItem("DM Ultra");
+            System.Windows.Forms.ListViewItem listViewItem252 = new System.Windows.Forms.ListViewItem("Blue Tiger");
+            System.Windows.Forms.ListViewItem listViewItem253 = new System.Windows.Forms.ListViewItem("Rising Tiger");
+            System.Windows.Forms.ListViewItem listViewItem254 = new System.Windows.Forms.ListViewItem("Acidic");
+            System.Windows.Forms.ListViewItem listViewItem255 = new System.Windows.Forms.ListViewItem("Gunrunner");
+            System.Windows.Forms.ListViewItem listViewItem256 = new System.Windows.Forms.ListViewItem("Forecast");
+            System.Windows.Forms.ListViewItem listViewItem257 = new System.Windows.Forms.ListViewItem("Cartographer");
+            System.Windows.Forms.ListViewItem listViewItem258 = new System.Windows.Forms.ListViewItem("Sunder");
+            System.Windows.Forms.ListViewItem listViewItem259 = new System.Windows.Forms.ListViewItem("Corrosion");
+            System.Windows.Forms.ListViewItem listViewItem260 = new System.Windows.Forms.ListViewItem("Corrosion (again)");
+            System.Windows.Forms.ListViewItem listViewItem261 = new System.Windows.Forms.ListViewItem("Entropy");
+            System.Windows.Forms.ListViewItem listViewItem262 = new System.Windows.Forms.ListViewItem("Glitch");
+            System.Windows.Forms.ListViewItem listViewItem263 = new System.Windows.Forms.ListViewItem("Conviction");
+            System.Windows.Forms.ListViewItem listViewItem264 = new System.Windows.Forms.ListViewItem("Golden Viper");
+            System.Windows.Forms.ListViewItem listViewItem265 = new System.Windows.Forms.ListViewItem("Plague Diamond");
+            System.Windows.Forms.ListViewItem listViewItem266 = new System.Windows.Forms.ListViewItem("Dark Aether");
+            System.Windows.Forms.ListViewGroup listViewGroup57 = new System.Windows.Forms.ListViewGroup("Mastery", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup58 = new System.Windows.Forms.ListViewGroup("Spray (Lv. 1)", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup59 = new System.Windows.Forms.ListViewGroup("Stripes (Lv. 5)", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup60 = new System.Windows.Forms.ListViewGroup("Classic (Lv. 10)", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup61 = new System.Windows.Forms.ListViewGroup("Geometric (Lv. 20)", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup62 = new System.Windows.Forms.ListViewGroup("Flora (Lv. 30)", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup63 = new System.Windows.Forms.ListViewGroup("Science (Lv. 40)", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup64 = new System.Windows.Forms.ListViewGroup("Psyechedelic (Lv. 50)", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewItem listViewItem267 = new System.Windows.Forms.ListViewItem("Shards");
+            System.Windows.Forms.ListViewItem listViewItem268 = new System.Windows.Forms.ListViewItem("Ambush");
+            System.Windows.Forms.ListViewItem listViewItem269 = new System.Windows.Forms.ListViewItem("Frozen Lake");
+            System.Windows.Forms.ListViewItem listViewItem270 = new System.Windows.Forms.ListViewItem("Debris");
+            System.Windows.Forms.ListViewItem listViewItem271 = new System.Windows.Forms.ListViewItem("Prosper");
+            System.Windows.Forms.ListViewItem listViewItem272 = new System.Windows.Forms.ListViewItem("Gravel");
+            System.Windows.Forms.ListViewItem listViewItem273 = new System.Windows.Forms.ListViewItem("Graze");
+            System.Windows.Forms.ListViewItem listViewItem274 = new System.Windows.Forms.ListViewItem("Frost");
+            System.Windows.Forms.ListViewItem listViewItem275 = new System.Windows.Forms.ListViewItem("Thrash");
+            System.Windows.Forms.ListViewItem listViewItem276 = new System.Windows.Forms.ListViewItem("Bengal");
+            System.Windows.Forms.ListViewItem listViewItem277 = new System.Windows.Forms.ListViewItem("Platoon");
+            System.Windows.Forms.ListViewItem listViewItem278 = new System.Windows.Forms.ListViewItem("Ash");
+            System.Windows.Forms.ListViewItem listViewItem279 = new System.Windows.Forms.ListViewItem("Checkpoint");
+            System.Windows.Forms.ListViewItem listViewItem280 = new System.Windows.Forms.ListViewItem("Coercion");
+            System.Windows.Forms.ListViewItem listViewItem281 = new System.Windows.Forms.ListViewItem("Ransom");
+            System.Windows.Forms.ListViewItem listViewItem282 = new System.Windows.Forms.ListViewItem("Blockade");
+            System.Windows.Forms.ListViewItem listViewItem283 = new System.Windows.Forms.ListViewItem("Warsaw");
+            System.Windows.Forms.ListViewItem listViewItem284 = new System.Windows.Forms.ListViewItem("Transform");
+            System.Windows.Forms.ListViewItem listViewItem285 = new System.Windows.Forms.ListViewItem("Fraction");
+            System.Windows.Forms.ListViewItem listViewItem286 = new System.Windows.Forms.ListViewItem("Bloodline");
+            System.Windows.Forms.ListViewItem listViewItem287 = new System.Windows.Forms.ListViewItem("Frith");
+            System.Windows.Forms.ListViewItem listViewItem288 = new System.Windows.Forms.ListViewItem("Old Growth");
+            System.Windows.Forms.ListViewItem listViewItem289 = new System.Windows.Forms.ListViewItem("Nectar");
+            System.Windows.Forms.ListViewItem listViewItem290 = new System.Windows.Forms.ListViewItem("Lumber");
+            System.Windows.Forms.ListViewItem listViewItem291 = new System.Windows.Forms.ListViewItem("Cherry Blossom");
+            System.Windows.Forms.ListViewItem listViewItem292 = new System.Windows.Forms.ListViewItem("Teleport");
+            System.Windows.Forms.ListViewItem listViewItem293 = new System.Windows.Forms.ListViewItem("Cosmonaut");
+            System.Windows.Forms.ListViewItem listViewItem294 = new System.Windows.Forms.ListViewItem("Decipher");
+            System.Windows.Forms.ListViewItem listViewItem295 = new System.Windows.Forms.ListViewItem("Integer");
+            System.Windows.Forms.ListViewItem listViewItem296 = new System.Windows.Forms.ListViewItem("Policia");
+            System.Windows.Forms.ListViewItem listViewItem297 = new System.Windows.Forms.ListViewItem("Groovy");
+            System.Windows.Forms.ListViewItem listViewItem298 = new System.Windows.Forms.ListViewItem("Seducer");
+            System.Windows.Forms.ListViewItem listViewItem299 = new System.Windows.Forms.ListViewItem("Blush");
+            System.Windows.Forms.ListViewItem listViewItem300 = new System.Windows.Forms.ListViewItem("Melancholy");
+            System.Windows.Forms.ListViewItem listViewItem301 = new System.Windows.Forms.ListViewItem("Bliss");
+            System.Windows.Forms.ListViewItem listViewItem302 = new System.Windows.Forms.ListViewItem("Gold");
+            System.Windows.Forms.ListViewItem listViewItem303 = new System.Windows.Forms.ListViewItem("Diamond");
+            System.Windows.Forms.ListViewItem listViewItem304 = new System.Windows.Forms.ListViewItem("DM Ultra");
             this.panel1 = new System.Windows.Forms.Panel();
             this.rbSP = new System.Windows.Forms.RadioButton();
             this.rbSMG = new System.Windows.Forms.RadioButton();
@@ -174,6 +174,9 @@
             this.lbWeaponLevel = new System.Windows.Forms.Label();
             this.txtWeaponLevel = new System.Windows.Forms.TextBox();
             this.lbClassWeaponSeperator = new System.Windows.Forms.Label();
+            this.radioButton6 = new System.Windows.Forms.RadioButton();
+            this.btnReticles = new System.Windows.Forms.Button();
+            this.radioButton7 = new System.Windows.Forms.RadioButton();
             this.panel1.SuspendLayout();
             this.gbZM.SuspendLayout();
             this.gbMP.SuspendLayout();
@@ -401,150 +404,150 @@
             this.lvZombieCamo.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1});
             this.lvZombieCamo.FullRowSelect = true;
-            listViewGroup1.Header = "Mastery";
-            listViewGroup1.Name = "listViewGroup8";
-            listViewGroup2.Header = "Grunge (Lv. 1)";
-            listViewGroup2.Name = "listViewGroup1";
-            listViewGroup3.Header = "Liquid (Lv. 5)";
-            listViewGroup3.Name = "listViewGroup2";
-            listViewGroup4.Header = "Brushstroke (Lv. 10)";
-            listViewGroup4.Name = "listViewGroup3";
-            listViewGroup5.Header = "Vintage (Lv. 20)";
-            listViewGroup5.Name = "listViewGroup4";
-            listViewGroup6.Header = "Fauna (Lv. 30)";
-            listViewGroup6.Name = "listViewGroup5";
-            listViewGroup7.Header = "Topography (Lv. 40)";
-            listViewGroup7.Name = "listViewGroup6";
-            listViewGroup8.Header = "Infection (Lv. 50)";
-            listViewGroup8.Name = "listViewGroup7";
+            listViewGroup49.Header = "Mastery";
+            listViewGroup49.Name = "listViewGroup8";
+            listViewGroup50.Header = "Grunge (Lv. 1)";
+            listViewGroup50.Name = "listViewGroup1";
+            listViewGroup51.Header = "Liquid (Lv. 5)";
+            listViewGroup51.Name = "listViewGroup2";
+            listViewGroup52.Header = "Brushstroke (Lv. 10)";
+            listViewGroup52.Name = "listViewGroup3";
+            listViewGroup53.Header = "Vintage (Lv. 20)";
+            listViewGroup53.Name = "listViewGroup4";
+            listViewGroup54.Header = "Fauna (Lv. 30)";
+            listViewGroup54.Name = "listViewGroup5";
+            listViewGroup55.Header = "Topography (Lv. 40)";
+            listViewGroup55.Name = "listViewGroup6";
+            listViewGroup56.Header = "Infection (Lv. 50)";
+            listViewGroup56.Name = "listViewGroup7";
             this.lvZombieCamo.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
-            listViewGroup1,
-            listViewGroup2,
-            listViewGroup3,
-            listViewGroup4,
-            listViewGroup5,
-            listViewGroup6,
-            listViewGroup7,
-            listViewGroup8});
-            listViewItem1.Group = listViewGroup2;
-            listViewItem1.StateImageIndex = 0;
-            listViewItem2.Group = listViewGroup2;
-            listViewItem2.StateImageIndex = 0;
-            listViewItem3.Group = listViewGroup2;
-            listViewItem3.StateImageIndex = 0;
-            listViewItem4.Group = listViewGroup2;
-            listViewItem4.StateImageIndex = 0;
-            listViewItem5.Group = listViewGroup2;
-            listViewItem5.StateImageIndex = 0;
-            listViewItem6.Group = listViewGroup3;
-            listViewItem6.StateImageIndex = 0;
-            listViewItem7.Group = listViewGroup3;
-            listViewItem7.StateImageIndex = 0;
-            listViewItem8.Group = listViewGroup3;
-            listViewItem8.StateImageIndex = 0;
-            listViewItem9.Group = listViewGroup3;
-            listViewItem9.StateImageIndex = 0;
-            listViewItem10.Group = listViewGroup3;
-            listViewItem10.StateImageIndex = 0;
-            listViewItem11.Group = listViewGroup4;
-            listViewItem11.StateImageIndex = 0;
-            listViewItem12.Group = listViewGroup4;
-            listViewItem12.StateImageIndex = 0;
-            listViewItem13.Group = listViewGroup4;
-            listViewItem13.StateImageIndex = 0;
-            listViewItem14.Group = listViewGroup4;
-            listViewItem14.StateImageIndex = 0;
-            listViewItem15.Group = listViewGroup4;
-            listViewItem15.StateImageIndex = 0;
-            listViewItem16.Group = listViewGroup5;
-            listViewItem16.StateImageIndex = 0;
-            listViewItem17.Group = listViewGroup5;
-            listViewItem17.StateImageIndex = 0;
-            listViewItem18.Group = listViewGroup5;
-            listViewItem18.StateImageIndex = 0;
-            listViewItem19.Group = listViewGroup5;
-            listViewItem19.StateImageIndex = 0;
-            listViewItem20.Group = listViewGroup5;
-            listViewItem20.StateImageIndex = 0;
-            listViewItem21.Group = listViewGroup6;
-            listViewItem21.StateImageIndex = 0;
-            listViewItem22.Group = listViewGroup6;
-            listViewItem22.StateImageIndex = 0;
-            listViewItem23.Group = listViewGroup6;
-            listViewItem23.StateImageIndex = 0;
-            listViewItem24.Group = listViewGroup6;
-            listViewItem24.StateImageIndex = 0;
-            listViewItem25.Group = listViewGroup6;
-            listViewItem25.StateImageIndex = 0;
-            listViewItem26.Group = listViewGroup7;
-            listViewItem26.StateImageIndex = 0;
-            listViewItem27.Group = listViewGroup7;
-            listViewItem27.StateImageIndex = 0;
-            listViewItem28.Group = listViewGroup7;
-            listViewItem28.StateImageIndex = 0;
-            listViewItem29.Group = listViewGroup7;
-            listViewItem29.StateImageIndex = 0;
-            listViewItem30.Group = listViewGroup7;
-            listViewItem30.StateImageIndex = 0;
-            listViewItem31.Group = listViewGroup8;
-            listViewItem31.StateImageIndex = 0;
-            listViewItem32.Group = listViewGroup8;
-            listViewItem32.StateImageIndex = 0;
-            listViewItem33.Group = listViewGroup8;
-            listViewItem33.StateImageIndex = 0;
-            listViewItem34.Group = listViewGroup8;
-            listViewItem34.StateImageIndex = 0;
-            listViewItem35.Group = listViewGroup8;
-            listViewItem35.StateImageIndex = 0;
-            listViewItem36.Group = listViewGroup1;
-            listViewItem36.StateImageIndex = 0;
-            listViewItem37.Group = listViewGroup1;
-            listViewItem37.StateImageIndex = 0;
-            listViewItem38.Group = listViewGroup1;
-            listViewItem38.StateImageIndex = 0;
+            listViewGroup49,
+            listViewGroup50,
+            listViewGroup51,
+            listViewGroup52,
+            listViewGroup53,
+            listViewGroup54,
+            listViewGroup55,
+            listViewGroup56});
+            listViewItem229.Group = listViewGroup50;
+            listViewItem229.StateImageIndex = 0;
+            listViewItem230.Group = listViewGroup50;
+            listViewItem230.StateImageIndex = 0;
+            listViewItem231.Group = listViewGroup50;
+            listViewItem231.StateImageIndex = 0;
+            listViewItem232.Group = listViewGroup50;
+            listViewItem232.StateImageIndex = 0;
+            listViewItem233.Group = listViewGroup50;
+            listViewItem233.StateImageIndex = 0;
+            listViewItem234.Group = listViewGroup51;
+            listViewItem234.StateImageIndex = 0;
+            listViewItem235.Group = listViewGroup51;
+            listViewItem235.StateImageIndex = 0;
+            listViewItem236.Group = listViewGroup51;
+            listViewItem236.StateImageIndex = 0;
+            listViewItem237.Group = listViewGroup51;
+            listViewItem237.StateImageIndex = 0;
+            listViewItem238.Group = listViewGroup51;
+            listViewItem238.StateImageIndex = 0;
+            listViewItem239.Group = listViewGroup52;
+            listViewItem239.StateImageIndex = 0;
+            listViewItem240.Group = listViewGroup52;
+            listViewItem240.StateImageIndex = 0;
+            listViewItem241.Group = listViewGroup52;
+            listViewItem241.StateImageIndex = 0;
+            listViewItem242.Group = listViewGroup52;
+            listViewItem242.StateImageIndex = 0;
+            listViewItem243.Group = listViewGroup52;
+            listViewItem243.StateImageIndex = 0;
+            listViewItem244.Group = listViewGroup53;
+            listViewItem244.StateImageIndex = 0;
+            listViewItem245.Group = listViewGroup53;
+            listViewItem245.StateImageIndex = 0;
+            listViewItem246.Group = listViewGroup53;
+            listViewItem246.StateImageIndex = 0;
+            listViewItem247.Group = listViewGroup53;
+            listViewItem247.StateImageIndex = 0;
+            listViewItem248.Group = listViewGroup53;
+            listViewItem248.StateImageIndex = 0;
+            listViewItem249.Group = listViewGroup54;
+            listViewItem249.StateImageIndex = 0;
+            listViewItem250.Group = listViewGroup54;
+            listViewItem250.StateImageIndex = 0;
+            listViewItem251.Group = listViewGroup54;
+            listViewItem251.StateImageIndex = 0;
+            listViewItem252.Group = listViewGroup54;
+            listViewItem252.StateImageIndex = 0;
+            listViewItem253.Group = listViewGroup54;
+            listViewItem253.StateImageIndex = 0;
+            listViewItem254.Group = listViewGroup55;
+            listViewItem254.StateImageIndex = 0;
+            listViewItem255.Group = listViewGroup55;
+            listViewItem255.StateImageIndex = 0;
+            listViewItem256.Group = listViewGroup55;
+            listViewItem256.StateImageIndex = 0;
+            listViewItem257.Group = listViewGroup55;
+            listViewItem257.StateImageIndex = 0;
+            listViewItem258.Group = listViewGroup55;
+            listViewItem258.StateImageIndex = 0;
+            listViewItem259.Group = listViewGroup56;
+            listViewItem259.StateImageIndex = 0;
+            listViewItem260.Group = listViewGroup56;
+            listViewItem260.StateImageIndex = 0;
+            listViewItem261.Group = listViewGroup56;
+            listViewItem261.StateImageIndex = 0;
+            listViewItem262.Group = listViewGroup56;
+            listViewItem262.StateImageIndex = 0;
+            listViewItem263.Group = listViewGroup56;
+            listViewItem263.StateImageIndex = 0;
+            listViewItem264.Group = listViewGroup49;
+            listViewItem264.StateImageIndex = 0;
+            listViewItem265.Group = listViewGroup49;
+            listViewItem265.StateImageIndex = 0;
+            listViewItem266.Group = listViewGroup49;
+            listViewItem266.StateImageIndex = 0;
             this.lvZombieCamo.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1,
-            listViewItem2,
-            listViewItem3,
-            listViewItem4,
-            listViewItem5,
-            listViewItem6,
-            listViewItem7,
-            listViewItem8,
-            listViewItem9,
-            listViewItem10,
-            listViewItem11,
-            listViewItem12,
-            listViewItem13,
-            listViewItem14,
-            listViewItem15,
-            listViewItem16,
-            listViewItem17,
-            listViewItem18,
-            listViewItem19,
-            listViewItem20,
-            listViewItem21,
-            listViewItem22,
-            listViewItem23,
-            listViewItem24,
-            listViewItem25,
-            listViewItem26,
-            listViewItem27,
-            listViewItem28,
-            listViewItem29,
-            listViewItem30,
-            listViewItem31,
-            listViewItem32,
-            listViewItem33,
-            listViewItem34,
-            listViewItem35,
-            listViewItem36,
-            listViewItem37,
-            listViewItem38});
-            this.lvZombieCamo.Location = new System.Drawing.Point(6, 19);
+            listViewItem229,
+            listViewItem230,
+            listViewItem231,
+            listViewItem232,
+            listViewItem233,
+            listViewItem234,
+            listViewItem235,
+            listViewItem236,
+            listViewItem237,
+            listViewItem238,
+            listViewItem239,
+            listViewItem240,
+            listViewItem241,
+            listViewItem242,
+            listViewItem243,
+            listViewItem244,
+            listViewItem245,
+            listViewItem246,
+            listViewItem247,
+            listViewItem248,
+            listViewItem249,
+            listViewItem250,
+            listViewItem251,
+            listViewItem252,
+            listViewItem253,
+            listViewItem254,
+            listViewItem255,
+            listViewItem256,
+            listViewItem257,
+            listViewItem258,
+            listViewItem259,
+            listViewItem260,
+            listViewItem261,
+            listViewItem262,
+            listViewItem263,
+            listViewItem264,
+            listViewItem265,
+            listViewItem266});
+            this.lvZombieCamo.Location = new System.Drawing.Point(5, 19);
             this.lvZombieCamo.MultiSelect = false;
             this.lvZombieCamo.Name = "lvZombieCamo";
-            this.lvZombieCamo.Size = new System.Drawing.Size(261, 328);
+            this.lvZombieCamo.Size = new System.Drawing.Size(262, 328);
             this.lvZombieCamo.TabIndex = 0;
             this.lvZombieCamo.UseCompatibleStateImageBehavior = false;
             this.lvZombieCamo.View = System.Windows.Forms.View.Details;
@@ -574,150 +577,150 @@
             this.lvMultiplayerCamo.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader2});
             this.lvMultiplayerCamo.FullRowSelect = true;
-            listViewGroup9.Header = "Mastery";
-            listViewGroup9.Name = "listViewGroup8";
-            listViewGroup10.Header = "Spray (Lv. 1)";
-            listViewGroup10.Name = "listViewGroup1";
-            listViewGroup11.Header = "Stripes (Lv. 5)";
-            listViewGroup11.Name = "listViewGroup2";
-            listViewGroup12.Header = "Classic (Lv. 10)";
-            listViewGroup12.Name = "listViewGroup3";
-            listViewGroup13.Header = "Geometric (Lv. 20)";
-            listViewGroup13.Name = "listViewGroup4";
-            listViewGroup14.Header = "Flora (Lv. 30)";
-            listViewGroup14.Name = "listViewGroup5";
-            listViewGroup15.Header = "Science (Lv. 40)";
-            listViewGroup15.Name = "listViewGroup6";
-            listViewGroup16.Header = "Psyechedelic (Lv. 50)";
-            listViewGroup16.Name = "listViewGroup7";
+            listViewGroup57.Header = "Mastery";
+            listViewGroup57.Name = "listViewGroup8";
+            listViewGroup58.Header = "Spray (Lv. 1)";
+            listViewGroup58.Name = "listViewGroup1";
+            listViewGroup59.Header = "Stripes (Lv. 5)";
+            listViewGroup59.Name = "listViewGroup2";
+            listViewGroup60.Header = "Classic (Lv. 10)";
+            listViewGroup60.Name = "listViewGroup3";
+            listViewGroup61.Header = "Geometric (Lv. 20)";
+            listViewGroup61.Name = "listViewGroup4";
+            listViewGroup62.Header = "Flora (Lv. 30)";
+            listViewGroup62.Name = "listViewGroup5";
+            listViewGroup63.Header = "Science (Lv. 40)";
+            listViewGroup63.Name = "listViewGroup6";
+            listViewGroup64.Header = "Psyechedelic (Lv. 50)";
+            listViewGroup64.Name = "listViewGroup7";
             this.lvMultiplayerCamo.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
-            listViewGroup9,
-            listViewGroup10,
-            listViewGroup11,
-            listViewGroup12,
-            listViewGroup13,
-            listViewGroup14,
-            listViewGroup15,
-            listViewGroup16});
-            listViewItem39.Group = listViewGroup10;
-            listViewItem39.StateImageIndex = 0;
-            listViewItem40.Group = listViewGroup10;
-            listViewItem40.StateImageIndex = 0;
-            listViewItem41.Group = listViewGroup10;
-            listViewItem41.StateImageIndex = 0;
-            listViewItem42.Group = listViewGroup10;
-            listViewItem42.StateImageIndex = 0;
-            listViewItem43.Group = listViewGroup10;
-            listViewItem43.StateImageIndex = 0;
-            listViewItem44.Group = listViewGroup11;
-            listViewItem44.StateImageIndex = 0;
-            listViewItem45.Group = listViewGroup11;
-            listViewItem45.StateImageIndex = 0;
-            listViewItem46.Group = listViewGroup11;
-            listViewItem46.StateImageIndex = 0;
-            listViewItem47.Group = listViewGroup11;
-            listViewItem47.StateImageIndex = 0;
-            listViewItem48.Group = listViewGroup11;
-            listViewItem48.StateImageIndex = 0;
-            listViewItem49.Group = listViewGroup12;
-            listViewItem49.StateImageIndex = 0;
-            listViewItem50.Group = listViewGroup12;
-            listViewItem50.StateImageIndex = 0;
-            listViewItem51.Group = listViewGroup12;
-            listViewItem51.StateImageIndex = 0;
-            listViewItem52.Group = listViewGroup12;
-            listViewItem52.StateImageIndex = 0;
-            listViewItem53.Group = listViewGroup12;
-            listViewItem53.StateImageIndex = 0;
-            listViewItem54.Group = listViewGroup13;
-            listViewItem54.StateImageIndex = 0;
-            listViewItem55.Group = listViewGroup13;
-            listViewItem55.StateImageIndex = 0;
-            listViewItem56.Group = listViewGroup13;
-            listViewItem56.StateImageIndex = 0;
-            listViewItem57.Group = listViewGroup13;
-            listViewItem57.StateImageIndex = 0;
-            listViewItem58.Group = listViewGroup13;
-            listViewItem58.StateImageIndex = 0;
-            listViewItem59.Group = listViewGroup14;
-            listViewItem59.StateImageIndex = 0;
-            listViewItem60.Group = listViewGroup14;
-            listViewItem60.StateImageIndex = 0;
-            listViewItem61.Group = listViewGroup14;
-            listViewItem61.StateImageIndex = 0;
-            listViewItem62.Group = listViewGroup14;
-            listViewItem62.StateImageIndex = 0;
-            listViewItem63.Group = listViewGroup14;
-            listViewItem63.StateImageIndex = 0;
-            listViewItem64.Group = listViewGroup15;
-            listViewItem64.StateImageIndex = 0;
-            listViewItem65.Group = listViewGroup15;
-            listViewItem65.StateImageIndex = 0;
-            listViewItem66.Group = listViewGroup15;
-            listViewItem66.StateImageIndex = 0;
-            listViewItem67.Group = listViewGroup15;
-            listViewItem67.StateImageIndex = 0;
-            listViewItem68.Group = listViewGroup15;
-            listViewItem68.StateImageIndex = 0;
-            listViewItem69.Group = listViewGroup16;
-            listViewItem69.StateImageIndex = 0;
-            listViewItem70.Group = listViewGroup16;
-            listViewItem70.StateImageIndex = 0;
-            listViewItem71.Group = listViewGroup16;
-            listViewItem71.StateImageIndex = 0;
-            listViewItem72.Group = listViewGroup16;
-            listViewItem72.StateImageIndex = 0;
-            listViewItem73.Group = listViewGroup16;
-            listViewItem73.StateImageIndex = 0;
-            listViewItem74.Group = listViewGroup9;
-            listViewItem74.StateImageIndex = 0;
-            listViewItem75.Group = listViewGroup9;
-            listViewItem75.StateImageIndex = 0;
-            listViewItem76.Group = listViewGroup9;
-            listViewItem76.StateImageIndex = 0;
+            listViewGroup57,
+            listViewGroup58,
+            listViewGroup59,
+            listViewGroup60,
+            listViewGroup61,
+            listViewGroup62,
+            listViewGroup63,
+            listViewGroup64});
+            listViewItem267.Group = listViewGroup58;
+            listViewItem267.StateImageIndex = 0;
+            listViewItem268.Group = listViewGroup58;
+            listViewItem268.StateImageIndex = 0;
+            listViewItem269.Group = listViewGroup58;
+            listViewItem269.StateImageIndex = 0;
+            listViewItem270.Group = listViewGroup58;
+            listViewItem270.StateImageIndex = 0;
+            listViewItem271.Group = listViewGroup58;
+            listViewItem271.StateImageIndex = 0;
+            listViewItem272.Group = listViewGroup59;
+            listViewItem272.StateImageIndex = 0;
+            listViewItem273.Group = listViewGroup59;
+            listViewItem273.StateImageIndex = 0;
+            listViewItem274.Group = listViewGroup59;
+            listViewItem274.StateImageIndex = 0;
+            listViewItem275.Group = listViewGroup59;
+            listViewItem275.StateImageIndex = 0;
+            listViewItem276.Group = listViewGroup59;
+            listViewItem276.StateImageIndex = 0;
+            listViewItem277.Group = listViewGroup60;
+            listViewItem277.StateImageIndex = 0;
+            listViewItem278.Group = listViewGroup60;
+            listViewItem278.StateImageIndex = 0;
+            listViewItem279.Group = listViewGroup60;
+            listViewItem279.StateImageIndex = 0;
+            listViewItem280.Group = listViewGroup60;
+            listViewItem280.StateImageIndex = 0;
+            listViewItem281.Group = listViewGroup60;
+            listViewItem281.StateImageIndex = 0;
+            listViewItem282.Group = listViewGroup61;
+            listViewItem282.StateImageIndex = 0;
+            listViewItem283.Group = listViewGroup61;
+            listViewItem283.StateImageIndex = 0;
+            listViewItem284.Group = listViewGroup61;
+            listViewItem284.StateImageIndex = 0;
+            listViewItem285.Group = listViewGroup61;
+            listViewItem285.StateImageIndex = 0;
+            listViewItem286.Group = listViewGroup61;
+            listViewItem286.StateImageIndex = 0;
+            listViewItem287.Group = listViewGroup62;
+            listViewItem287.StateImageIndex = 0;
+            listViewItem288.Group = listViewGroup62;
+            listViewItem288.StateImageIndex = 0;
+            listViewItem289.Group = listViewGroup62;
+            listViewItem289.StateImageIndex = 0;
+            listViewItem290.Group = listViewGroup62;
+            listViewItem290.StateImageIndex = 0;
+            listViewItem291.Group = listViewGroup62;
+            listViewItem291.StateImageIndex = 0;
+            listViewItem292.Group = listViewGroup63;
+            listViewItem292.StateImageIndex = 0;
+            listViewItem293.Group = listViewGroup63;
+            listViewItem293.StateImageIndex = 0;
+            listViewItem294.Group = listViewGroup63;
+            listViewItem294.StateImageIndex = 0;
+            listViewItem295.Group = listViewGroup63;
+            listViewItem295.StateImageIndex = 0;
+            listViewItem296.Group = listViewGroup63;
+            listViewItem296.StateImageIndex = 0;
+            listViewItem297.Group = listViewGroup64;
+            listViewItem297.StateImageIndex = 0;
+            listViewItem298.Group = listViewGroup64;
+            listViewItem298.StateImageIndex = 0;
+            listViewItem299.Group = listViewGroup64;
+            listViewItem299.StateImageIndex = 0;
+            listViewItem300.Group = listViewGroup64;
+            listViewItem300.StateImageIndex = 0;
+            listViewItem301.Group = listViewGroup64;
+            listViewItem301.StateImageIndex = 0;
+            listViewItem302.Group = listViewGroup57;
+            listViewItem302.StateImageIndex = 0;
+            listViewItem303.Group = listViewGroup57;
+            listViewItem303.StateImageIndex = 0;
+            listViewItem304.Group = listViewGroup57;
+            listViewItem304.StateImageIndex = 0;
             this.lvMultiplayerCamo.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem39,
-            listViewItem40,
-            listViewItem41,
-            listViewItem42,
-            listViewItem43,
-            listViewItem44,
-            listViewItem45,
-            listViewItem46,
-            listViewItem47,
-            listViewItem48,
-            listViewItem49,
-            listViewItem50,
-            listViewItem51,
-            listViewItem52,
-            listViewItem53,
-            listViewItem54,
-            listViewItem55,
-            listViewItem56,
-            listViewItem57,
-            listViewItem58,
-            listViewItem59,
-            listViewItem60,
-            listViewItem61,
-            listViewItem62,
-            listViewItem63,
-            listViewItem64,
-            listViewItem65,
-            listViewItem66,
-            listViewItem67,
-            listViewItem68,
-            listViewItem69,
-            listViewItem70,
-            listViewItem71,
-            listViewItem72,
-            listViewItem73,
-            listViewItem74,
-            listViewItem75,
-            listViewItem76});
-            this.lvMultiplayerCamo.Location = new System.Drawing.Point(6, 19);
+            listViewItem267,
+            listViewItem268,
+            listViewItem269,
+            listViewItem270,
+            listViewItem271,
+            listViewItem272,
+            listViewItem273,
+            listViewItem274,
+            listViewItem275,
+            listViewItem276,
+            listViewItem277,
+            listViewItem278,
+            listViewItem279,
+            listViewItem280,
+            listViewItem281,
+            listViewItem282,
+            listViewItem283,
+            listViewItem284,
+            listViewItem285,
+            listViewItem286,
+            listViewItem287,
+            listViewItem288,
+            listViewItem289,
+            listViewItem290,
+            listViewItem291,
+            listViewItem292,
+            listViewItem293,
+            listViewItem294,
+            listViewItem295,
+            listViewItem296,
+            listViewItem297,
+            listViewItem298,
+            listViewItem299,
+            listViewItem300,
+            listViewItem301,
+            listViewItem302,
+            listViewItem303,
+            listViewItem304});
+            this.lvMultiplayerCamo.Location = new System.Drawing.Point(5, 19);
             this.lvMultiplayerCamo.MultiSelect = false;
             this.lvMultiplayerCamo.Name = "lvMultiplayerCamo";
-            this.lvMultiplayerCamo.Size = new System.Drawing.Size(261, 328);
+            this.lvMultiplayerCamo.Size = new System.Drawing.Size(262, 328);
             this.lvMultiplayerCamo.TabIndex = 0;
             this.lvMultiplayerCamo.UseCompatibleStateImageBehavior = false;
             this.lvMultiplayerCamo.View = System.Windows.Forms.View.Details;
@@ -1090,18 +1093,18 @@
             // 
             // lbWeaponLevel
             // 
-            this.lbWeaponLevel.Location = new System.Drawing.Point(648, 91);
+            this.lbWeaponLevel.Location = new System.Drawing.Point(641, 89);
             this.lbWeaponLevel.Name = "lbWeaponLevel";
-            this.lbWeaponLevel.Size = new System.Drawing.Size(65, 15);
+            this.lbWeaponLevel.Size = new System.Drawing.Size(82, 19);
             this.lbWeaponLevel.TabIndex = 18;
-            this.lbWeaponLevel.Text = "Level";
+            this.lbWeaponLevel.Text = "Level (Max 55)";
             this.lbWeaponLevel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lbWeaponLevel.Visible = false;
             // 
             // txtWeaponLevel
             // 
             this.txtWeaponLevel.Location = new System.Drawing.Point(651, 112);
-            this.txtWeaponLevel.MaxLength = 4;
+            this.txtWeaponLevel.MaxLength = 2;
             this.txtWeaponLevel.Name = "txtWeaponLevel";
             this.txtWeaponLevel.Size = new System.Drawing.Size(62, 22);
             this.txtWeaponLevel.TabIndex = 19;
@@ -1118,12 +1121,53 @@
             this.lbClassWeaponSeperator.TabIndex = 55;
             this.lbClassWeaponSeperator.Text = "lol";
             // 
+            // radioButton6
+            // 
+            this.radioButton6.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButton6.AutoSize = true;
+            this.radioButton6.Location = new System.Drawing.Point(400, 48);
+            this.radioButton6.Name = "radioButton6";
+            this.radioButton6.Size = new System.Drawing.Size(70, 23);
+            this.radioButton6.TabIndex = 56;
+            this.radioButton6.Text = "Weapon 6";
+            this.radioButton6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.radioButton6.UseVisualStyleBackColor = true;
+            this.radioButton6.Visible = false;
+            this.radioButton6.CheckedChanged += new System.EventHandler(this.radioButton6_CheckedChanged);
+            // 
+            // btnReticles
+            // 
+            this.btnReticles.Location = new System.Drawing.Point(624, 491);
+            this.btnReticles.Name = "btnReticles";
+            this.btnReticles.Size = new System.Drawing.Size(75, 23);
+            this.btnReticles.TabIndex = 57;
+            this.btnReticles.Text = "Reticles";
+            this.btnReticles.UseVisualStyleBackColor = true;
+            this.btnReticles.Click += new System.EventHandler(this.btnReticles_Click);
+            // 
+            // radioButton7
+            // 
+            this.radioButton7.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButton7.AutoSize = true;
+            this.radioButton7.Location = new System.Drawing.Point(476, 48);
+            this.radioButton7.Name = "radioButton7";
+            this.radioButton7.Size = new System.Drawing.Size(70, 23);
+            this.radioButton7.TabIndex = 58;
+            this.radioButton7.Text = "Weapon 7";
+            this.radioButton7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.radioButton7.UseVisualStyleBackColor = true;
+            this.radioButton7.Visible = false;
+            this.radioButton7.CheckedChanged += new System.EventHandler(this.radioButton7_CheckedChanged);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(826, 531);
+            this.Controls.Add(this.radioButton7);
+            this.Controls.Add(this.btnReticles);
+            this.Controls.Add(this.radioButton6);
             this.Controls.Add(this.lbWeaponLevel);
             this.Controls.Add(this.txtWeaponLevel);
             this.Controls.Add(this.lbTier6ZM);
@@ -1172,7 +1216,7 @@
             this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MaximizeBox = false;
             this.Name = "frmMain";
-            this.Text = "Cold War Camos";
+            this.Text = "Cold War Camo Tracker";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmMain_FormClosing);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -1243,6 +1287,9 @@
         private System.Windows.Forms.Label lbWeaponLevel;
         private System.Windows.Forms.TextBox txtWeaponLevel;
         private System.Windows.Forms.Label lbClassWeaponSeperator;
+        private System.Windows.Forms.RadioButton radioButton6;
+        private System.Windows.Forms.Button btnReticles;
+        private System.Windows.Forms.RadioButton radioButton7;
     }
 }
 

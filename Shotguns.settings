@@ -35,5 +35,20 @@
     <Setting Name="GALLOSA12_STATS_ZM" Type="System.String" Scope="User">
       <Value Profile="(Default)">0,0,0,0,0,0,0</Value>
     </Setting>
+    <Setting Name="STREETSWEEPER_LEVEL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="STREETSWEEPER_CAMO_MP" Type="System.String" Scope="User">
+      <Value Profile="(Default)">00000000000000000000000000000000000000</Value>
+    </Setting>
+    <Setting Name="STREETSWEEPER_CAMO_ZM" Type="System.String" Scope="User">
+      <Value Profile="(Default)">00000000000000000000000000000000000000</Value>
+    </Setting>
+    <Setting Name="STREETSWEEPER_STATS_MP" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0,0,0,0,0,0,0</Value>
+    </Setting>
+    <Setting Name="STREETSWEEPER_STATS_ZM" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0,0,0,0,0,0,0</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

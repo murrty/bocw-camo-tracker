@@ -4,11 +4,10 @@ using System.Windows.Forms;
 
 namespace ColdWarCamo {
     public partial class frmMain : Form {
-        private readonly string DefaultCamo = "00000000000000000000000000000000000";
+        private readonly string DefaultCamo =  "00000000000000000000000000000000000";
         private readonly string CompleteCamo = "11111111111111111111111111111111111";
-        private readonly string DefaultComplete = "00000000000000000000000000000000000000|1|0,0,0,0,0,0,0";
 
-        private int SelectedClass = -1;
+        private WeaponClass SelectedClass = WeaponClass.None;
         private int SelectedWeapon = -1;
 
         private bool WeaponModified = false;
@@ -28,6 +27,8 @@ namespace ColdWarCamo {
             radioButton3.Location = new Point(radioButton2.Location.X + radioButton2.Size.Width + 4, 48);
             radioButton4.Location = new Point(radioButton3.Location.X + radioButton3.Size.Width + 4, 48);
             radioButton5.Location = new Point(radioButton4.Location.X + radioButton4.Size.Width + 4, 48);
+            radioButton6.Location = new Point(radioButton5.Location.X + radioButton5.Size.Width + 4, 48);
+            radioButton7.Location = new Point(radioButton6.Location.X + radioButton6.Size.Width + 4, 48);
         }
         [System.Diagnostics.DebuggerStepThrough]
         private void SetCamoLevels(int Type) {
@@ -167,12 +168,12 @@ namespace ColdWarCamo {
                         lv.Items[33].Checked = true;
                         break;
 
-                    case 36:
-                        lv.Items[35].Checked = true;
-                        break;
-                    case 37:
-                        lv.Items[36].Checked = true;
-                        break;
+                    //case 36:
+                    //    lv.Items[35].Checked = true;
+                    //    break;
+                    //case 37:
+                    //    lv.Items[36].Checked = true;
+                    //    break;
                 }
             }
         }
@@ -271,12 +272,12 @@ namespace ColdWarCamo {
                         lv.Items[34].Checked = false;
                         break;
 
-                    case 35:
-                        lv.Items[36].Checked = false;
-                        break;
-                    case 36:
-                        lv.Items[37].Checked = false;
-                        break;
+                    //case 35:
+                    //    lv.Items[36].Checked = false;
+                    //    break;
+                    //case 36:
+                    //    lv.Items[37].Checked = false;
+                    //    break;
                 }
             }
         }
@@ -476,7 +477,7 @@ namespace ColdWarCamo {
                             return "Get 10 kills rapidly 10 times";
                     }
                 }
-                else if (rbSP.Checked && radioButton1.Checked) {
+                else if (rbSP.Checked && radioButton1.Checked || radioButton4.Checked) {
                     switch (Camo) {
                         case 0:
                             return "Get 50 kills";
@@ -950,7 +951,7 @@ namespace ColdWarCamo {
                     }
                 }
                 else if (rbSP.Checked) {
-                    if (radioButton1.Checked) {
+                    if (radioButton1.Checked || radioButton4.Checked) {
                         switch (Camo) {
                             case 0:
                                 return "Get 5 kills";
@@ -1083,47 +1084,78 @@ namespace ColdWarCamo {
             #endregion
             return null;
         }
+        [System.Diagnostics.DebuggerStepThrough]
+        private bool CheckCamos() {
+            return true;
+        }
 
-        private void SwitchClass(int NewClass) {
+        private void SwitchClass(WeaponClass NewClass) {
             SwitchingClass = true;
 
             if (SelectedWeapon != -1) {
                 switch (SelectedClass) {
-                    case 0:
-                        AssaultRifles.Default.Last = SelectedWeapon;
-                        AssaultRifles.Default.Save();
+                    case WeaponClass.AssaultRifle:
+                        if (AssaultRifles.Default.Last != SelectedWeapon) {
+                            Console.WriteLine("Saving AssaultRifles");
+                            AssaultRifles.Default.Last = SelectedWeapon;
+                            AssaultRifles.Default.Save();
+                        }
                         break;
-                    case 1:
-                        SubmachineGuns.Default.Last = SelectedWeapon;
-                        SubmachineGuns.Default.Save();
+                    case WeaponClass.SubmachineGun:
+                        if (SubmachineGuns.Default.Last != SelectedWeapon) {
+                            Console.WriteLine("Saving SubmachineGuns");
+                            SubmachineGuns.Default.Last = SelectedWeapon;
+                            SubmachineGuns.Default.Save();
+                        }
                         break;
-                    case 2:
-                        TacticalRifles.Default.Last = SelectedWeapon;
-                        TacticalRifles.Default.Save();
+                    case WeaponClass.TacticalRifle:
+                        if (TacticalRifles.Default.Last != SelectedWeapon) {
+                            Console.WriteLine("Saving TacticalRifles");
+                            TacticalRifles.Default.Last = SelectedWeapon;
+                            TacticalRifles.Default.Save();
+                        }
                         break;
-                    case 3:
-                        LightMachineGuns.Default.Last = SelectedWeapon;
-                        LightMachineGuns.Default.Save();
+                    case WeaponClass.LightMachineGun:
+                        if (LightMachineGuns.Default.Last != SelectedWeapon) {
+                            Console.WriteLine("Saving LightMachineGuns");
+                            LightMachineGuns.Default.Last = SelectedWeapon;
+                            LightMachineGuns.Default.Save();
+                        }
                         break;
-                    case 4:
-                        SniperRifles.Default.Last = SelectedWeapon;
-                        SniperRifles.Default.Save();
+                    case WeaponClass.SniperRifle:
+                        if (SniperRifles.Default.Last != SelectedWeapon) {
+                            Console.WriteLine("Saving SniperRifles");
+                            SniperRifles.Default.Last = SelectedWeapon;
+                            SniperRifles.Default.Save();
+                        }
                         break;
-                    case 5:
-                        Pistols.Default.Last = SelectedWeapon;
-                        Pistols.Default.Save();
+                    case WeaponClass.Pistol:
+                        if (Pistols.Default.Last != SelectedWeapon) {
+                            Console.WriteLine("Saving Pistols");
+                            Pistols.Default.Last = SelectedWeapon;
+                            Pistols.Default.Save();
+                        }
                         break;
-                    case 6:
-                        Shotguns.Default.Last = SelectedWeapon;
-                        Shotguns.Default.Save();
+                    case WeaponClass.Shotgun:
+                        if (Shotguns.Default.Last != SelectedWeapon) {
+                            Console.WriteLine("Saving Shotguns");
+                            Shotguns.Default.Last = SelectedWeapon;
+                            Shotguns.Default.Save();
+                        }
                         break;
-                    case 7:
-                        RocketLaunchers.Default.Last = SelectedWeapon;
-                        RocketLaunchers.Default.Save();
+                    case WeaponClass.RocketLauncher:
+                        if (RocketLaunchers.Default.Last != SelectedWeapon) {
+                            Console.WriteLine("Saving RocketLaunchers");
+                            RocketLaunchers.Default.Last = SelectedWeapon;
+                            RocketLaunchers.Default.Save();
+                        }
                         break;
-                    case 8:
-                        Specials.Default.Last = SelectedWeapon;
-                        Specials.Default.Save();
+                    case WeaponClass.Special:
+                        if (Specials.Default.Last != SelectedWeapon) {
+                            Console.WriteLine("Saving Specials");
+                            Specials.Default.Last = SelectedWeapon;
+                            Specials.Default.Save();
+                        }
                         break;
                 }
             }
@@ -1133,48 +1165,107 @@ namespace ColdWarCamo {
             radioButton3.Checked = false;
             radioButton4.Checked = false;
             radioButton5.Checked = false;
+            radioButton6.Checked = false;
+            radioButton7.Checked = false;
+
+            radioButton1.Visible = false;
+            radioButton2.Visible = false;
+            radioButton3.Visible = false;
+            radioButton4.Visible = false;
+            radioButton5.Visible = false;
+            radioButton6.Visible = false;
+            radioButton7.Visible = false;
 
             radioButton1.Text = "Unused";
             radioButton2.Text = "Unused";
             radioButton3.Text = "Unused";
             radioButton4.Text = "Unused";
             radioButton5.Text = "Unused";
+            radioButton6.Text = "Unused";
+
+            lbWeaponLevel.Text = "Level";
 
             SelectedWeapon = -1;
+            int GoldCount_MP = 0;
+            int GoldCount_ZM = 0;
 
             switch (NewClass) {
                 #region Assault Rifles
-                default:
+                case WeaponClass.AssaultRifle:
+                    Console.WriteLine("Loading AssaultRifles");
                     radioButton1.Visible = true;
                     radioButton2.Visible = true;
                     radioButton3.Visible = true;
                     radioButton4.Visible = true;
                     radioButton5.Visible = true;
+                    radioButton6.Visible = true;
+                    radioButton7.Visible = true;
                     radioButton1.Text = "XM4";
                     radioButton2.Text = "AK-47";
                     radioButton3.Text = "Krig 6";
                     radioButton4.Text = "QBZ-83";
                     radioButton5.Text = "FFAR 1";
+                    radioButton6.Text = "Groza";
+                    radioButton7.Text = "FARA 83";
 
-                    if (AssaultRifles.Default.XM4_CAMO_MP.StartsWith(CompleteCamo) &&
-                        AssaultRifles.Default.AK47_CAMO_MP.StartsWith(CompleteCamo) &&
-                        AssaultRifles.Default.KRIG6_CAMO_MP.StartsWith(CompleteCamo) &&
-                        AssaultRifles.Default.QBZ83_CAMO_MP.StartsWith(CompleteCamo) &&
-                        AssaultRifles.Default.FFAR1_CAMO_MP.StartsWith(CompleteCamo)) {
-                            lbDiamondUnlocked.Visible = true;
+                    lbWeaponLevel.Text += " (Max 55)";
+
+                    if (AssaultRifles.Default.XM4_CAMO_MP.StartsWith(CompleteCamo)) {
+                        GoldCount_MP++;
                     }
-                    else {
+                    if (AssaultRifles.Default.AK47_CAMO_MP.StartsWith(CompleteCamo)) {
+                        GoldCount_MP++;
+                    }
+                    if (AssaultRifles.Default.KRIG6_CAMO_MP.StartsWith(CompleteCamo)) {
+                        GoldCount_MP++;
+                    }
+                    if (AssaultRifles.Default.QBZ83_CAMO_MP.StartsWith(CompleteCamo)) {
+                        GoldCount_MP++;
+                    }
+                    if (AssaultRifles.Default.FFAR1_CAMO_MP.StartsWith(CompleteCamo)) {
+                        GoldCount_MP++;
+                    }
+                    if (AssaultRifles.Default.GROZA_CAMO_MP.StartsWith(CompleteCamo)) {
+                        GoldCount_MP++;
+                    }
+                    if (AssaultRifles.Default.FARA83_CAMO_MP.StartsWith(CompleteCamo)) {
+                        GoldCount_MP++;
+                    }
+
+                    if ( GoldCount_MP < 5) {
                         lbDiamondUnlocked.Visible = false;
                     }
-                    if (AssaultRifles.Default.XM4_CAMO_ZM.StartsWith(CompleteCamo) &&
-                        AssaultRifles.Default.AK47_CAMO_ZM.StartsWith(CompleteCamo) &&
-                        AssaultRifles.Default.KRIG6_CAMO_ZM.StartsWith(CompleteCamo) &&
-                        AssaultRifles.Default.QBZ83_CAMO_ZM.StartsWith(CompleteCamo) &&
-                        AssaultRifles.Default.FFAR1_CAMO_ZM.StartsWith(CompleteCamo)) {
-                        lbPlagueDiamondUnlocked.Visible = true;
+                    else {
+                        lbDiamondUnlocked.Visible = true;
+                    }
+
+                    if (AssaultRifles.Default.XM4_CAMO_ZM.StartsWith(CompleteCamo)) {
+                        GoldCount_ZM++;
+                    }
+                    if (AssaultRifles.Default.AK47_CAMO_ZM.StartsWith(CompleteCamo)) {
+                        GoldCount_ZM++;
+                    }
+                    if (AssaultRifles.Default.KRIG6_CAMO_ZM.StartsWith(CompleteCamo)) {
+                        GoldCount_ZM++;
+                    }
+                    if (AssaultRifles.Default.QBZ83_CAMO_ZM.StartsWith(CompleteCamo)) {
+                        GoldCount_ZM++;
+                    }
+                    if (AssaultRifles.Default.FFAR1_CAMO_ZM.StartsWith(CompleteCamo)) {
+                        GoldCount_ZM++;
+                    }
+                    if (AssaultRifles.Default.GROZA_CAMO_ZM.StartsWith(CompleteCamo)) {
+                        GoldCount_ZM++;
+                    }
+                    if (AssaultRifles.Default.FARA83_CAMO_ZM.StartsWith(CompleteCamo)) {
+                        GoldCount_ZM++;
+                    }
+
+                    if ( GoldCount_ZM < 5) {
+                        lbPlagueDiamondUnlocked.Visible = false;
                     }
                     else {
-                        lbPlagueDiamondUnlocked.Visible = false;
+                        lbPlagueDiamondUnlocked.Visible = true;
                     }
 
                     if (AssaultRifles.Default.Last != -1) {
@@ -1185,37 +1276,81 @@ namespace ColdWarCamo {
                     break;
                 #endregion
                 #region Submachine Guns
-                case 1:
+                case WeaponClass.SubmachineGun:
+                    Console.WriteLine("Loading SubmachineGuns");
                     radioButton1.Visible = true;
                     radioButton2.Visible = true;
                     radioButton3.Visible = true;
                     radioButton4.Visible = true;
                     radioButton5.Visible = true;
+                    radioButton6.Visible = true;
+                    radioButton7.Visible = true;
                     radioButton1.Text = "MP5";
                     radioButton2.Text = "Milano 821";
                     radioButton3.Text = "AK-74u";
                     radioButton4.Text = "KSP 45";
                     radioButton5.Text = "Bullfrog";
+                    radioButton6.Text = "MAC-10";
+                    radioButton7.Text = "LC10";
 
-                    if (SubmachineGuns.Default.MP5_CAMO_MP.StartsWith(CompleteCamo) &&
-                        SubmachineGuns.Default.MILANO821_CAMO_MP.StartsWith(CompleteCamo) &&
-                        SubmachineGuns.Default.AK74U_CAMO_MP.StartsWith(CompleteCamo) &&
-                        SubmachineGuns.Default.KSP45_CAMO_MP.StartsWith(CompleteCamo) &&
-                        SubmachineGuns.Default.BULLFROG_CAMO_MP.StartsWith(CompleteCamo)) {
-                            lbDiamondUnlocked.Visible = true;
+                    lbWeaponLevel.Text += " (Max 55)";
+
+                    if (SubmachineGuns.Default.MP5_CAMO_MP.StartsWith(CompleteCamo)) {
+                        GoldCount_MP++;
                     }
-                    else {
+                    if (SubmachineGuns.Default.MILANO821_CAMO_MP.StartsWith(CompleteCamo)) {
+                        GoldCount_MP++;
+                    }
+                    if (SubmachineGuns.Default.AK74U_CAMO_MP.StartsWith(CompleteCamo)) {
+                        GoldCount_MP++;
+                    }
+                    if (SubmachineGuns.Default.KSP45_CAMO_MP.StartsWith(CompleteCamo)) {
+                        GoldCount_MP++;
+                    }
+                    if (SubmachineGuns.Default.BULLFROG_CAMO_MP.StartsWith(CompleteCamo)) {
+                        GoldCount_MP++;
+                    }
+                    if (SubmachineGuns.Default.MAC10_CAMO_MP.StartsWith(CompleteCamo)) {
+                        GoldCount_MP++;
+                    }
+                    if (SubmachineGuns.Default.LC10_CAMO_MP.StartsWith(CompleteCamo)) {
+                        GoldCount_MP++;
+                    }
+
+                    if ( GoldCount_MP < 5) {
                         lbDiamondUnlocked.Visible = false;
                     }
-                    if (SubmachineGuns.Default.MP5_CAMO_ZM.StartsWith(CompleteCamo) &&
-                        SubmachineGuns.Default.MILANO821_CAMO_ZM.StartsWith(CompleteCamo) &&
-                        SubmachineGuns.Default.AK74U_CAMO_ZM.StartsWith(CompleteCamo) &&
-                        SubmachineGuns.Default.KSP45_CAMO_ZM.StartsWith(CompleteCamo) &&
-                        SubmachineGuns.Default.BULLFROG_CAMO_ZM.StartsWith(CompleteCamo)) {
-                        lbPlagueDiamondUnlocked.Visible = true;
+                    else {
+                        lbDiamondUnlocked.Visible = true;
+                    }
+
+                    if (SubmachineGuns.Default.MP5_CAMO_ZM.StartsWith(CompleteCamo)) {
+                        GoldCount_ZM++;
+                    }
+                    if (SubmachineGuns.Default.MILANO821_CAMO_ZM.StartsWith(CompleteCamo)) {
+                        GoldCount_ZM++;
+                    }
+                    if (SubmachineGuns.Default.AK74U_CAMO_ZM.StartsWith(CompleteCamo)) {
+                        GoldCount_ZM++;
+                    }
+                    if (SubmachineGuns.Default.KSP45_CAMO_ZM.StartsWith(CompleteCamo)) {
+                        GoldCount_ZM++;
+                    }
+                    if (SubmachineGuns.Default.BULLFROG_CAMO_ZM.StartsWith(CompleteCamo)) {
+                        GoldCount_ZM++;
+                    }
+                    if (SubmachineGuns.Default.MAC10_CAMO_ZM.StartsWith(CompleteCamo)) {
+                        GoldCount_ZM++;
+                    }
+                    if (SubmachineGuns.Default.LC10_CAMO_ZM.StartsWith(CompleteCamo)) {
+                        GoldCount_ZM++;
+                    }
+
+                    if ( GoldCount_ZM < 5) {
+                        lbPlagueDiamondUnlocked.Visible = false;
                     }
                     else {
-                        lbPlagueDiamondUnlocked.Visible = false;
+                        lbPlagueDiamondUnlocked.Visible = true;
                     }
 
                     if (SubmachineGuns.Default.Last != -1) {
@@ -1226,35 +1361,57 @@ namespace ColdWarCamo {
                     break;
                 #endregion
                 #region Tactical Rifles
-                case 2:
+                case WeaponClass.TacticalRifle:
+                    Console.WriteLine("Loading TacticalRifles");
                     radioButton1.Visible = true;
                     radioButton2.Visible = true;
                     radioButton3.Visible = true;
                     radioButton4.Visible = true;
-                    radioButton5.Visible = false;
                     radioButton1.Text = "Type 63";
                     radioButton2.Text = "M16";
                     radioButton3.Text = "AUG";
                     radioButton4.Text = "DMR-14";
-                    radioButton5.Text = "Unused";
 
-                    if (TacticalRifles.Default.TYPE63_CAMO_MP.StartsWith(CompleteCamo) &&
-                        TacticalRifles.Default.M16_CAMO_MP.StartsWith(CompleteCamo) &&
-                        TacticalRifles.Default.AUG_CAMO_MP.StartsWith(CompleteCamo) &&
-                        TacticalRifles.Default.DMR14_CAMO_MP.StartsWith(CompleteCamo)) {
-                            lbDiamondUnlocked.Visible = true;
+                    lbWeaponLevel.Text += " (Max 55)";
+
+                    if (TacticalRifles.Default.TYPE63_CAMO_MP.StartsWith(CompleteCamo)) {
+                        GoldCount_MP++;
                     }
-                    else {
+                    if (TacticalRifles.Default.M16_CAMO_MP.StartsWith(CompleteCamo)) {
+                        GoldCount_MP++;
+                    }
+                    if (TacticalRifles.Default.AUG_CAMO_MP.StartsWith(CompleteCamo)) {
+                        GoldCount_MP++;
+                    }
+                    if (TacticalRifles.Default.DMR14_CAMO_MP.StartsWith(CompleteCamo)) {
+                        GoldCount_MP++;
+                    }
+
+                    if ( GoldCount_MP < 4) {
                         lbDiamondUnlocked.Visible = false;
                     }
-                    if (TacticalRifles.Default.TYPE63_CAMO_ZM.StartsWith(CompleteCamo) &&
-                        TacticalRifles.Default.M16_CAMO_ZM.StartsWith(CompleteCamo) &&
-                        TacticalRifles.Default.AUG_CAMO_ZM.StartsWith(CompleteCamo) &&
-                        TacticalRifles.Default.DMR14_CAMO_ZM.StartsWith(CompleteCamo)) {
-                        lbPlagueDiamondUnlocked.Visible = true;
+                    else {
+                        lbDiamondUnlocked.Visible = true;
+                    }
+
+                    if (TacticalRifles.Default.TYPE63_CAMO_ZM.StartsWith(CompleteCamo)) {
+                        GoldCount_ZM++;
+                    }
+                    if (TacticalRifles.Default.M16_CAMO_ZM.StartsWith(CompleteCamo)) {
+                        GoldCount_ZM++;
+                    }
+                    if (TacticalRifles.Default.AUG_CAMO_ZM.StartsWith(CompleteCamo)) {
+                        GoldCount_ZM++;
+                    }
+                    if (TacticalRifles.Default.DMR14_CAMO_ZM.StartsWith(CompleteCamo)) {
+                        GoldCount_ZM++;
+                    }
+
+                    if ( GoldCount_ZM < 4) {
+                        lbPlagueDiamondUnlocked.Visible = false;
                     }
                     else {
-                        lbPlagueDiamondUnlocked.Visible = false;
+                        lbPlagueDiamondUnlocked.Visible = true;
                     }
 
                     if (TacticalRifles.Default.Last != -1) {
@@ -1265,33 +1422,49 @@ namespace ColdWarCamo {
                     break;
                 #endregion
                 #region Light Machine Guns
-                case 3:
+                case WeaponClass.LightMachineGun:
+                    Console.WriteLine("Loading LightMachineGuns");
                     radioButton1.Visible = true;
                     radioButton2.Visible = true;
                     radioButton3.Visible = true;
-                    radioButton4.Visible = false;
-                    radioButton5.Visible = false;
                     radioButton1.Text = "Stoner-63";
                     radioButton2.Text = "RPD";
                     radioButton3.Text = "M60";
-                    radioButton4.Text = "Unused";
-                    radioButton5.Text = "Unused";
 
-                    if (LightMachineGuns.Default.STONER63_CAMO_MP.StartsWith(CompleteCamo) &&
-                        LightMachineGuns.Default.RPD_CAMO_MP.StartsWith(CompleteCamo) &&
-                        LightMachineGuns.Default.M60_CAMO_MP.StartsWith(CompleteCamo)) {
-                            lbDiamondUnlocked.Visible = true;
+                    lbWeaponLevel.Text += " (Max 55)";
+
+                    if (LightMachineGuns.Default.STONER63_CAMO_MP.StartsWith(CompleteCamo)) {
+                        GoldCount_MP++;
                     }
-                    else {
+                    if (LightMachineGuns.Default.RPD_CAMO_MP.StartsWith(CompleteCamo)) {
+                        GoldCount_MP++;
+                    }
+                    if (LightMachineGuns.Default.M60_CAMO_MP.StartsWith(CompleteCamo)) {
+                        GoldCount_MP++;
+                    }
+
+                    if ( GoldCount_MP < 3) {
                         lbDiamondUnlocked.Visible = false;
                     }
-                    if (LightMachineGuns.Default.STONER63_CAMO_ZM.StartsWith(CompleteCamo) &&
-                        LightMachineGuns.Default.RPD_CAMO_ZM.StartsWith(CompleteCamo) &&
-                        LightMachineGuns.Default.M60_CAMO_ZM.StartsWith(CompleteCamo)) {
-                        lbPlagueDiamondUnlocked.Visible = true;
+                    else {
+                        lbDiamondUnlocked.Visible = true;
+                    }
+
+                    if (LightMachineGuns.Default.STONER63_CAMO_ZM.StartsWith(CompleteCamo)) {
+                        GoldCount_ZM++;
+                    }
+                    if (LightMachineGuns.Default.RPD_CAMO_ZM.StartsWith(CompleteCamo)) {
+                        GoldCount_ZM++;
+                    }
+                    if (LightMachineGuns.Default.M60_CAMO_ZM.StartsWith(CompleteCamo)) {
+                        GoldCount_ZM++;
+                    }
+
+                    if ( GoldCount_ZM < 3) {
+                        lbPlagueDiamondUnlocked.Visible = false;
                     }
                     else {
-                        lbPlagueDiamondUnlocked.Visible = false;
+                        lbPlagueDiamondUnlocked.Visible = true;
                     }
 
                     if (LightMachineGuns.Default.Last != -1) {
@@ -1302,33 +1475,57 @@ namespace ColdWarCamo {
                     break;
                 #endregion
                 #region Sniper Rifles
-                case 4:
+                case WeaponClass.SniperRifle:
+                    Console.WriteLine("Loading SniperRifles");
                     radioButton1.Visible = true;
                     radioButton2.Visible = true;
                     radioButton3.Visible = true;
-                    radioButton4.Visible = false;
-                    radioButton5.Visible = false;
+                    radioButton4.Visible = true;
                     radioButton1.Text = "Pelington 703";
                     radioButton2.Text = "LW3 - Tundra";
                     radioButton3.Text = "M82";
-                    radioButton4.Text = "Unused";
-                    radioButton5.Text = "Unused";
+                    radioButton4.Text = "ZRG 20mm";
 
-                    if (SniperRifles.Default.PELINGTON703_CAMO_MP.StartsWith(CompleteCamo) &&
-                        SniperRifles.Default.LW3TUNDRA_CAMO_MP.StartsWith(CompleteCamo) &&
-                        SniperRifles.Default.M82_CAMO_MP.StartsWith(CompleteCamo)) {
-                            lbDiamondUnlocked.Visible = true;
+                    lbWeaponLevel.Text += " (Max 55)";
+
+                    if (SniperRifles.Default.PELINGTON703_CAMO_MP.StartsWith(CompleteCamo)) {
+                        GoldCount_MP++;
                     }
-                    else {
+                    if (SniperRifles.Default.LW3TUNDRA_CAMO_MP.StartsWith(CompleteCamo)) {
+                        GoldCount_MP++;
+                    }
+                    if (SniperRifles.Default.M82_CAMO_MP.StartsWith(CompleteCamo)) {
+                        GoldCount_MP++;
+                    }
+                    if (SniperRifles.Default.ZRG20MM_CAMO_MP.StartsWith(CompleteCamo)) {
+                        GoldCount_MP++;
+                    }
+
+                    if ( GoldCount_MP < 3) {
                         lbDiamondUnlocked.Visible = false;
                     }
-                    if (SniperRifles.Default.PELINGTON703_CAMO_ZM.StartsWith(CompleteCamo) &&
-                        SniperRifles.Default.LW3TUNDRA_CAMO_ZM.StartsWith(CompleteCamo) &&
-                        SniperRifles.Default.M82_CAMO_ZM.StartsWith(CompleteCamo)) {
-                        lbPlagueDiamondUnlocked.Visible = true;
+                    else {
+                        lbDiamondUnlocked.Visible = true;
+                    }
+
+                    if (SniperRifles.Default.PELINGTON703_CAMO_ZM.StartsWith(CompleteCamo)) {
+                        GoldCount_ZM++;
+                    }
+                    if (SniperRifles.Default.LW3TUNDRA_CAMO_ZM.StartsWith(CompleteCamo)) {
+                        GoldCount_ZM++;
+                    }
+                    if (SniperRifles.Default.M82_CAMO_ZM.StartsWith(CompleteCamo)) {
+                        GoldCount_ZM++;
+                    }
+                    if (SniperRifles.Default.ZRG20MM_CAMO_ZM.StartsWith(CompleteCamo)) {
+                        GoldCount_ZM++;
+                    }
+
+                    if ( GoldCount_ZM < 3) {
+                        lbPlagueDiamondUnlocked.Visible = false;
                     }
                     else {
-                        lbPlagueDiamondUnlocked.Visible = false;
+                        lbPlagueDiamondUnlocked.Visible = true;
                     }
 
                     if (SniperRifles.Default.Last != -1) {
@@ -1339,33 +1536,49 @@ namespace ColdWarCamo {
                     break;
                 #endregion
                 #region Pistols
-                case 5:
+                case WeaponClass.Pistol:
+                    Console.WriteLine("Loading Pistols");
                     radioButton1.Visible = true;
                     radioButton2.Visible = true;
                     radioButton3.Visible = true;
-                    radioButton4.Visible = false;
-                    radioButton5.Visible = false;
                     radioButton1.Text = "1911";
                     radioButton2.Text = "Magnum";
                     radioButton3.Text = "Diamatti";
-                    radioButton4.Text = "Unused";
-                    radioButton5.Text = "Unused";
 
-                    if (Pistols.Default.M1911_CAMO_MP.StartsWith(CompleteCamo) &&
-                        Pistols.Default.MAGNUM_CAMO_MP.StartsWith(CompleteCamo) &&
-                        Pistols.Default.DIAMATTI_CAMO_MP.StartsWith(CompleteCamo)) {
-                            lbDiamondUnlocked.Visible = true;
+                    lbWeaponLevel.Text += " (Max 35)";
+
+                    if (Pistols.Default.M1911_CAMO_MP.StartsWith(CompleteCamo)) {
+                        GoldCount_MP++;
                     }
-                    else {
+                    if (Pistols.Default.MAGNUM_CAMO_MP.StartsWith(CompleteCamo)) {
+                        GoldCount_MP++;
+                    }
+                    if (Pistols.Default.DIAMATTI_CAMO_MP.StartsWith(CompleteCamo)) {
+                        GoldCount_MP++;
+                    }
+
+                    if ( GoldCount_MP < 3) {
                         lbDiamondUnlocked.Visible = false;
                     }
-                    if (Pistols.Default.M1911_CAMO_ZM.StartsWith(CompleteCamo) &&
-                        Pistols.Default.MAGNUM_CAMO_ZM.StartsWith(CompleteCamo) &&
-                        Pistols.Default.DIAMATTI_CAMO_ZM.StartsWith(CompleteCamo)) {
-                        lbPlagueDiamondUnlocked.Visible = true;
+                    else {
+                        lbDiamondUnlocked.Visible = true;
+                    }
+
+                    if (Pistols.Default.M1911_CAMO_ZM.StartsWith(CompleteCamo)) {
+                        GoldCount_ZM++;
+                    }
+                    if (Pistols.Default.MAGNUM_CAMO_ZM.StartsWith(CompleteCamo)) {
+                        GoldCount_ZM++;
+                    }
+                    if (Pistols.Default.DIAMATTI_CAMO_ZM.StartsWith(CompleteCamo)) {
+                        GoldCount_ZM++;
+                    }
+
+                    if ( GoldCount_ZM < 3) {
+                        lbPlagueDiamondUnlocked.Visible = false;
                     }
                     else {
-                        lbPlagueDiamondUnlocked.Visible = false;
+                        lbPlagueDiamondUnlocked.Visible = true;
                     }
 
                     if (Pistols.Default.Last != -1) {
@@ -1376,31 +1589,49 @@ namespace ColdWarCamo {
                     break;
                 #endregion
                 #region Shotguns
-                case 6:
+                case WeaponClass.Shotgun:
+                    Console.WriteLine("Loading Shotguns");
                     radioButton1.Visible = true;
                     radioButton2.Visible = true;
-                    radioButton3.Visible = false;
-                    radioButton4.Visible = false;
-                    radioButton5.Visible = false;
+                    radioButton3.Visible = true;
                     radioButton1.Text = "Hauer 77";
                     radioButton2.Text = "Gallo SA12";
-                    radioButton3.Text = "Unused";
-                    radioButton4.Text = "Unused";
-                    radioButton5.Text = "Unused";
+                    radioButton3.Text = "Streetsweeper";
 
-                    if (Shotguns.Default.HAUER77_CAMO_MP.StartsWith(CompleteCamo) &&
-                        Shotguns.Default.GALLOSA12_CAMO_MP.StartsWith(CompleteCamo)) {
-                            lbDiamondUnlocked.Visible = true;
+                    lbWeaponLevel.Text += " (Max 36)";
+
+                    if (Shotguns.Default.HAUER77_CAMO_MP.StartsWith(CompleteCamo)) {
+                        GoldCount_MP++;
                     }
-                    else {
+                    if (Shotguns.Default.GALLOSA12_CAMO_MP.StartsWith(CompleteCamo)) {
+                        GoldCount_MP++;
+                    }
+                    if (Shotguns.Default.STREETSWEEPER_CAMO_MP.StartsWith(CompleteCamo)) {
+                        GoldCount_MP++;
+                    }
+
+                    if ( GoldCount_MP < 2) {
                         lbDiamondUnlocked.Visible = false;
                     }
-                    if (Shotguns.Default.HAUER77_CAMO_ZM.StartsWith(CompleteCamo) &&
-                        Shotguns.Default.GALLOSA12_CAMO_ZM.StartsWith(CompleteCamo)) {
-                        lbPlagueDiamondUnlocked.Visible = true;
+                    else {
+                        lbDiamondUnlocked.Visible = true;
+                    }
+
+                    if (Shotguns.Default.HAUER77_CAMO_ZM.StartsWith(CompleteCamo)) {
+                        GoldCount_ZM++;
+                    }
+                    if (Shotguns.Default.GALLOSA12_CAMO_ZM.StartsWith(CompleteCamo)) {
+                        GoldCount_ZM++;
+                    }
+                    if (Shotguns.Default.STREETSWEEPER_CAMO_ZM.StartsWith(CompleteCamo)) {
+                        GoldCount_ZM++;
+                    }
+
+                    if ( GoldCount_ZM < 2) {
+                        lbPlagueDiamondUnlocked.Visible = false;
                     }
                     else {
-                        lbPlagueDiamondUnlocked.Visible = false;
+                        lbPlagueDiamondUnlocked.Visible = true;
                     }
 
                     if (Shotguns.Default.Last != -1) {
@@ -1411,31 +1642,41 @@ namespace ColdWarCamo {
                     break;
                 #endregion
                 #region Rocket Launchers
-                case 7:
+                case WeaponClass.RocketLauncher:
+                    Console.WriteLine("Loading RocketLaunchers");
                     radioButton1.Visible = true;
                     radioButton2.Visible = true;
-                    radioButton3.Visible = false;
-                    radioButton4.Visible = false;
-                    radioButton5.Visible = false;
                     radioButton1.Text = "Cigma 2";
                     radioButton2.Text = "RPG-7";
-                    radioButton3.Text = "Unused";
-                    radioButton4.Text = "Unused";
-                    radioButton5.Text = "Unused";
 
-                    if (RocketLaunchers.Default.CIGMA2_CAMO_MP.StartsWith(CompleteCamo) &&
-                        RocketLaunchers.Default.RPG7_CAMO_MP.StartsWith(CompleteCamo)) {
-                            lbDiamondUnlocked.Visible = true;
+                    lbWeaponLevel.Text += " (Max 35)";
+
+                    if (RocketLaunchers.Default.CIGMA2_CAMO_MP.StartsWith(CompleteCamo)) {
+                        GoldCount_MP++;
                     }
-                    else {
+                    if (RocketLaunchers.Default.RPG7_CAMO_MP.StartsWith(CompleteCamo)) {
+                        GoldCount_MP++;
+                    }
+
+                    if ( GoldCount_MP < 2) {
                         lbDiamondUnlocked.Visible = false;
                     }
-                    if (RocketLaunchers.Default.CIGMA2_CAMO_ZM.StartsWith(CompleteCamo) &&
-                        RocketLaunchers.Default.RPG7_CAMO_ZM.StartsWith(CompleteCamo)) {
-                        lbPlagueDiamondUnlocked.Visible = true;
+                    else {
+                        lbDiamondUnlocked.Visible = true;
+                    }
+
+                    if (RocketLaunchers.Default.CIGMA2_CAMO_ZM.StartsWith(CompleteCamo)) {
+                        GoldCount_ZM++;
+                    }
+                    if (RocketLaunchers.Default.RPG7_CAMO_ZM.StartsWith(CompleteCamo)) {
+                        GoldCount_ZM++;
+                    }
+
+                    if ( GoldCount_ZM < 2) {
+                        lbPlagueDiamondUnlocked.Visible = false;
                     }
                     else {
-                        lbPlagueDiamondUnlocked.Visible = false;
+                        lbPlagueDiamondUnlocked.Visible = true;
                     }
 
                     if (RocketLaunchers.Default.Last != -1) {
@@ -1446,31 +1687,81 @@ namespace ColdWarCamo {
                     break;
                 #endregion
                 #region Specials
-                case 8:
+                case WeaponClass.Special:
+                    Console.WriteLine("Loading Specials");
                     radioButton1.Visible = true;
                     radioButton2.Visible = true;
-                    radioButton3.Visible = false;
-                    radioButton4.Visible = false;
-                    radioButton5.Visible = false;
+                    radioButton3.Visible = true;
+                    radioButton4.Visible = true;
+                    radioButton5.Visible = true;
+                    radioButton6.Visible = true;
+                    radioButton7.Visible = true;
                     radioButton1.Text = "Knife";
                     radioButton2.Text = "M79";
-                    radioButton3.Text = "Unused";
-                    radioButton4.Text = "Unused";
-                    radioButton5.Text = "Unused";
+                    radioButton3.Text = "Sledgehammer";
+                    radioButton4.Text = "Wakizashi";
+                    radioButton5.Text = "Machete";
+                    radioButton6.Text = "E-Tool";
+                    radioButton7.Text = "R1 Shadowhunter";
 
-                    if (Specials.Default.KNIFE_CAMO_MP.StartsWith(CompleteCamo) &&
-                        Specials.Default.M79_CAMO_MP.StartsWith(CompleteCamo)) {
-                            lbDiamondUnlocked.Visible = true;
+                    lbWeaponLevel.Text += " (Max 35)";
+
+                    if (Specials.Default.KNIFE_CAMO_MP.StartsWith(CompleteCamo)) {
+                        GoldCount_MP++;
                     }
-                    else {
+                    if (Specials.Default.M79_CAMO_MP.StartsWith(CompleteCamo)) {
+                        GoldCount_MP++;
+                    }
+                    if (Specials.Default.SLEDGEHAMMER_CAMO_MP.StartsWith(CompleteCamo)) {
+                        GoldCount_MP++;
+                    }
+                    if (Specials.Default.WAKIZASHI_CAMO_MP.StartsWith(CompleteCamo)) {
+                        GoldCount_MP++;
+                    }
+                    if (Specials.Default.MACHETE_CAMO_MP.StartsWith(CompleteCamo)) {
+                        GoldCount_MP++;
+                    }
+                    if (Specials.Default.ETOOL_CAMO_MP.StartsWith(CompleteCamo)) {
+                        GoldCount_MP++;
+                    }
+                    if (Specials.Default.R1SHADOWHUNTER_CAMO_MP.StartsWith(CompleteCamo)) {
+                        GoldCount_MP++;
+                    }
+
+                    if ( GoldCount_MP < 2) {
                         lbDiamondUnlocked.Visible = false;
                     }
-                    if (Specials.Default.KNIFE_CAMO_ZM.StartsWith(CompleteCamo) &&
-                        Specials.Default.M79_CAMO_ZM.StartsWith(CompleteCamo)) {
-                        lbPlagueDiamondUnlocked.Visible = true;
+                    else {
+                        lbDiamondUnlocked.Visible = true;
+                    }
+
+                    if (Specials.Default.KNIFE_CAMO_ZM.StartsWith(CompleteCamo)) {
+                        GoldCount_ZM++;
+                    }
+                    if (Specials.Default.M79_CAMO_ZM.StartsWith(CompleteCamo)) {
+                        GoldCount_ZM++;
+                    }
+                    if (Specials.Default.SLEDGEHAMMER_CAMO_ZM.StartsWith(CompleteCamo)) {
+                        GoldCount_ZM++;
+                    }
+                    if (Specials.Default.WAKIZASHI_CAMO_ZM.StartsWith(CompleteCamo)) {
+                        GoldCount_ZM++;
+                    }
+                    if (Specials.Default.MACHETE_CAMO_ZM.StartsWith(CompleteCamo)) {
+                        GoldCount_ZM++;
+                    }
+                    if (Specials.Default.ETOOL_CAMO_ZM.StartsWith(CompleteCamo)) {
+                        GoldCount_ZM++;
+                    }
+                    if (Specials.Default.R1SHADOWHUNTER_CAMO_ZM.StartsWith(CompleteCamo)) {
+                        GoldCount_ZM++;
+                    }
+
+                    if ( GoldCount_ZM < 2) {
+                        lbPlagueDiamondUnlocked.Visible = false;
                     }
                     else {
-                        lbPlagueDiamondUnlocked.Visible = false;
+                        lbPlagueDiamondUnlocked.Visible = true;
                     }
 
                     if (Specials.Default.Last != -1) {
@@ -1507,6 +1798,12 @@ namespace ColdWarCamo {
                 case 4:
                     radioButton5.Checked = true;
                     break;
+                case 5:
+                    radioButton6.Checked = true;
+                    break;
+                case 6:
+                    radioButton7.Checked = true;
+                    break;
             }
 
             SwitchingClass = false;
@@ -1515,7 +1812,7 @@ namespace ColdWarCamo {
         private void SelectedWeaponSkeleton() {
             switch (SelectedClass) {
                 #region AssaultRifles
-                case 0:
+                case WeaponClass.AssaultRifle:
                     switch (SelectedWeapon) {
                         case 0:
                             // XM4
@@ -1537,11 +1834,19 @@ namespace ColdWarCamo {
                             // FFAR1
 
                             break;
+                        case 5:
+                            // GROZA
+
+                            break;
+                        case 6:
+                            // FARA83
+
+                            break;
                     }
                     break;
                 #endregion
                 #region SubmachineGuns
-                case 1:
+                case WeaponClass.SubmachineGun:
                     switch (SelectedWeapon) {
                         case 0:
                             // MP5
@@ -1561,11 +1866,19 @@ namespace ColdWarCamo {
                             // BULLFROG
 
                             break;
+                        case 5:
+                            // MAC10
+
+                            break;
+                        case 6:
+                            // LC10
+
+                            break;
                     }
                     break;
                 #endregion
                 #region TacticalRifles
-                case 2:
+                case WeaponClass.TacticalRifle:
                     switch (SelectedWeapon) {
                         case 0:
                             // TYPE63
@@ -1587,7 +1900,7 @@ namespace ColdWarCamo {
                     break;
                 #endregion
                 #region LightMachineGuns
-                case 3:
+                case WeaponClass.LightMachineGun:
                     switch (SelectedWeapon) {
                         case 0:
                             // STONER63
@@ -1605,7 +1918,7 @@ namespace ColdWarCamo {
                     break;
                 #endregion
                 #region Snipers
-                case 4:
+                case WeaponClass.SniperRifle:
                     switch (SelectedWeapon) {
                         case 0:
                             // PELINGTON703
@@ -1619,11 +1932,15 @@ namespace ColdWarCamo {
                             // M82
 
                             break;
+                        case 3:
+                            // ZRG20MM
+
+                            break;
                     }
                     break;
                 #endregion
                 #region Pistols
-                case 5:
+                case WeaponClass.Pistol:
                     switch (SelectedWeapon) {
                         case 0:
                             // M1911
@@ -1641,7 +1958,7 @@ namespace ColdWarCamo {
                     break;
                 #endregion
                 #region Shotguns
-                case 6:
+                case WeaponClass.Shotgun:
                     switch (SelectedWeapon) {
                         case 0:
                             // HAUER77
@@ -1651,11 +1968,15 @@ namespace ColdWarCamo {
                             // GALLOSA12
 
                             break;
+                        case 2:
+                            // STREETSWEEPER
+
+                            break;
                     }
                     break;
                 #endregion
                 #region RocketLaunchers
-                case 7:
+                case WeaponClass.RocketLauncher:
                     switch (SelectedWeapon) {
                         case 0:
                             // CIGMA2
@@ -1669,7 +1990,7 @@ namespace ColdWarCamo {
                     break;
                 #endregion
                 #region Specials
-                case 8:
+                case WeaponClass.Special:
                     switch (SelectedWeapon) {
                         case 0:
                             // KNIFE
@@ -1677,6 +1998,26 @@ namespace ColdWarCamo {
                             break;
                         case 1:
                             // M79
+
+                            break;
+                        case 2:
+                            // SLEDGEHAMMER
+
+                            break;
+                        case 3:
+                            // WAKIZASHI
+
+                            break;
+                        case 4:
+                            // MACHETE
+
+                            break;
+                        case 5:
+                            // ETOOL
+
+                            break;
+                        case 6:
+                            // R1SHADOWHUNTER
 
                             break;
                     }
@@ -1687,8 +2028,58 @@ namespace ColdWarCamo {
 
         private void SaveWeapon() {
             #region Don't save if...
-            if (SelectedClass == -1 || SelectedWeapon == -1 || !WeaponModified || SwitchingClass) {
+            if (SelectedClass == WeaponClass.None || SelectedWeapon == -1 || !WeaponModified || SwitchingClass) {
                 return;
+            }
+            #endregion
+
+            #region Check textboxes
+            if (string.IsNullOrEmpty(txtTier0MP.Text)) {
+                txtTier0MP.Text = "0";
+            }
+            if (string.IsNullOrEmpty(txtTier1MP.Text)) {
+                txtTier1MP.Text = "0";
+            }
+            if (string.IsNullOrEmpty(txtTier2MP.Text)) {
+                txtTier2MP.Text = "0";
+            }
+            if (string.IsNullOrEmpty(txtTier3MP.Text)) {
+                txtTier3MP.Text = "0";
+            }
+            if (string.IsNullOrEmpty(txtTier4MP.Text)) {
+                txtTier4MP.Text = "0";
+            }
+            if (string.IsNullOrEmpty(txtTier5MP.Text)) {
+                txtTier5MP.Text = "0";
+            }
+            if (string.IsNullOrEmpty(txtTier6MP.Text)) {
+                txtTier6MP.Text = "0";
+            }
+
+            if (string.IsNullOrEmpty(txtTier0ZM.Text)) {
+                txtTier0ZM.Text = "0";
+            }
+            if (string.IsNullOrEmpty(txtTier1ZM.Text)) {
+                txtTier1ZM.Text = "0";
+            }
+            if (string.IsNullOrEmpty(txtTier2ZM.Text)) {
+                txtTier2ZM.Text = "0";
+            }
+            if (string.IsNullOrEmpty(txtTier3ZM.Text)) {
+                txtTier3ZM.Text = "0";
+            }
+            if (string.IsNullOrEmpty(txtTier4ZM.Text)) {
+                txtTier4ZM.Text = "0";
+            }
+            if (string.IsNullOrEmpty(txtTier5ZM.Text)) {
+                txtTier5ZM.Text = "0";
+            }
+            if (string.IsNullOrEmpty(txtTier6ZM.Text)) {
+                txtTier6ZM.Text = "0";
+            }
+
+            if (string.IsNullOrEmpty(txtWeaponLevel.Text)) {
+                txtWeaponLevel.Text = "1";
             }
             #endregion
 
@@ -1715,7 +2106,7 @@ namespace ColdWarCamo {
 
             switch (SelectedClass) {
                 #region Assault Rifles
-                case 0:
+                case WeaponClass.AssaultRifle:
                     switch (SelectedWeapon) {
                         case 0:
                             // XM4
@@ -1812,12 +2203,50 @@ namespace ColdWarCamo {
                                 AssaultRifles.Default.FFAR1_STATS_ZM = SettingBufferStatsZM;
                             }
                             break;
+                        case 5:
+                            // Groza
+                            System.Diagnostics.Debug.Print("Saving GROZA");
+                            if (AssaultRifles.Default.GROZA_LEVEL != txtWeaponLevel.Text) {
+                                AssaultRifles.Default.GROZA_LEVEL = txtWeaponLevel.Text;
+                            }
+                            if (AssaultRifles.Default.GROZA_CAMO_MP != SettingBufferCamoMP) {
+                                AssaultRifles.Default.GROZA_CAMO_MP = SettingBufferCamoMP;
+                            }
+                            if (AssaultRifles.Default.GROZA_CAMO_ZM != SettingBufferCamoZM) {
+                                AssaultRifles.Default.GROZA_CAMO_ZM = SettingBufferCamoZM;
+                            }
+                            if (AssaultRifles.Default.GROZA_STATS_MP != SettingBufferStatsMP) {
+                                AssaultRifles.Default.GROZA_STATS_MP = SettingBufferStatsMP;
+                            }
+                            if (AssaultRifles.Default.GROZA_STATS_ZM != SettingBufferStatsZM) {
+                                AssaultRifles.Default.GROZA_STATS_ZM = SettingBufferStatsZM;
+                            }
+                            break;
+                        case 6:
+                            // FARA 83
+                            System.Diagnostics.Debug.Print("Saving FARA83");
+                            if (AssaultRifles.Default.FARA83_LEVEL != txtWeaponLevel.Text) {
+                                AssaultRifles.Default.FARA83_LEVEL = txtWeaponLevel.Text;
+                            }
+                            if (AssaultRifles.Default.FARA83_CAMO_MP != SettingBufferCamoMP) {
+                                AssaultRifles.Default.FARA83_CAMO_MP = SettingBufferCamoMP;
+                            }
+                            if (AssaultRifles.Default.FARA83_CAMO_ZM != SettingBufferCamoZM) {
+                                AssaultRifles.Default.FARA83_CAMO_ZM = SettingBufferCamoZM;
+                            }
+                            if (AssaultRifles.Default.FARA83_STATS_MP != SettingBufferStatsMP) {
+                                AssaultRifles.Default.FARA83_STATS_MP = SettingBufferStatsMP;
+                            }
+                            if (AssaultRifles.Default.FARA83_STATS_ZM != SettingBufferStatsZM) {
+                                AssaultRifles.Default.FARA83_STATS_ZM = SettingBufferStatsZM;
+                            }
+                            break;
                     }
                     AssaultRifles.Default.Save();
                     break;
                 #endregion
                 #region Submachine Guns
-                case 1:
+                case WeaponClass.SubmachineGun:
                     switch (SelectedWeapon) {
                         case 0:
                             // MP5
@@ -1914,12 +2343,50 @@ namespace ColdWarCamo {
                                 SubmachineGuns.Default.BULLFROG_STATS_ZM = SettingBufferStatsZM;
                             }
                             break;
+                        case 5:
+                            // MAC-10
+                            System.Diagnostics.Debug.Print("Saving MAC10");
+                            if (SubmachineGuns.Default.MAC10_LEVEL != txtWeaponLevel.Text) {
+                                SubmachineGuns.Default.MAC10_LEVEL = txtWeaponLevel.Text;
+                            }
+                            if (SubmachineGuns.Default.MAC10_CAMO_MP != SettingBufferCamoMP) {
+                                SubmachineGuns.Default.MAC10_CAMO_MP = SettingBufferCamoMP;
+                            }
+                            if (SubmachineGuns.Default.MAC10_CAMO_ZM != SettingBufferCamoZM) {
+                                SubmachineGuns.Default.MAC10_CAMO_ZM = SettingBufferCamoZM;
+                            }
+                            if (SubmachineGuns.Default.MAC10_STATS_MP != SettingBufferStatsMP) {
+                                SubmachineGuns.Default.MAC10_STATS_MP = SettingBufferStatsMP;
+                            }
+                            if (SubmachineGuns.Default.MAC10_STATS_ZM != SettingBufferStatsZM) {
+                                SubmachineGuns.Default.MAC10_STATS_ZM = SettingBufferStatsZM;
+                            }
+                            break;
+                        case 6:
+                            // LC10
+                            System.Diagnostics.Debug.Print("Saving LC10");
+                            if (SubmachineGuns.Default.LC10_LEVEL != txtWeaponLevel.Text) {
+                                SubmachineGuns.Default.LC10_LEVEL = txtWeaponLevel.Text;
+                            }
+                            if (SubmachineGuns.Default.LC10_CAMO_MP != SettingBufferCamoMP) {
+                                SubmachineGuns.Default.LC10_CAMO_MP = SettingBufferCamoMP;
+                            }
+                            if (SubmachineGuns.Default.LC10_CAMO_ZM != SettingBufferCamoZM) {
+                                SubmachineGuns.Default.LC10_CAMO_ZM = SettingBufferCamoZM;
+                            }
+                            if (SubmachineGuns.Default.LC10_STATS_MP != SettingBufferStatsMP) {
+                                SubmachineGuns.Default.LC10_STATS_MP = SettingBufferStatsMP;
+                            }
+                            if (SubmachineGuns.Default.LC10_STATS_ZM != SettingBufferStatsZM) {
+                                SubmachineGuns.Default.LC10_STATS_ZM = SettingBufferStatsZM;
+                            }
+                            break;
                     }
                     SubmachineGuns.Default.Save();
                     break;
                 #endregion
                 #region Tactical Rifles
-                case 2:
+                case WeaponClass.TacticalRifle:
                     switch (SelectedWeapon) {
                         case 0:
                             // TYP63
@@ -2002,7 +2469,7 @@ namespace ColdWarCamo {
                     break;
                 #endregion
                 #region Light Machine Guns
-                case 3:
+                case WeaponClass.LightMachineGun:
                     switch (SelectedWeapon) {
                         case 0:
                             // STONER63
@@ -2066,7 +2533,7 @@ namespace ColdWarCamo {
                     break;
                 #endregion
                 #region Sniper Rifles
-                case 4:
+                case WeaponClass.SniperRifle:
                     switch (SelectedWeapon) {
                         case 0:
                             // PELINGTON703
@@ -2125,12 +2592,31 @@ namespace ColdWarCamo {
                                 SniperRifles.Default.M82_STATS_ZM = SettingBufferStatsZM;
                             }
                             break;
+                        case 3:
+                            // ZRG20MM
+                            System.Diagnostics.Debug.Print("Saving ZRG20MM");
+                            if (SniperRifles.Default.ZRG20MM_LEVEL != txtWeaponLevel.Text) {
+                                SniperRifles.Default.ZRG20MM_LEVEL = txtWeaponLevel.Text;
+                            }
+                            if (SniperRifles.Default.ZRG20MM_CAMO_MP != SettingBufferCamoMP) {
+                                SniperRifles.Default.ZRG20MM_CAMO_MP = SettingBufferCamoMP;
+                            }
+                            if (SniperRifles.Default.ZRG20MM_CAMO_ZM != SettingBufferCamoZM) {
+                                SniperRifles.Default.ZRG20MM_CAMO_ZM = SettingBufferCamoZM;
+                            }
+                            if (SniperRifles.Default.ZRG20MM_STATS_MP != SettingBufferStatsMP) {
+                                SniperRifles.Default.ZRG20MM_STATS_MP = SettingBufferStatsMP;
+                            }
+                            if (SniperRifles.Default.ZRG20MM_STATS_ZM != SettingBufferStatsZM) {
+                                SniperRifles.Default.ZRG20MM_STATS_ZM = SettingBufferStatsZM;
+                            }
+                            break;
                     }
                     SniperRifles.Default.Save();
                     break;
                 #endregion
                 #region Pistols
-                case 5:
+                case WeaponClass.Pistol:
                     switch (SelectedWeapon) {
                         case 0:
                             // M1911
@@ -2194,7 +2680,7 @@ namespace ColdWarCamo {
                     break;
                 #endregion
                 #region Shotguns
-                case 6:
+                case WeaponClass.Shotgun:
                     switch (SelectedWeapon) {
                         case 0:
                             // HAUER77
@@ -2234,12 +2720,31 @@ namespace ColdWarCamo {
                                 Shotguns.Default.GALLOSA12_STATS_ZM = SettingBufferStatsZM;
                             }
                             break;
+                        case 2:
+                            // STREETSWEEPER
+                            System.Diagnostics.Debug.Print("Saving STREETSWEEPER");
+                            if (Shotguns.Default.STREETSWEEPER_LEVEL != txtWeaponLevel.Text) {
+                                Shotguns.Default.STREETSWEEPER_LEVEL = txtWeaponLevel.Text;
+                            }
+                            if (Shotguns.Default.STREETSWEEPER_CAMO_MP != SettingBufferCamoMP) {
+                                Shotguns.Default.STREETSWEEPER_CAMO_MP = SettingBufferCamoMP;
+                            }
+                            if (Shotguns.Default.STREETSWEEPER_CAMO_ZM != SettingBufferCamoZM) {
+                                Shotguns.Default.STREETSWEEPER_CAMO_ZM = SettingBufferCamoZM;
+                            }
+                            if (Shotguns.Default.STREETSWEEPER_STATS_MP != SettingBufferStatsMP) {
+                                Shotguns.Default.STREETSWEEPER_STATS_MP = SettingBufferStatsMP;
+                            }
+                            if (Shotguns.Default.STREETSWEEPER_STATS_ZM != SettingBufferStatsZM) {
+                                Shotguns.Default.STREETSWEEPER_STATS_ZM = SettingBufferStatsZM;
+                            }
+                            break;
                     }
                     Shotguns.Default.Save();
                     break;
                 #endregion
                 #region Rocket Launchers
-                case 7:
+                case WeaponClass.RocketLauncher:
                     switch (SelectedWeapon) {
                         case 0:
                             // CIGMA2
@@ -2284,7 +2789,7 @@ namespace ColdWarCamo {
                     break;
                 #endregion
                 #region Specials
-                case 8:
+                case WeaponClass.Special:
                     switch (SelectedWeapon) {
                         case 0:
                             // KNIFE
@@ -2324,6 +2829,101 @@ namespace ColdWarCamo {
                                 Specials.Default.M79_STATS_ZM = SettingBufferStatsZM;
                             }
                             break;
+                        case 2:
+                            // SLEDGEHAMMER
+                            System.Diagnostics.Debug.Print("Saving SLEDGEHAMMER");
+                            if (Specials.Default.SLEDGEHAMMER_LEVEL != txtWeaponLevel.Text) {
+                                Specials.Default.SLEDGEHAMMER_LEVEL = txtWeaponLevel.Text;
+                            }
+                            if (Specials.Default.SLEDGEHAMMER_CAMO_MP != SettingBufferCamoMP) {
+                                Specials.Default.SLEDGEHAMMER_CAMO_MP = SettingBufferCamoMP;
+                            }
+                            if (Specials.Default.SLEDGEHAMMER_CAMO_ZM != SettingBufferCamoZM) {
+                                Specials.Default.SLEDGEHAMMER_CAMO_ZM = SettingBufferCamoZM;
+                            }
+                            if (Specials.Default.SLEDGEHAMMER_STATS_MP != SettingBufferStatsMP) {
+                                Specials.Default.SLEDGEHAMMER_STATS_MP = SettingBufferStatsMP;
+                            }
+                            if (Specials.Default.SLEDGEHAMMER_STATS_ZM != SettingBufferStatsZM) {
+                                Specials.Default.SLEDGEHAMMER_STATS_ZM = SettingBufferStatsZM;
+                            }
+                            break;
+                        case 3:
+                            // WAKIZASHI
+                            System.Diagnostics.Debug.Print("Saving WAKIZASHI");
+                            if (Specials.Default.WAKIZASHI_LEVEL != txtWeaponLevel.Text) {
+                                Specials.Default.WAKIZASHI_LEVEL = txtWeaponLevel.Text;
+                            }
+                            if (Specials.Default.WAKIZASHI_CAMO_MP != SettingBufferCamoMP) {
+                                Specials.Default.WAKIZASHI_CAMO_MP = SettingBufferCamoMP;
+                            }
+                            if (Specials.Default.WAKIZASHI_CAMO_ZM != SettingBufferCamoZM) {
+                                Specials.Default.WAKIZASHI_CAMO_ZM = SettingBufferCamoZM;
+                            }
+                            if (Specials.Default.WAKIZASHI_STATS_MP != SettingBufferStatsMP) {
+                                Specials.Default.WAKIZASHI_STATS_MP = SettingBufferStatsMP;
+                            }
+                            if (Specials.Default.WAKIZASHI_STATS_ZM != SettingBufferStatsZM) {
+                                Specials.Default.WAKIZASHI_STATS_ZM = SettingBufferStatsZM;
+                            }
+                            break;
+                        case 4:
+                            // MACHETE
+                            System.Diagnostics.Debug.Print("Saving MACHETE");
+                            if (Specials.Default.MACHETE_LEVEL != txtWeaponLevel.Text) {
+                                Specials.Default.MACHETE_LEVEL = txtWeaponLevel.Text;
+                            }
+                            if (Specials.Default.MACHETE_CAMO_MP != SettingBufferCamoMP) {
+                                Specials.Default.MACHETE_CAMO_MP = SettingBufferCamoMP;
+                            }
+                            if (Specials.Default.MACHETE_CAMO_ZM != SettingBufferCamoZM) {
+                                Specials.Default.MACHETE_CAMO_ZM = SettingBufferCamoZM;
+                            }
+                            if (Specials.Default.MACHETE_STATS_MP != SettingBufferStatsMP) {
+                                Specials.Default.MACHETE_STATS_MP = SettingBufferStatsMP;
+                            }
+                            if (Specials.Default.MACHETE_STATS_ZM != SettingBufferStatsZM) {
+                                Specials.Default.MACHETE_STATS_ZM = SettingBufferStatsZM;
+                            }
+                            break;
+                        case 5:
+                            // ETOOL
+                            System.Diagnostics.Debug.Print("Saving ETOOL");
+                            if (Specials.Default.ETOOL_LEVEL != txtWeaponLevel.Text) {
+                                Specials.Default.ETOOL_LEVEL = txtWeaponLevel.Text;
+                            }
+                            if (Specials.Default.ETOOL_CAMO_MP != SettingBufferCamoMP) {
+                                Specials.Default.ETOOL_CAMO_MP = SettingBufferCamoMP;
+                            }
+                            if (Specials.Default.ETOOL_CAMO_ZM != SettingBufferCamoZM) {
+                                Specials.Default.ETOOL_CAMO_ZM = SettingBufferCamoZM;
+                            }
+                            if (Specials.Default.ETOOL_STATS_MP != SettingBufferStatsMP) {
+                                Specials.Default.ETOOL_STATS_MP = SettingBufferStatsMP;
+                            }
+                            if (Specials.Default.ETOOL_STATS_ZM != SettingBufferStatsZM) {
+                                Specials.Default.ETOOL_STATS_ZM = SettingBufferStatsZM;
+                            }
+                            break;
+                        case 6:
+                            // R1SHADOWHUNTER
+                            System.Diagnostics.Debug.Print("Saving R1SHADOWHUNTER");
+                            if (Specials.Default.R1SHADOWHUNTER_LEVEL != txtWeaponLevel.Text) {
+                                Specials.Default.R1SHADOWHUNTER_LEVEL = txtWeaponLevel.Text;
+                            }
+                            if (Specials.Default.R1SHADOWHUNTER_CAMO_MP != SettingBufferCamoMP) {
+                                Specials.Default.R1SHADOWHUNTER_CAMO_MP = SettingBufferCamoMP;
+                            }
+                            if (Specials.Default.R1SHADOWHUNTER_CAMO_ZM != SettingBufferCamoZM) {
+                                Specials.Default.R1SHADOWHUNTER_CAMO_ZM = SettingBufferCamoZM;
+                            }
+                            if (Specials.Default.R1SHADOWHUNTER_STATS_MP != SettingBufferStatsMP) {
+                                Specials.Default.R1SHADOWHUNTER_STATS_MP = SettingBufferStatsMP;
+                            }
+                            if (Specials.Default.R1SHADOWHUNTER_STATS_ZM != SettingBufferStatsZM) {
+                                Specials.Default.R1SHADOWHUNTER_STATS_ZM = SettingBufferStatsZM;
+                            }
+                            break;
                     }
                     Specials.Default.Save();
                     break;
@@ -2334,7 +2934,7 @@ namespace ColdWarCamo {
         }
         private void LoadWeapon() {
             #region Don't load if...
-            if (SelectedClass == -1 && SelectedWeapon == -1) {
+            if (SelectedClass == WeaponClass.None && SelectedWeapon == -1) {
                 return;
             }
             #endregion
@@ -2370,7 +2970,7 @@ namespace ColdWarCamo {
 
             switch (SelectedClass) {
                 #region AssaultRifles
-                case 0:
+                case WeaponClass.AssaultRifle:
                     switch (SelectedWeapon) {
                         case 0:
                             // XM4
@@ -2427,11 +3027,33 @@ namespace ColdWarCamo {
 
                             WeaponName = "FFAR 1";
                             break;
+                        case 5:
+                            // GROZA
+                            System.Diagnostics.Debug.Print("Loading GROZA");
+                            ReadSettingCamoMP = AssaultRifles.Default.GROZA_CAMO_MP;
+                            ReadSettingCamoZM = AssaultRifles.Default.GROZA_CAMO_ZM;
+                            ReadSettingStatsMP = AssaultRifles.Default.GROZA_STATS_MP.Split(',');
+                            ReadSettingStatsZM = AssaultRifles.Default.GROZA_STATS_ZM.Split(',');
+                            ReadSettingLevel = AssaultRifles.Default.GROZA_LEVEL;
+
+                            WeaponName = "Groza";
+                            break;
+                        case 6:
+                            // FARA83
+                            System.Diagnostics.Debug.Print("Loading FARA83");
+                            ReadSettingCamoMP = AssaultRifles.Default.FARA83_CAMO_MP;
+                            ReadSettingCamoZM = AssaultRifles.Default.FARA83_CAMO_ZM;
+                            ReadSettingStatsMP = AssaultRifles.Default.FARA83_STATS_MP.Split(',');
+                            ReadSettingStatsZM = AssaultRifles.Default.FARA83_STATS_ZM.Split(',');
+                            ReadSettingLevel = AssaultRifles.Default.FARA83_LEVEL;
+
+                            WeaponName = "FARA 83";
+                            break;
                     }
                     break;
                 #endregion
                 #region SubmachineGuns
-                case 1:
+                case WeaponClass.SubmachineGun:
                     switch (SelectedWeapon) {
                         case 0:
                             // MP5
@@ -2488,11 +3110,33 @@ namespace ColdWarCamo {
 
                             WeaponName = "Bullfrog";
                             break;
+                        case 5:
+                            // MAC10
+                            System.Diagnostics.Debug.Print("Loading MAC10");
+                            ReadSettingCamoMP = SubmachineGuns.Default.MAC10_CAMO_MP;
+                            ReadSettingCamoZM = SubmachineGuns.Default.MAC10_CAMO_ZM;
+                            ReadSettingStatsMP = SubmachineGuns.Default.MAC10_STATS_MP.Split(',');
+                            ReadSettingStatsZM = SubmachineGuns.Default.MAC10_STATS_ZM.Split(',');
+                            ReadSettingLevel = SubmachineGuns.Default.MAC10_LEVEL;
+
+                            WeaponName = "MAC-10";
+                            break;
+                        case 6:
+                            // LC10
+                            System.Diagnostics.Debug.Print("Loading LC10");
+                            ReadSettingCamoMP = SubmachineGuns.Default.LC10_CAMO_MP;
+                            ReadSettingCamoZM = SubmachineGuns.Default.LC10_CAMO_ZM;
+                            ReadSettingStatsMP = SubmachineGuns.Default.LC10_STATS_MP.Split(',');
+                            ReadSettingStatsZM = SubmachineGuns.Default.LC10_STATS_ZM.Split(',');
+                            ReadSettingLevel = SubmachineGuns.Default.LC10_LEVEL;
+
+                            WeaponName = "LC10";
+                            break;
                     }
                     break;
                 #endregion
                 #region TacticalRifles
-                case 2:
+                case WeaponClass.TacticalRifle:
                     switch (SelectedWeapon) {
                         case 0:
                             // TYPE63
@@ -2542,7 +3186,7 @@ namespace ColdWarCamo {
                     break;
                 #endregion
                 #region LightMachineGuns
-                case 3:
+                case WeaponClass.LightMachineGun:
                     switch (SelectedWeapon) {
                         case 0:
                             // STONER63
@@ -2581,7 +3225,7 @@ namespace ColdWarCamo {
                     break;
                 #endregion
                 #region SniperRifles
-                case 4:
+                case WeaponClass.SniperRifle:
                     switch (SelectedWeapon) {
                         case 0:
                             // PELINGTON703
@@ -2616,11 +3260,22 @@ namespace ColdWarCamo {
 
                             WeaponName = "M82";
                             break;
+                        case 3:
+                            // ZRG20MM
+                            System.Diagnostics.Debug.Print("Loading ZRG20MM");
+                            ReadSettingCamoMP = SniperRifles.Default.ZRG20MM_CAMO_MP;
+                            ReadSettingCamoZM = SniperRifles.Default.ZRG20MM_CAMO_ZM;
+                            ReadSettingStatsMP = SniperRifles.Default.ZRG20MM_STATS_MP.Split(',');
+                            ReadSettingStatsZM = SniperRifles.Default.ZRG20MM_STATS_ZM.Split(',');
+                            ReadSettingLevel = SniperRifles.Default.ZRG20MM_LEVEL;
+
+                            WeaponName = "ZRG 20mm";
+                            break;
                     }
                     break;
                 #endregion
                 #region Pistols
-                case 5:
+                case WeaponClass.Pistol:
                     switch (SelectedWeapon) {
                         case 0:
                             // M1911
@@ -2659,7 +3314,7 @@ namespace ColdWarCamo {
                     break;
                 #endregion
                 #region Shotguns
-                case 6:
+                case WeaponClass.Shotgun:
                     switch (SelectedWeapon) {
                         case 0:
                             // HAUER77
@@ -2683,11 +3338,22 @@ namespace ColdWarCamo {
 
                             WeaponName = "Gallo SA12";
                             break;
+                        case 2:
+                            // STREETSWEEPER
+                            System.Diagnostics.Debug.Print("Loading STREETSWEEPER");
+                            ReadSettingCamoMP = Shotguns.Default.STREETSWEEPER_CAMO_MP;
+                            ReadSettingCamoZM = Shotguns.Default.STREETSWEEPER_CAMO_ZM;
+                            ReadSettingStatsMP = Shotguns.Default.STREETSWEEPER_STATS_MP.Split(',');
+                            ReadSettingStatsZM = Shotguns.Default.STREETSWEEPER_STATS_ZM.Split(',');
+                            ReadSettingLevel = Shotguns.Default.STREETSWEEPER_LEVEL;
+
+                            WeaponName = "Streetsweeper";
+                            break;
                     }
                     break;
                 #endregion
                 #region RocketLaunchers
-                case 7:
+                case WeaponClass.RocketLauncher:
                     switch (SelectedWeapon) {
                         case 0:
                             // CIGMA2
@@ -2715,7 +3381,7 @@ namespace ColdWarCamo {
                     break;
                 #endregion
                 #region Specials
-                case 8:
+                case WeaponClass.Special:
                     switch (SelectedWeapon) {
                         case 0:
                             // KNIFE
@@ -2739,6 +3405,61 @@ namespace ColdWarCamo {
 
                             WeaponName = "M79";
                             break;
+                        case 2:
+                            // SLEDGEHAMMER
+                            System.Diagnostics.Debug.Print("Loading SLEDGEHAMMER");
+                            ReadSettingCamoMP = Specials.Default.SLEDGEHAMMER_CAMO_MP;
+                            ReadSettingCamoZM = Specials.Default.SLEDGEHAMMER_CAMO_ZM;
+                            ReadSettingStatsMP = Specials.Default.SLEDGEHAMMER_STATS_MP.Split(',');
+                            ReadSettingStatsZM = Specials.Default.SLEDGEHAMMER_STATS_ZM.Split(',');
+                            ReadSettingLevel = Specials.Default.SLEDGEHAMMER_LEVEL;
+
+                            WeaponName = "Sledgehammer";
+                            break;
+                        case 3:
+                            // WAKIZASHI
+                            System.Diagnostics.Debug.Print("Loading WAKIZASHI");
+                            ReadSettingCamoMP = Specials.Default.WAKIZASHI_CAMO_MP;
+                            ReadSettingCamoZM = Specials.Default.WAKIZASHI_CAMO_ZM;
+                            ReadSettingStatsMP = Specials.Default.WAKIZASHI_STATS_MP.Split(',');
+                            ReadSettingStatsZM = Specials.Default.WAKIZASHI_STATS_ZM.Split(',');
+                            ReadSettingLevel = Specials.Default.WAKIZASHI_LEVEL;
+
+                            WeaponName = "Wakizashi";
+                            break;
+                        case 4:
+                            // MACHETE
+                            System.Diagnostics.Debug.Print("Loading MACHETE");
+                            ReadSettingCamoMP = Specials.Default.MACHETE_CAMO_MP;
+                            ReadSettingCamoZM = Specials.Default.MACHETE_CAMO_ZM;
+                            ReadSettingStatsMP = Specials.Default.MACHETE_STATS_MP.Split(',');
+                            ReadSettingStatsZM = Specials.Default.MACHETE_STATS_ZM.Split(',');
+                            ReadSettingLevel = Specials.Default.MACHETE_LEVEL;
+
+                            WeaponName = "Machete";
+                            break;
+                        case 5:
+                            // ETOOL
+                            System.Diagnostics.Debug.Print("Loading ETOOL");
+                            ReadSettingCamoMP = Specials.Default.ETOOL_CAMO_MP;
+                            ReadSettingCamoZM = Specials.Default.ETOOL_CAMO_ZM;
+                            ReadSettingStatsMP = Specials.Default.ETOOL_STATS_MP.Split(',');
+                            ReadSettingStatsZM = Specials.Default.ETOOL_STATS_ZM.Split(',');
+                            ReadSettingLevel = Specials.Default.ETOOL_LEVEL;
+
+                            WeaponName = "E-Tool";
+                            break;
+                        case 6:
+                            // R1SHADOWHUNTER
+                            System.Diagnostics.Debug.Print("Loading R1SHADOWHUNTER");
+                            ReadSettingCamoMP = Specials.Default.R1SHADOWHUNTER_CAMO_MP;
+                            ReadSettingCamoZM = Specials.Default.R1SHADOWHUNTER_CAMO_ZM;
+                            ReadSettingStatsMP = Specials.Default.R1SHADOWHUNTER_STATS_MP.Split(',');
+                            ReadSettingStatsZM = Specials.Default.R1SHADOWHUNTER_STATS_ZM.Split(',');
+                            ReadSettingLevel = Specials.Default.R1SHADOWHUNTER_LEVEL;
+
+                            WeaponName = "R1 Shadowhunter";
+                            break;
                     }
                     break;
                 #endregion
@@ -2746,7 +3467,7 @@ namespace ColdWarCamo {
 
             LoadingCamos = true;
 
-            if (ReadSettingCamoMP.StartsWith(DefaultComplete) && ReadSettingCamoZM.StartsWith(DefaultComplete)) {
+            if (ReadSettingCamoMP.StartsWith(DefaultCamo) && ReadSettingCamoZM.StartsWith(DefaultCamo)) {
                 lbIsGold.Text = WeaponName + " is Not Gold";
                 lbIsGoldenViper.Text = WeaponName + " is Not Golden Viper";
                 return;
@@ -2809,81 +3530,63 @@ namespace ColdWarCamo {
         private void rbAR_CheckedChanged(object sender, EventArgs e) {
             if (rbAR.Checked) {
                 SaveWeapon();
-                SelectedClass = -1;
-                SelectedWeapon = -1;
-                SwitchClass(0);
+                SwitchClass(WeaponClass.AssaultRifle);
             }
         }
 
         private void rbSMG_CheckedChanged(object sender, EventArgs e) {
             if (rbSMG.Checked) {
                 SaveWeapon();
-                SelectedClass = -1;
-                SelectedWeapon = -1;
-                SwitchClass(1);
+                SwitchClass(WeaponClass.SubmachineGun);
             }
         }
 
         private void rbTR_CheckedChanged(object sender, EventArgs e) {
             if (rbTR.Checked) {
                 SaveWeapon();
-                SelectedClass = -1;
-                SelectedWeapon = -1;
-                SwitchClass(2);
+                SwitchClass(WeaponClass.TacticalRifle);
             }
         }
 
         private void rbLMG_CheckedChanged(object sender, EventArgs e) {
             if (rbLMG.Checked) {
                 SaveWeapon();
-                SelectedClass = -1;
-                SelectedWeapon = -1;
-                SwitchClass(3);
+                SwitchClass(WeaponClass.LightMachineGun);
             }
         }
 
         private void rbSR_CheckedChanged(object sender, EventArgs e) {
             if (rbSR.Checked) {
                 SaveWeapon();
-                SelectedClass = -1;
-                SelectedWeapon = -1;
-                SwitchClass(4);
+                SwitchClass(WeaponClass.SniperRifle);
             }
         }
 
         private void rbPS_CheckedChanged(object sender, EventArgs e) {
             if (rbPS.Checked) {
                 SaveWeapon();
-                SelectedClass = -1;
-                SelectedWeapon = -1;
-                SwitchClass(5);
+                SwitchClass(WeaponClass.Pistol);
             }
         }
 
         private void rbSG_CheckedChanged(object sender, EventArgs e) {
             if (rbSG.Checked) {
                 SaveWeapon();
-                SelectedClass = -1;
-                SelectedWeapon = -1;
-                SwitchClass(6);
+                SwitchClass(WeaponClass.Shotgun);
             }
         }
 
         private void rbRL_CheckedChanged(object sender, EventArgs e) {
             if (rbRL.Checked) {
                 SaveWeapon();
-                SelectedClass = -1;
-                SelectedWeapon = -1;
-                SwitchClass(7);
+                SwitchClass(WeaponClass.RocketLauncher);
             }
         }
 
         private void rbSP_CheckedChanged(object sender, EventArgs e) {
             if (rbSP.Checked) {
                 SaveWeapon();
-                SelectedClass = -1;
-                SelectedWeapon = -1;
-                SwitchClass(8);
+                SwitchClass(WeaponClass.Special);
             }
         }
 
@@ -2947,6 +3650,28 @@ namespace ColdWarCamo {
             }
         }
 
+        private void radioButton6_CheckedChanged(object sender, EventArgs e) {
+            if (radioButton6.Checked) {
+                SaveWeapon();
+                SelectedWeapon = 5;
+                if (ControlsHidden) {
+                    SetControlsVisibility(true);
+                }
+                LoadWeapon();
+            }
+        }
+
+        private void radioButton7_CheckedChanged(object sender, EventArgs e) {
+            if (radioButton7.Checked) {
+                SaveWeapon();
+                SelectedWeapon = 6;
+                if (ControlsHidden) {
+                    SetControlsVisibility(true);
+                }
+                LoadWeapon();
+            }
+        }
+
         [System.Diagnostics.DebuggerStepThrough]
         private void lvMultiplayerCamo_ItemChecked(object sender, ItemCheckedEventArgs e) {
             WeaponModified = true;
@@ -2998,6 +3723,11 @@ namespace ColdWarCamo {
 
         private void frmMain_FormClosing(object sender, FormClosingEventArgs e) {
             SaveWeapon();
+        }
+
+        private void btnReticles_Click(object sender, EventArgs e) {
+            frmReticles ShowReticles = new frmReticles();
+            ShowReticles.Show();
         }
     }
 }

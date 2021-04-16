@@ -1,0 +1,99 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ColdWarCamo" GeneratedClassName="Reticles">
+  <Profiles />
+  <Settings>
+    <Setting Name="Last" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">-1</Value>
+    </Setting>
+    <Setting Name="MILLSTOPREFLEX_MP" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0|0000000000</Value>
+    </Setting>
+    <Setting Name="MILLSTOPREFLEX_ZM" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0|0000000000</Value>
+    </Setting>
+    <Setting Name="VISIONTECH2X_MP" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0|0000000000</Value>
+    </Setting>
+    <Setting Name="VISIONTECH2X_ZM" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0|0000000000</Value>
+    </Setting>
+    <Setting Name="KOBRAREDDOT_MP" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0|0000000000</Value>
+    </Setting>
+    <Setting Name="KOBRAREDDOT_ZM" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0|0000000000</Value>
+    </Setting>
+    <Setting Name="QUICKDOTLED_MP" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0|0000000000</Value>
+    </Setting>
+    <Setting Name="QUICKDOTLED_ZM" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0|0000000000</Value>
+    </Setting>
+    <Setting Name="AXIALARMS3X_MP" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0|0000000000</Value>
+    </Setting>
+    <Setting Name="AXIALARMS3X_ZM" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0|0000000000</Value>
+    </Setting>
+    <Setting Name="SILLIXHOLOSCOUT_MP" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0|0000000000</Value>
+    </Setting>
+    <Setting Name="SILLIXHOLOSCOUT_ZM" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0|0000000000</Value>
+    </Setting>
+    <Setting Name="MICROFLEXLED_MP" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0|0000000000</Value>
+    </Setting>
+    <Setting Name="MICROFLEXLED_ZM" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0|0000000000</Value>
+    </Setting>
+    <Setting Name="HAWKSMOOR_MP" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0|0000000000</Value>
+    </Setting>
+    <Setting Name="HAWKSMOOR_ZM" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0|0000000000</Value>
+    </Setting>
+    <Setting Name="ROYALKROSS4X_MP" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0|0000000000</Value>
+    </Setting>
+    <Setting Name="ROYALKROSS4X_ZM" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0|0000000000</Value>
+    </Setting>
+    <Setting Name="SUSATMULTIZOOM_MP" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0|0000000000</Value>
+    </Setting>
+    <Setting Name="SUSATMULTIZOOM_ZM" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0|0000000000</Value>
+    </Setting>
+    <Setting Name="DIAMONDBACKREFLEX_MP" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0|0000000000</Value>
+    </Setting>
+    <Setting Name="DIAMONDBACKREFLEX_ZM" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0|0000000000</Value>
+    </Setting>
+    <Setting Name="SNAPPOINT_MP" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0|0000000000</Value>
+    </Setting>
+    <Setting Name="SNAPPOINT_ZM" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0|0000000000</Value>
+    </Setting>
+    <Setting Name="FASTPOINTREFLEX_MP" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0|0000000000</Value>
+    </Setting>
+    <Setting Name="FASTPOINTREFLEX_ZM" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0|0000000000</Value>
+    </Setting>
+    <Setting Name="HANGMANRF_MP" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0|0000000000</Value>
+    </Setting>
+    <Setting Name="HANGMANRF_ZM" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0|0000000000</Value>
+    </Setting>
+    <Setting Name="OTEROMINIREFLEX_MP" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0|0000000000</Value>
+    </Setting>
+    <Setting Name="OTEROMINIREFLEX_ZM" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0|0000000000</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

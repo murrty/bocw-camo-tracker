@@ -154,5 +154,305 @@ namespace ColdWarCamo {
                 this["M79_STATS_ZM"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
+        public string SLEDGEHAMMER_LEVEL {
+            get {
+                return ((string)(this["SLEDGEHAMMER_LEVEL"]));
+            }
+            set {
+                this["SLEDGEHAMMER_LEVEL"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("00000000000000000000000000000000000000")]
+        public string SLEDGEHAMMER_CAMO_MP {
+            get {
+                return ((string)(this["SLEDGEHAMMER_CAMO_MP"]));
+            }
+            set {
+                this["SLEDGEHAMMER_CAMO_MP"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("00000000000000000000000000000000000000")]
+        public string SLEDGEHAMMER_CAMO_ZM {
+            get {
+                return ((string)(this["SLEDGEHAMMER_CAMO_ZM"]));
+            }
+            set {
+                this["SLEDGEHAMMER_CAMO_ZM"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0,0,0,0,0,0,0")]
+        public string SLEDGEHAMMER_STATS_MP {
+            get {
+                return ((string)(this["SLEDGEHAMMER_STATS_MP"]));
+            }
+            set {
+                this["SLEDGEHAMMER_STATS_MP"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0,0,0,0,0,0,0")]
+        public string SLEDGEHAMMER_STATS_ZM {
+            get {
+                return ((string)(this["SLEDGEHAMMER_STATS_ZM"]));
+            }
+            set {
+                this["SLEDGEHAMMER_STATS_ZM"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
+        public string WAKIZASHI_LEVEL {
+            get {
+                return ((string)(this["WAKIZASHI_LEVEL"]));
+            }
+            set {
+                this["WAKIZASHI_LEVEL"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("00000000000000000000000000000000000000")]
+        public string WAKIZASHI_CAMO_MP {
+            get {
+                return ((string)(this["WAKIZASHI_CAMO_MP"]));
+            }
+            set {
+                this["WAKIZASHI_CAMO_MP"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("00000000000000000000000000000000000000")]
+        public string WAKIZASHI_CAMO_ZM {
+            get {
+                return ((string)(this["WAKIZASHI_CAMO_ZM"]));
+            }
+            set {
+                this["WAKIZASHI_CAMO_ZM"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0,0,0,0,0,0,0")]
+        public string WAKIZASHI_STATS_MP {
+            get {
+                return ((string)(this["WAKIZASHI_STATS_MP"]));
+            }
+            set {
+                this["WAKIZASHI_STATS_MP"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0,0,0,0,0,0,0")]
+        public string WAKIZASHI_STATS_ZM {
+            get {
+                return ((string)(this["WAKIZASHI_STATS_ZM"]));
+            }
+            set {
+                this["WAKIZASHI_STATS_ZM"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
+        public string MACHETE_LEVEL {
+            get {
+                return ((string)(this["MACHETE_LEVEL"]));
+            }
+            set {
+                this["MACHETE_LEVEL"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("00000000000000000000000000000000000000")]
+        public string MACHETE_CAMO_MP {
+            get {
+                return ((string)(this["MACHETE_CAMO_MP"]));
+            }
+            set {
+                this["MACHETE_CAMO_MP"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("00000000000000000000000000000000000000")]
+        public string MACHETE_CAMO_ZM {
+            get {
+                return ((string)(this["MACHETE_CAMO_ZM"]));
+            }
+            set {
+                this["MACHETE_CAMO_ZM"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0,0,0,0,0,0,0")]
+        public string MACHETE_STATS_MP {
+            get {
+                return ((string)(this["MACHETE_STATS_MP"]));
+            }
+            set {
+                this["MACHETE_STATS_MP"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0,0,0,0,0,0,0")]
+        public string MACHETE_STATS_ZM {
+            get {
+                return ((string)(this["MACHETE_STATS_ZM"]));
+            }
+            set {
+                this["MACHETE_STATS_ZM"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
+        public string ETOOL_LEVEL {
+            get {
+                return ((string)(this["ETOOL_LEVEL"]));
+            }
+            set {
+                this["ETOOL_LEVEL"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("00000000000000000000000000000000000000")]
+        public string ETOOL_CAMO_MP {
+            get {
+                return ((string)(this["ETOOL_CAMO_MP"]));
+            }
+            set {
+                this["ETOOL_CAMO_MP"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("00000000000000000000000000000000000000")]
+        public string ETOOL_CAMO_ZM {
+            get {
+                return ((string)(this["ETOOL_CAMO_ZM"]));
+            }
+            set {
+                this["ETOOL_CAMO_ZM"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0,0,0,0,0,0,0")]
+        public string ETOOL_STATS_MP {
+            get {
+                return ((string)(this["ETOOL_STATS_MP"]));
+            }
+            set {
+                this["ETOOL_STATS_MP"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0,0,0,0,0,0,0")]
+        public string ETOOL_STATS_ZM {
+            get {
+                return ((string)(this["ETOOL_STATS_ZM"]));
+            }
+            set {
+                this["ETOOL_STATS_ZM"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
+        public string R1SHADOWHUNTER_LEVEL {
+            get {
+                return ((string)(this["R1SHADOWHUNTER_LEVEL"]));
+            }
+            set {
+                this["R1SHADOWHUNTER_LEVEL"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("00000000000000000000000000000000000000")]
+        public string R1SHADOWHUNTER_CAMO_MP {
+            get {
+                return ((string)(this["R1SHADOWHUNTER_CAMO_MP"]));
+            }
+            set {
+                this["R1SHADOWHUNTER_CAMO_MP"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("00000000000000000000000000000000000000")]
+        public string R1SHADOWHUNTER_CAMO_ZM {
+            get {
+                return ((string)(this["R1SHADOWHUNTER_CAMO_ZM"]));
+            }
+            set {
+                this["R1SHADOWHUNTER_CAMO_ZM"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0,0,0,0,0,0,0")]
+        public string R1SHADOWHUNTER_STATS_MP {
+            get {
+                return ((string)(this["R1SHADOWHUNTER_STATS_MP"]));
+            }
+            set {
+                this["R1SHADOWHUNTER_STATS_MP"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0,0,0,0,0,0,0")]
+        public string R1SHADOWHUNTER_STATS_ZM {
+            get {
+                return ((string)(this["R1SHADOWHUNTER_STATS_ZM"]));
+            }
+            set {
+                this["R1SHADOWHUNTER_STATS_ZM"] = value;
+            }
+        }
     }
 }

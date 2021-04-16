@@ -334,5 +334,125 @@ namespace ColdWarCamo {
                 this["FFAR1_STATS_ZM"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
+        public string GROZA_LEVEL {
+            get {
+                return ((string)(this["GROZA_LEVEL"]));
+            }
+            set {
+                this["GROZA_LEVEL"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("00000000000000000000000000000000000000")]
+        public string GROZA_CAMO_MP {
+            get {
+                return ((string)(this["GROZA_CAMO_MP"]));
+            }
+            set {
+                this["GROZA_CAMO_MP"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("00000000000000000000000000000000000000")]
+        public string GROZA_CAMO_ZM {
+            get {
+                return ((string)(this["GROZA_CAMO_ZM"]));
+            }
+            set {
+                this["GROZA_CAMO_ZM"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0,0,0,0,0,0,0")]
+        public string GROZA_STATS_MP {
+            get {
+                return ((string)(this["GROZA_STATS_MP"]));
+            }
+            set {
+                this["GROZA_STATS_MP"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0,0,0,0,0,0,0")]
+        public string GROZA_STATS_ZM {
+            get {
+                return ((string)(this["GROZA_STATS_ZM"]));
+            }
+            set {
+                this["GROZA_STATS_ZM"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
+        public string FARA83_LEVEL {
+            get {
+                return ((string)(this["FARA83_LEVEL"]));
+            }
+            set {
+                this["FARA83_LEVEL"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("00000000000000000000000000000000000000")]
+        public string FARA83_CAMO_MP {
+            get {
+                return ((string)(this["FARA83_CAMO_MP"]));
+            }
+            set {
+                this["FARA83_CAMO_MP"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("00000000000000000000000000000000000000")]
+        public string FARA83_CAMO_ZM {
+            get {
+                return ((string)(this["FARA83_CAMO_ZM"]));
+            }
+            set {
+                this["FARA83_CAMO_ZM"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0,0,0,0,0,0,0")]
+        public string FARA83_STATS_MP {
+            get {
+                return ((string)(this["FARA83_STATS_MP"]));
+            }
+            set {
+                this["FARA83_STATS_MP"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0,0,0,0,0,0,0")]
+        public string FARA83_STATS_ZM {
+            get {
+                return ((string)(this["FARA83_STATS_ZM"]));
+            }
+            set {
+                this["FARA83_STATS_ZM"] = value;
+            }
+        }
     }
 }

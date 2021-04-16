@@ -80,5 +80,35 @@
     <Setting Name="BULLFROG_STATS_ZM" Type="System.String" Scope="User">
       <Value Profile="(Default)">0,0,0,0,0,0,0</Value>
     </Setting>
+    <Setting Name="MAC10_LEVEL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="MAC10_CAMO_MP" Type="System.String" Scope="User">
+      <Value Profile="(Default)">00000000000000000000000000000000000000</Value>
+    </Setting>
+    <Setting Name="MAC10_CAMO_ZM" Type="System.String" Scope="User">
+      <Value Profile="(Default)">00000000000000000000000000000000000000</Value>
+    </Setting>
+    <Setting Name="MAC10_STATS_MP" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0,0,0,0,0,0,0</Value>
+    </Setting>
+    <Setting Name="MAC10_STATS_ZM" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0,0,0,0,0,0,0</Value>
+    </Setting>
+    <Setting Name="LC10_LEVEL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="LC10_CAMO_MP" Type="System.String" Scope="User">
+      <Value Profile="(Default)">00000000000000000000000000000000000000</Value>
+    </Setting>
+    <Setting Name="LC10_CAMO_ZM" Type="System.String" Scope="User">
+      <Value Profile="(Default)">00000000000000000000000000000000000000</Value>
+    </Setting>
+    <Setting Name="LC10_STATS_MP" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0,0,0,0,0,0,0</Value>
+    </Setting>
+    <Setting Name="LC10_STATS_ZM" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0,0,0,0,0,0,0</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

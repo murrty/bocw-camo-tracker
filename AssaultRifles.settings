@@ -80,5 +80,35 @@
     <Setting Name="FFAR1_STATS_ZM" Type="System.String" Scope="User">
       <Value Profile="(Default)">0,0,0,0,0,0,0</Value>
     </Setting>
+    <Setting Name="GROZA_LEVEL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="GROZA_CAMO_MP" Type="System.String" Scope="User">
+      <Value Profile="(Default)">00000000000000000000000000000000000000</Value>
+    </Setting>
+    <Setting Name="GROZA_CAMO_ZM" Type="System.String" Scope="User">
+      <Value Profile="(Default)">00000000000000000000000000000000000000</Value>
+    </Setting>
+    <Setting Name="GROZA_STATS_MP" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0,0,0,0,0,0,0</Value>
+    </Setting>
+    <Setting Name="GROZA_STATS_ZM" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0,0,0,0,0,0,0</Value>
+    </Setting>
+    <Setting Name="FARA83_LEVEL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="FARA83_CAMO_MP" Type="System.String" Scope="User">
+      <Value Profile="(Default)">00000000000000000000000000000000000000</Value>
+    </Setting>
+    <Setting Name="FARA83_CAMO_ZM" Type="System.String" Scope="User">
+      <Value Profile="(Default)">00000000000000000000000000000000000000</Value>
+    </Setting>
+    <Setting Name="FARA83_STATS_MP" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0,0,0,0,0,0,0</Value>
+    </Setting>
+    <Setting Name="FARA83_STATS_ZM" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0,0,0,0,0,0,0</Value>
+    </Setting>
   </Settings>
 </SettingsFile>
