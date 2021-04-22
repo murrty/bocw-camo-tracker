@@ -454,5 +454,65 @@ namespace ColdWarCamo {
                 this["LC10_STATS_ZM"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
+        public string PPSH41_LEVEL {
+            get {
+                return ((string)(this["PPSH41_LEVEL"]));
+            }
+            set {
+                this["PPSH41_LEVEL"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("00000000000000000000000000000000000000")]
+        public string PPSH41_CAMO_MP {
+            get {
+                return ((string)(this["PPSH41_CAMO_MP"]));
+            }
+            set {
+                this["PPSH41_CAMO_MP"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("00000000000000000000000000000000000000")]
+        public string PPSH41_CAMO_ZM {
+            get {
+                return ((string)(this["PPSH41_CAMO_ZM"]));
+            }
+            set {
+                this["PPSH41_CAMO_ZM"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0,0,0,0,0,0,0")]
+        public string PPSH41_STATS_MP {
+            get {
+                return ((string)(this["PPSH41_STATS_MP"]));
+            }
+            set {
+                this["PPSH41_STATS_MP"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0,0,0,0,0,0,0")]
+        public string PPSH41_STATS_ZM {
+            get {
+                return ((string)(this["PPSH41_STATS_ZM"]));
+            }
+            set {
+                this["PPSH41_STATS_ZM"] = value;
+            }
+        }
     }
 }

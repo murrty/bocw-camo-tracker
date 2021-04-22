@@ -29,6 +29,8 @@ namespace ColdWarCamo {
             radioButton5.Location = new Point(radioButton4.Location.X + radioButton4.Size.Width + 4, 48);
             radioButton6.Location = new Point(radioButton5.Location.X + radioButton5.Size.Width + 4, 48);
             radioButton7.Location = new Point(radioButton6.Location.X + radioButton6.Size.Width + 4, 48);
+            radioButton8.Location = new Point(radioButton7.Location.X + radioButton7.Size.Width + 4, 48);
+            radioButton9.Location = new Point(radioButton8.Location.X + radioButton8.Size.Width + 4, 48);
         }
         [System.Diagnostics.DebuggerStepThrough]
         private void SetCamoLevels(int Type) {
@@ -1167,6 +1169,8 @@ namespace ColdWarCamo {
             radioButton5.Checked = false;
             radioButton6.Checked = false;
             radioButton7.Checked = false;
+            radioButton8.Checked = false;
+            radioButton9.Checked = false;
 
             radioButton1.Visible = false;
             radioButton2.Visible = false;
@@ -1175,6 +1179,8 @@ namespace ColdWarCamo {
             radioButton5.Visible = false;
             radioButton6.Visible = false;
             radioButton7.Visible = false;
+            radioButton8.Visible = false;
+            radioButton9.Visible = false;
 
             radioButton1.Text = "Unused";
             radioButton2.Text = "Unused";
@@ -1182,6 +1188,8 @@ namespace ColdWarCamo {
             radioButton4.Text = "Unused";
             radioButton5.Text = "Unused";
             radioButton6.Text = "Unused";
+            radioButton8.Text = "Unused";
+            radioButton9.Text = "Unused";
 
             lbWeaponLevel.Text = "Level";
 
@@ -1193,13 +1201,6 @@ namespace ColdWarCamo {
                 #region Assault Rifles
                 case WeaponClass.AssaultRifle:
                     Console.WriteLine("Loading AssaultRifles");
-                    radioButton1.Visible = true;
-                    radioButton2.Visible = true;
-                    radioButton3.Visible = true;
-                    radioButton4.Visible = true;
-                    radioButton5.Visible = true;
-                    radioButton6.Visible = true;
-                    radioButton7.Visible = true;
                     radioButton1.Text = "XM4";
                     radioButton2.Text = "AK-47";
                     radioButton3.Text = "Krig 6";
@@ -1207,6 +1208,13 @@ namespace ColdWarCamo {
                     radioButton5.Text = "FFAR 1";
                     radioButton6.Text = "Groza";
                     radioButton7.Text = "FARA 83";
+                    radioButton1.Visible = true;
+                    radioButton2.Visible = true;
+                    radioButton3.Visible = true;
+                    radioButton4.Visible = true;
+                    radioButton5.Visible = true;
+                    radioButton6.Visible = true;
+                    radioButton7.Visible = true;
 
                     lbWeaponLevel.Text += " (Max 55)";
 
@@ -1278,13 +1286,6 @@ namespace ColdWarCamo {
                 #region Submachine Guns
                 case WeaponClass.SubmachineGun:
                     Console.WriteLine("Loading SubmachineGuns");
-                    radioButton1.Visible = true;
-                    radioButton2.Visible = true;
-                    radioButton3.Visible = true;
-                    radioButton4.Visible = true;
-                    radioButton5.Visible = true;
-                    radioButton6.Visible = true;
-                    radioButton7.Visible = true;
                     radioButton1.Text = "MP5";
                     radioButton2.Text = "Milano 821";
                     radioButton3.Text = "AK-74u";
@@ -1292,6 +1293,15 @@ namespace ColdWarCamo {
                     radioButton5.Text = "Bullfrog";
                     radioButton6.Text = "MAC-10";
                     radioButton7.Text = "LC10";
+                    radioButton8.Text = "PPSh-41";
+                    radioButton1.Visible = true;
+                    radioButton2.Visible = true;
+                    radioButton3.Visible = true;
+                    radioButton4.Visible = true;
+                    radioButton5.Visible = true;
+                    radioButton6.Visible = true;
+                    radioButton7.Visible = true;
+                    radioButton8.Visible = true;
 
                     lbWeaponLevel.Text += " (Max 55)";
 
@@ -1314,6 +1324,9 @@ namespace ColdWarCamo {
                         GoldCount_MP++;
                     }
                     if (SubmachineGuns.Default.LC10_CAMO_MP.StartsWith(CompleteCamo)) {
+                        GoldCount_MP++;
+                    }
+                    if (SubmachineGuns.Default.PPSH41_CAMO_MP.StartsWith(CompleteCamo)) {
                         GoldCount_MP++;
                     }
 
@@ -1345,6 +1358,9 @@ namespace ColdWarCamo {
                     if (SubmachineGuns.Default.LC10_CAMO_ZM.StartsWith(CompleteCamo)) {
                         GoldCount_ZM++;
                     }
+                    if (SubmachineGuns.Default.PPSH41_CAMO_ZM.StartsWith(CompleteCamo)) {
+                        GoldCount_MP++;
+                    }
 
                     if ( GoldCount_ZM < 5) {
                         lbPlagueDiamondUnlocked.Visible = false;
@@ -1363,14 +1379,16 @@ namespace ColdWarCamo {
                 #region Tactical Rifles
                 case WeaponClass.TacticalRifle:
                     Console.WriteLine("Loading TacticalRifles");
-                    radioButton1.Visible = true;
-                    radioButton2.Visible = true;
-                    radioButton3.Visible = true;
-                    radioButton4.Visible = true;
                     radioButton1.Text = "Type 63";
                     radioButton2.Text = "M16";
                     radioButton3.Text = "AUG";
                     radioButton4.Text = "DMR-14";
+                    radioButton5.Text = "CARV.2";
+                    radioButton1.Visible = true;
+                    radioButton2.Visible = true;
+                    radioButton3.Visible = true;
+                    radioButton4.Visible = true;
+                    radioButton5.Visible = true;
 
                     lbWeaponLevel.Text += " (Max 55)";
 
@@ -1384,6 +1402,9 @@ namespace ColdWarCamo {
                         GoldCount_MP++;
                     }
                     if (TacticalRifles.Default.DMR14_CAMO_MP.StartsWith(CompleteCamo)) {
+                        GoldCount_MP++;
+                    }
+                    if (TacticalRifles.Default.CARV2_CAMO_MP.StartsWith(CompleteCamo)) {
                         GoldCount_MP++;
                     }
 
@@ -1406,6 +1427,9 @@ namespace ColdWarCamo {
                     if (TacticalRifles.Default.DMR14_CAMO_ZM.StartsWith(CompleteCamo)) {
                         GoldCount_ZM++;
                     }
+                    if (TacticalRifles.Default.CARV2_CAMO_ZM.StartsWith(CompleteCamo)) {
+                        GoldCount_ZM++;
+                    }
 
                     if ( GoldCount_ZM < 4) {
                         lbPlagueDiamondUnlocked.Visible = false;
@@ -1424,12 +1448,12 @@ namespace ColdWarCamo {
                 #region Light Machine Guns
                 case WeaponClass.LightMachineGun:
                     Console.WriteLine("Loading LightMachineGuns");
-                    radioButton1.Visible = true;
-                    radioButton2.Visible = true;
-                    radioButton3.Visible = true;
                     radioButton1.Text = "Stoner-63";
                     radioButton2.Text = "RPD";
                     radioButton3.Text = "M60";
+                    radioButton1.Visible = true;
+                    radioButton2.Visible = true;
+                    radioButton3.Visible = true;
 
                     lbWeaponLevel.Text += " (Max 55)";
 
@@ -1477,14 +1501,16 @@ namespace ColdWarCamo {
                 #region Sniper Rifles
                 case WeaponClass.SniperRifle:
                     Console.WriteLine("Loading SniperRifles");
-                    radioButton1.Visible = true;
-                    radioButton2.Visible = true;
-                    radioButton3.Visible = true;
-                    radioButton4.Visible = true;
                     radioButton1.Text = "Pelington 703";
                     radioButton2.Text = "LW3 - Tundra";
                     radioButton3.Text = "M82";
                     radioButton4.Text = "ZRG 20mm";
+                    radioButton5.Text = "Swiss K31";
+                    radioButton1.Visible = true;
+                    radioButton2.Visible = true;
+                    radioButton3.Visible = true;
+                    radioButton4.Visible = true;
+                    radioButton5.Visible = true;
 
                     lbWeaponLevel.Text += " (Max 55)";
 
@@ -1498,6 +1524,9 @@ namespace ColdWarCamo {
                         GoldCount_MP++;
                     }
                     if (SniperRifles.Default.ZRG20MM_CAMO_MP.StartsWith(CompleteCamo)) {
+                        GoldCount_MP++;
+                    }
+                    if (SniperRifles.Default.SWISSK31_CAMO_MP.StartsWith(CompleteCamo)) {
                         GoldCount_MP++;
                     }
 
@@ -1520,6 +1549,9 @@ namespace ColdWarCamo {
                     if (SniperRifles.Default.ZRG20MM_CAMO_ZM.StartsWith(CompleteCamo)) {
                         GoldCount_ZM++;
                     }
+                    if (SniperRifles.Default.SWISSK31_CAMO_ZM.StartsWith(CompleteCamo)) {
+                        GoldCount_ZM++;
+                    }
 
                     if ( GoldCount_ZM < 3) {
                         lbPlagueDiamondUnlocked.Visible = false;
@@ -1538,12 +1570,14 @@ namespace ColdWarCamo {
                 #region Pistols
                 case WeaponClass.Pistol:
                     Console.WriteLine("Loading Pistols");
-                    radioButton1.Visible = true;
-                    radioButton2.Visible = true;
-                    radioButton3.Visible = true;
                     radioButton1.Text = "1911";
                     radioButton2.Text = "Magnum";
                     radioButton3.Text = "Diamatti";
+                    radioButton4.Text = "AMP63";
+                    radioButton1.Visible = true;
+                    radioButton2.Visible = true;
+                    radioButton3.Visible = true;
+                    radioButton4.Visible = true;
 
                     lbWeaponLevel.Text += " (Max 35)";
 
@@ -1554,6 +1588,9 @@ namespace ColdWarCamo {
                         GoldCount_MP++;
                     }
                     if (Pistols.Default.DIAMATTI_CAMO_MP.StartsWith(CompleteCamo)) {
+                        GoldCount_MP++;
+                    }
+                    if (Pistols.Default.AMP63_CAMO_MP.StartsWith(CompleteCamo)) {
                         GoldCount_MP++;
                     }
 
@@ -1571,6 +1608,9 @@ namespace ColdWarCamo {
                         GoldCount_ZM++;
                     }
                     if (Pistols.Default.DIAMATTI_CAMO_ZM.StartsWith(CompleteCamo)) {
+                        GoldCount_ZM++;
+                    }
+                    if (Pistols.Default.AMP63_CAMO_ZM.StartsWith(CompleteCamo)) {
                         GoldCount_ZM++;
                     }
 
@@ -1591,12 +1631,12 @@ namespace ColdWarCamo {
                 #region Shotguns
                 case WeaponClass.Shotgun:
                     Console.WriteLine("Loading Shotguns");
-                    radioButton1.Visible = true;
-                    radioButton2.Visible = true;
-                    radioButton3.Visible = true;
                     radioButton1.Text = "Hauer 77";
                     radioButton2.Text = "Gallo SA12";
                     radioButton3.Text = "Streetsweeper";
+                    radioButton1.Visible = true;
+                    radioButton2.Visible = true;
+                    radioButton3.Visible = true;
 
                     lbWeaponLevel.Text += " (Max 36)";
 
@@ -1644,10 +1684,10 @@ namespace ColdWarCamo {
                 #region Rocket Launchers
                 case WeaponClass.RocketLauncher:
                     Console.WriteLine("Loading RocketLaunchers");
-                    radioButton1.Visible = true;
-                    radioButton2.Visible = true;
                     radioButton1.Text = "Cigma 2";
                     radioButton2.Text = "RPG-7";
+                    radioButton1.Visible = true;
+                    radioButton2.Visible = true;
 
                     lbWeaponLevel.Text += " (Max 35)";
 
@@ -1689,13 +1729,6 @@ namespace ColdWarCamo {
                 #region Specials
                 case WeaponClass.Special:
                     Console.WriteLine("Loading Specials");
-                    radioButton1.Visible = true;
-                    radioButton2.Visible = true;
-                    radioButton3.Visible = true;
-                    radioButton4.Visible = true;
-                    radioButton5.Visible = true;
-                    radioButton6.Visible = true;
-                    radioButton7.Visible = true;
                     radioButton1.Text = "Knife";
                     radioButton2.Text = "M79";
                     radioButton3.Text = "Sledgehammer";
@@ -1703,6 +1736,17 @@ namespace ColdWarCamo {
                     radioButton5.Text = "Machete";
                     radioButton6.Text = "E-Tool";
                     radioButton7.Text = "R1 Shadowhunter";
+                    radioButton8.Text = "Ballistic Knife";
+                    radioButton9.Text = "Baseball Bat";
+                    radioButton1.Visible = true;
+                    radioButton2.Visible = true;
+                    radioButton3.Visible = true;
+                    radioButton4.Visible = true;
+                    radioButton5.Visible = true;
+                    radioButton6.Visible = true;
+                    radioButton7.Visible = true;
+                    radioButton8.Visible = true;
+                    radioButton9.Visible = true;
 
                     lbWeaponLevel.Text += " (Max 35)";
 
@@ -1725,6 +1769,12 @@ namespace ColdWarCamo {
                         GoldCount_MP++;
                     }
                     if (Specials.Default.R1SHADOWHUNTER_CAMO_MP.StartsWith(CompleteCamo)) {
+                        GoldCount_MP++;
+                    }
+                    if (Specials.Default.BALLISTICKNIFE_CAMO_MP.StartsWith(CompleteCamo)) {
+                        GoldCount_MP++;
+                    }
+                    if (Specials.Default.BASEBALLBAT_CAMO_MP.StartsWith(CompleteCamo)) {
                         GoldCount_MP++;
                     }
 
@@ -1754,6 +1804,12 @@ namespace ColdWarCamo {
                         GoldCount_ZM++;
                     }
                     if (Specials.Default.R1SHADOWHUNTER_CAMO_ZM.StartsWith(CompleteCamo)) {
+                        GoldCount_ZM++;
+                    }
+                    if (Specials.Default.BALLISTICKNIFE_CAMO_ZM.StartsWith(CompleteCamo)) {
+                        GoldCount_ZM++;
+                    }
+                    if (Specials.Default.BASEBALLBAT_CAMO_ZM.StartsWith(CompleteCamo)) {
                         GoldCount_ZM++;
                     }
 
@@ -1874,6 +1930,10 @@ namespace ColdWarCamo {
                             // LC10
 
                             break;
+                        case 7:
+                            // PPSH41
+
+                            break;
                     }
                     break;
                 #endregion
@@ -1894,6 +1954,10 @@ namespace ColdWarCamo {
                             break;
                         case 3:
                             // DMR14
+
+                            break;
+                        case 4:
+                            // CARV2
 
                             break;
                     }
@@ -1936,6 +2000,10 @@ namespace ColdWarCamo {
                             // ZRG20MM
 
                             break;
+                        case 4:
+                            //SWISSK31
+
+                            break;
                     }
                     break;
                 #endregion
@@ -1952,6 +2020,10 @@ namespace ColdWarCamo {
                             break;
                         case 2:
                             // DIAMATTI
+
+                            break;
+                        case 3:
+                            // AMP63
 
                             break;
                     }
@@ -2018,6 +2090,14 @@ namespace ColdWarCamo {
                             break;
                         case 6:
                             // R1SHADOWHUNTER
+
+                            break;
+                        case 7:
+                            // BALLISTICKNIFE
+
+                            break;
+                        case 8:
+                            // BASEBALLBAT
 
                             break;
                     }
@@ -2381,6 +2461,25 @@ namespace ColdWarCamo {
                                 SubmachineGuns.Default.LC10_STATS_ZM = SettingBufferStatsZM;
                             }
                             break;
+                        case 7:
+                            // PPSH41
+                            System.Diagnostics.Debug.Print("Saving PPSH41");
+                            if (SubmachineGuns.Default.PPSH41_LEVEL != txtWeaponLevel.Text) {
+                                SubmachineGuns.Default.PPSH41_LEVEL = txtWeaponLevel.Text;
+                            }
+                            if (SubmachineGuns.Default.PPSH41_CAMO_MP != SettingBufferCamoMP) {
+                                SubmachineGuns.Default.PPSH41_CAMO_MP = SettingBufferCamoMP;
+                            }
+                            if (SubmachineGuns.Default.PPSH41_CAMO_ZM != SettingBufferCamoZM) {
+                                SubmachineGuns.Default.PPSH41_CAMO_ZM = SettingBufferCamoZM;
+                            }
+                            if (SubmachineGuns.Default.PPSH41_STATS_MP != SettingBufferStatsMP) {
+                                SubmachineGuns.Default.PPSH41_STATS_MP = SettingBufferStatsMP;
+                            }
+                            if (SubmachineGuns.Default.PPSH41_STATS_ZM != SettingBufferStatsZM) {
+                                SubmachineGuns.Default.PPSH41_STATS_ZM = SettingBufferStatsZM;
+                            }
+                            break;
                     }
                     SubmachineGuns.Default.Save();
                     break;
@@ -2462,6 +2561,25 @@ namespace ColdWarCamo {
                             }
                             if (TacticalRifles.Default.DMR14_STATS_ZM != SettingBufferStatsZM) {
                                 TacticalRifles.Default.DMR14_STATS_ZM = SettingBufferStatsZM;
+                            }
+                            break;
+                        case 4:
+                            // CARV2
+                            System.Diagnostics.Debug.Print("Saving CARV2");
+                            if (TacticalRifles.Default.CARV2_LEVEL != txtWeaponLevel.Text) {
+                                TacticalRifles.Default.CARV2_LEVEL = txtWeaponLevel.Text;
+                            }
+                            if (TacticalRifles.Default.CARV2_CAMO_MP != SettingBufferCamoMP) {
+                                TacticalRifles.Default.CARV2_CAMO_MP = SettingBufferCamoMP;
+                            }
+                            if (TacticalRifles.Default.CARV2_CAMO_ZM != SettingBufferCamoZM) {
+                                TacticalRifles.Default.CARV2_CAMO_ZM = SettingBufferCamoZM;
+                            }
+                            if (TacticalRifles.Default.CARV2_STATS_MP != SettingBufferStatsMP) {
+                                TacticalRifles.Default.CARV2_STATS_MP = SettingBufferStatsMP;
+                            }
+                            if (TacticalRifles.Default.CARV2_STATS_ZM != SettingBufferStatsZM) {
+                                TacticalRifles.Default.CARV2_STATS_ZM = SettingBufferStatsZM;
                             }
                             break;
                     }
@@ -2611,6 +2729,25 @@ namespace ColdWarCamo {
                                 SniperRifles.Default.ZRG20MM_STATS_ZM = SettingBufferStatsZM;
                             }
                             break;
+                        case 4:
+                            // SWISSK31
+                            System.Diagnostics.Debug.Print("Saving SWISSK31");
+                            if (SniperRifles.Default.SWISSK31_LEVEL != txtWeaponLevel.Text) {
+                                SniperRifles.Default.SWISSK31_LEVEL = txtWeaponLevel.Text;
+                            }
+                            if (SniperRifles.Default.SWISSK31_CAMO_MP != SettingBufferCamoMP) {
+                                SniperRifles.Default.SWISSK31_CAMO_MP = SettingBufferCamoMP;
+                            }
+                            if (SniperRifles.Default.SWISSK31_CAMO_ZM != SettingBufferCamoZM) {
+                                SniperRifles.Default.SWISSK31_CAMO_ZM = SettingBufferCamoZM;
+                            }
+                            if (SniperRifles.Default.SWISSK31_STATS_MP != SettingBufferStatsMP) {
+                                SniperRifles.Default.SWISSK31_STATS_MP = SettingBufferStatsMP;
+                            }
+                            if (SniperRifles.Default.SWISSK31_STATS_ZM != SettingBufferStatsZM) {
+                                SniperRifles.Default.SWISSK31_STATS_ZM = SettingBufferStatsZM;
+                            }
+                            break;
                     }
                     SniperRifles.Default.Save();
                     break;
@@ -2673,6 +2810,25 @@ namespace ColdWarCamo {
                             }
                             if (Pistols.Default.DIAMATTI_STATS_ZM != SettingBufferStatsZM) {
                                 Pistols.Default.DIAMATTI_STATS_ZM = SettingBufferStatsZM;
+                            }
+                            break;
+                        case 3:
+                            // AMP63
+                            System.Diagnostics.Debug.Print("Saving AMP63");
+                            if (Pistols.Default.AMP63_LEVEL != txtWeaponLevel.Text) {
+                                Pistols.Default.AMP63_LEVEL = txtWeaponLevel.Text;
+                            }
+                            if (Pistols.Default.AMP63_CAMO_MP != SettingBufferCamoMP) {
+                                Pistols.Default.AMP63_CAMO_MP = SettingBufferCamoMP;
+                            }
+                            if (Pistols.Default.AMP63_CAMO_ZM != SettingBufferCamoZM) {
+                                Pistols.Default.AMP63_CAMO_ZM = SettingBufferCamoZM;
+                            }
+                            if (Pistols.Default.AMP63_STATS_MP != SettingBufferStatsMP) {
+                                Pistols.Default.AMP63_STATS_MP = SettingBufferStatsMP;
+                            }
+                            if (Pistols.Default.AMP63_STATS_ZM != SettingBufferStatsZM) {
+                                Pistols.Default.AMP63_STATS_ZM = SettingBufferStatsZM;
                             }
                             break;
                     }
@@ -2924,6 +3080,44 @@ namespace ColdWarCamo {
                                 Specials.Default.R1SHADOWHUNTER_STATS_ZM = SettingBufferStatsZM;
                             }
                             break;
+                        case 7:
+                            // BALLISTICKNIFE
+                            System.Diagnostics.Debug.Print("Saving BALLISTICKNIFE");
+                            if (Specials.Default.BALLISTICKNIFE_LEVEL != txtWeaponLevel.Text) {
+                                Specials.Default.BALLISTICKNIFE_LEVEL = txtWeaponLevel.Text;
+                            }
+                            if (Specials.Default.BALLISTICKNIFE_CAMO_MP != SettingBufferCamoMP) {
+                                Specials.Default.BALLISTICKNIFE_CAMO_MP = SettingBufferCamoMP;
+                            }
+                            if (Specials.Default.BALLISTICKNIFE_CAMO_ZM != SettingBufferCamoZM) {
+                                Specials.Default.BALLISTICKNIFE_CAMO_ZM = SettingBufferCamoZM;
+                            }
+                            if (Specials.Default.BALLISTICKNIFE_STATS_MP != SettingBufferStatsMP) {
+                                Specials.Default.BALLISTICKNIFE_STATS_MP = SettingBufferStatsMP;
+                            }
+                            if (Specials.Default.BALLISTICKNIFE_STATS_ZM != SettingBufferStatsZM) {
+                                Specials.Default.BALLISTICKNIFE_STATS_ZM = SettingBufferStatsZM;
+                            }
+                            break;
+                        case 8:
+                            // BASEBALLBAT
+                            System.Diagnostics.Debug.Print("Saving BASEBALLBAT");
+                            if (Specials.Default.BASEBALLBAT_LEVEL != txtWeaponLevel.Text) {
+                                Specials.Default.BASEBALLBAT_LEVEL = txtWeaponLevel.Text;
+                            }
+                            if (Specials.Default.BASEBALLBAT_CAMO_MP != SettingBufferCamoMP) {
+                                Specials.Default.BASEBALLBAT_CAMO_MP = SettingBufferCamoMP;
+                            }
+                            if (Specials.Default.BASEBALLBAT_CAMO_ZM != SettingBufferCamoZM) {
+                                Specials.Default.BASEBALLBAT_CAMO_ZM = SettingBufferCamoZM;
+                            }
+                            if (Specials.Default.BASEBALLBAT_STATS_MP != SettingBufferStatsMP) {
+                                Specials.Default.BASEBALLBAT_STATS_MP = SettingBufferStatsMP;
+                            }
+                            if (Specials.Default.BASEBALLBAT_STATS_ZM != SettingBufferStatsZM) {
+                                Specials.Default.BASEBALLBAT_STATS_ZM = SettingBufferStatsZM;
+                            }
+                            break;
                     }
                     Specials.Default.Save();
                     break;
@@ -3132,6 +3326,17 @@ namespace ColdWarCamo {
 
                             WeaponName = "LC10";
                             break;
+                        case 7:
+                            // PPSH41
+                            System.Diagnostics.Debug.Print("Loading PPSH41");
+                            ReadSettingCamoMP = SubmachineGuns.Default.PPSH41_CAMO_MP;
+                            ReadSettingCamoZM = SubmachineGuns.Default.PPSH41_CAMO_ZM;
+                            ReadSettingStatsMP = SubmachineGuns.Default.PPSH41_STATS_MP.Split(',');
+                            ReadSettingStatsZM = SubmachineGuns.Default.PPSH41_STATS_ZM.Split(',');
+                            ReadSettingLevel = SubmachineGuns.Default.PPSH41_LEVEL;
+
+                            WeaponName = "PPSh-41";
+                            break;
                     }
                     break;
                 #endregion
@@ -3181,6 +3386,17 @@ namespace ColdWarCamo {
                             ReadSettingLevel = TacticalRifles.Default.DMR14_LEVEL;
 
                             WeaponName = "DMR-14";
+                            break;
+                        case 4:
+                            // CARV2
+                            System.Diagnostics.Debug.Print("Loading CARV2");
+                            ReadSettingCamoMP = TacticalRifles.Default.CARV2_CAMO_MP;
+                            ReadSettingCamoZM = TacticalRifles.Default.CARV2_CAMO_ZM;
+                            ReadSettingStatsMP = TacticalRifles.Default.CARV2_STATS_MP.Split(',');
+                            ReadSettingStatsZM = TacticalRifles.Default.CARV2_STATS_ZM.Split(',');
+                            ReadSettingLevel = TacticalRifles.Default.CARV2_LEVEL;
+
+                            WeaponName = "CARV.2";
                             break;
                     }
                     break;
@@ -3271,6 +3487,17 @@ namespace ColdWarCamo {
 
                             WeaponName = "ZRG 20mm";
                             break;
+                        case 4:
+                            // SWISSK31
+                            System.Diagnostics.Debug.Print("Loading SWISSK31");
+                            ReadSettingCamoMP = SniperRifles.Default.SWISSK31_CAMO_MP;
+                            ReadSettingCamoZM = SniperRifles.Default.SWISSK31_CAMO_ZM;
+                            ReadSettingStatsMP = SniperRifles.Default.SWISSK31_STATS_MP.Split(',');
+                            ReadSettingStatsZM = SniperRifles.Default.SWISSK31_STATS_ZM.Split(',');
+                            ReadSettingLevel = SniperRifles.Default.SWISSK31_LEVEL;
+
+                            WeaponName = "Swiss K31";
+                            break;
                     }
                     break;
                 #endregion
@@ -3309,6 +3536,17 @@ namespace ColdWarCamo {
                             ReadSettingLevel = Pistols.Default.DIAMATTI_LEVEL;
 
                             WeaponName = "Diamatti";
+                            break;
+                        case 3:
+                            // AMP63
+                            System.Diagnostics.Debug.Print("Loading AMP63");
+                            ReadSettingCamoMP = Pistols.Default.AMP63_CAMO_MP;
+                            ReadSettingCamoZM = Pistols.Default.AMP63_CAMO_ZM;
+                            ReadSettingStatsMP = Pistols.Default.AMP63_STATS_MP.Split(',');
+                            ReadSettingStatsZM = Pistols.Default.AMP63_STATS_ZM.Split(',');
+                            ReadSettingLevel = Pistols.Default.AMP63_LEVEL;
+
+                            WeaponName = "AMP63";
                             break;
                     }
                     break;
@@ -3459,6 +3697,28 @@ namespace ColdWarCamo {
                             ReadSettingLevel = Specials.Default.R1SHADOWHUNTER_LEVEL;
 
                             WeaponName = "R1 Shadowhunter";
+                            break;
+                        case 7:
+                            // BALLISTICKNIFE
+                            System.Diagnostics.Debug.Print("Loading BALLISTICKNIFE");
+                            ReadSettingCamoMP = Specials.Default.BALLISTICKNIFE_CAMO_MP;
+                            ReadSettingCamoZM = Specials.Default.BALLISTICKNIFE_CAMO_ZM;
+                            ReadSettingStatsMP = Specials.Default.BALLISTICKNIFE_STATS_MP.Split(',');
+                            ReadSettingStatsZM = Specials.Default.BALLISTICKNIFE_STATS_ZM.Split(',');
+                            ReadSettingLevel = Specials.Default.BALLISTICKNIFE_LEVEL;
+
+                            WeaponName = "Ballistic Knife";
+                            break;
+                        case 8:
+                            // BASEBALLBAT
+                            System.Diagnostics.Debug.Print("Loading BASEBALLBAT");
+                            ReadSettingCamoMP = Specials.Default.BASEBALLBAT_CAMO_MP;
+                            ReadSettingCamoZM = Specials.Default.BASEBALLBAT_CAMO_ZM;
+                            ReadSettingStatsMP = Specials.Default.BASEBALLBAT_STATS_MP.Split(',');
+                            ReadSettingStatsZM = Specials.Default.BASEBALLBAT_STATS_ZM.Split(',');
+                            ReadSettingLevel = Specials.Default.BASEBALLBAT_LEVEL;
+
+                            WeaponName = "Baseball Bat";
                             break;
                     }
                     break;
@@ -3672,6 +3932,28 @@ namespace ColdWarCamo {
             }
         }
 
+        private void radioButton8_CheckedChanged(object sender, EventArgs e) {
+            if (radioButton8.Checked) {
+                SaveWeapon();
+                SelectedWeapon = 7;
+                if (ControlsHidden) {
+                    SetControlsVisibility(true);
+                }
+                LoadWeapon();
+            }
+        }
+
+        private void radioButton9_CheckedChanged(object sender, EventArgs e) {
+            if (radioButton9.Checked) {
+                SaveWeapon();
+                SelectedWeapon = 8;
+                if (ControlsHidden) {
+                    SetControlsVisibility(true);
+                }
+                LoadWeapon();
+            }
+        }
+
         [System.Diagnostics.DebuggerStepThrough]
         private void lvMultiplayerCamo_ItemChecked(object sender, ItemCheckedEventArgs e) {
             WeaponModified = true;
@@ -3729,5 +4011,6 @@ namespace ColdWarCamo {
             frmReticles ShowReticles = new frmReticles();
             ShowReticles.Show();
         }
+
     }
 }

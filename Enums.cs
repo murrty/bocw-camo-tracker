@@ -23,11 +23,13 @@ namespace ColdWarCamo {
         BULLFROG = 24,
         MAC10 = 25,
         LC10 = 26,
+        PPSH41 = 27,
 
         TYPE63 = 30,
         M16 = 31,
         AUG = 32,
         DMR14 = 33,
+        CARV2 = 34,
 
         STONER63 = 40,
         RPD = 41,
@@ -37,10 +39,12 @@ namespace ColdWarCamo {
         LW3TUNDRA = 51,
         M82 = 52,
         ZRG20MM = 53,
+        SWISSK31 = 54,
 
         M1911 = 60,
         MAGNUM = 61,
         DIAMATTI = 62,
+        AMP63 = 63,
 
         HAUER77 = 70,
         GALLOSA12 = 71,
@@ -55,7 +59,9 @@ namespace ColdWarCamo {
         WAKIZASHI = 93,
         MACHETE = 94,
         ETOOL = 95,
-        R1SHADOWHUNTER = 96
+        R1SHADOWHUNTER = 96,
+        BALLISTICKNIFE = 97,
+        BASEBALLBAT = 98
     }
     public enum WeaponClass : int {
         None = -1,

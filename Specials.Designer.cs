@@ -454,5 +454,125 @@ namespace ColdWarCamo {
                 this["R1SHADOWHUNTER_STATS_ZM"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
+        public string BALLISTICKNIFE_LEVEL {
+            get {
+                return ((string)(this["BALLISTICKNIFE_LEVEL"]));
+            }
+            set {
+                this["BALLISTICKNIFE_LEVEL"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("00000000000000000000000000000000000000")]
+        public string BALLISTICKNIFE_CAMO_MP {
+            get {
+                return ((string)(this["BALLISTICKNIFE_CAMO_MP"]));
+            }
+            set {
+                this["BALLISTICKNIFE_CAMO_MP"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("00000000000000000000000000000000000000")]
+        public string BALLISTICKNIFE_CAMO_ZM {
+            get {
+                return ((string)(this["BALLISTICKNIFE_CAMO_ZM"]));
+            }
+            set {
+                this["BALLISTICKNIFE_CAMO_ZM"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0,0,0,0,0,0,0")]
+        public string BALLISTICKNIFE_STATS_MP {
+            get {
+                return ((string)(this["BALLISTICKNIFE_STATS_MP"]));
+            }
+            set {
+                this["BALLISTICKNIFE_STATS_MP"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0,0,0,0,0,0,0")]
+        public string BALLISTICKNIFE_STATS_ZM {
+            get {
+                return ((string)(this["BALLISTICKNIFE_STATS_ZM"]));
+            }
+            set {
+                this["BALLISTICKNIFE_STATS_ZM"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
+        public string BASEBALLBAT_LEVEL {
+            get {
+                return ((string)(this["BASEBALLBAT_LEVEL"]));
+            }
+            set {
+                this["BASEBALLBAT_LEVEL"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("00000000000000000000000000000000000000")]
+        public string BASEBALLBAT_CAMO_MP {
+            get {
+                return ((string)(this["BASEBALLBAT_CAMO_MP"]));
+            }
+            set {
+                this["BASEBALLBAT_CAMO_MP"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("00000000000000000000000000000000000000")]
+        public string BASEBALLBAT_CAMO_ZM {
+            get {
+                return ((string)(this["BASEBALLBAT_CAMO_ZM"]));
+            }
+            set {
+                this["BASEBALLBAT_CAMO_ZM"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0,0,0,0,0,0,0")]
+        public string BASEBALLBAT_STATS_MP {
+            get {
+                return ((string)(this["BASEBALLBAT_STATS_MP"]));
+            }
+            set {
+                this["BASEBALLBAT_STATS_MP"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0,0,0,0,0,0,0")]
+        public string BASEBALLBAT_STATS_ZM {
+            get {
+                return ((string)(this["BASEBALLBAT_STATS_ZM"]));
+            }
+            set {
+                this["BASEBALLBAT_STATS_ZM"] = value;
+            }
+        }
     }
 }

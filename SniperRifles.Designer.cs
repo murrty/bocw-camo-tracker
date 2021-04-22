@@ -274,5 +274,65 @@ namespace ColdWarCamo {
                 this["ZRG20MM_STATS_ZM"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
+        public string SWISSK31_LEVEL {
+            get {
+                return ((string)(this["SWISSK31_LEVEL"]));
+            }
+            set {
+                this["SWISSK31_LEVEL"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("00000000000000000000000000000000000000")]
+        public string SWISSK31_CAMO_MP {
+            get {
+                return ((string)(this["SWISSK31_CAMO_MP"]));
+            }
+            set {
+                this["SWISSK31_CAMO_MP"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("00000000000000000000000000000000000000")]
+        public string SWISSK31_CAMO_ZM {
+            get {
+                return ((string)(this["SWISSK31_CAMO_ZM"]));
+            }
+            set {
+                this["SWISSK31_CAMO_ZM"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0,0,0,0,0,0,0")]
+        public string SWISSK31_STATS_MP {
+            get {
+                return ((string)(this["SWISSK31_STATS_MP"]));
+            }
+            set {
+                this["SWISSK31_STATS_MP"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0,0,0,0,0,0,0")]
+        public string SWISSK31_STATS_ZM {
+            get {
+                return ((string)(this["SWISSK31_STATS_ZM"]));
+            }
+            set {
+                this["SWISSK31_STATS_ZM"] = value;
+            }
+        }
     }
 }

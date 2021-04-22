@@ -214,5 +214,65 @@ namespace ColdWarCamo {
                 this["DIAMATTI_STATS_ZM"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
+        public string AMP63_LEVEL {
+            get {
+                return ((string)(this["AMP63_LEVEL"]));
+            }
+            set {
+                this["AMP63_LEVEL"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("00000000000000000000000000000000000000")]
+        public string AMP63_CAMO_MP {
+            get {
+                return ((string)(this["AMP63_CAMO_MP"]));
+            }
+            set {
+                this["AMP63_CAMO_MP"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("00000000000000000000000000000000000000")]
+        public string AMP63_CAMO_ZM {
+            get {
+                return ((string)(this["AMP63_CAMO_ZM"]));
+            }
+            set {
+                this["AMP63_CAMO_ZM"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0,0,0,0,0,0,0")]
+        public string AMP63_STATS_MP {
+            get {
+                return ((string)(this["AMP63_STATS_MP"]));
+            }
+            set {
+                this["AMP63_STATS_MP"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0,0,0,0,0,0,0")]
+        public string AMP63_STATS_ZM {
+            get {
+                return ((string)(this["AMP63_STATS_ZM"]));
+            }
+            set {
+                this["AMP63_STATS_ZM"] = value;
+            }
+        }
     }
 }

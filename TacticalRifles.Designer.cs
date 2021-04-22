@@ -274,5 +274,65 @@ namespace ColdWarCamo {
                 this["DMR14_STATS_ZM"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
+        public string CARV2_LEVEL {
+            get {
+                return ((string)(this["CARV2_LEVEL"]));
+            }
+            set {
+                this["CARV2_LEVEL"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("00000000000000000000000000000000000000")]
+        public string CARV2_CAMO_MP {
+            get {
+                return ((string)(this["CARV2_CAMO_MP"]));
+            }
+            set {
+                this["CARV2_CAMO_MP"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("00000000000000000000000000000000000000")]
+        public string CARV2_CAMO_ZM {
+            get {
+                return ((string)(this["CARV2_CAMO_ZM"]));
+            }
+            set {
+                this["CARV2_CAMO_ZM"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0,0,0,0,0,0,0")]
+        public string CARV2_STATS_MP {
+            get {
+                return ((string)(this["CARV2_STATS_MP"]));
+            }
+            set {
+                this["CARV2_STATS_MP"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0,0,0,0,0,0,0")]
+        public string CARV2_STATS_ZM {
+            get {
+                return ((string)(this["CARV2_STATS_ZM"]));
+            }
+            set {
+                this["CARV2_STATS_ZM"] = value;
+            }
+        }
     }
 }

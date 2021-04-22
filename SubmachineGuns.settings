@@ -1,5 +1,5 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ColdWarCamo" GeneratedClassName="SubmachineGuns">
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ColdWarCamo.Settings" GeneratedClassName="SubmachineGuns">
   <Profiles />
   <Settings>
     <Setting Name="Last" Type="System.Int32" Scope="User">
@@ -108,6 +108,21 @@
       <Value Profile="(Default)">0,0,0,0,0,0,0</Value>
     </Setting>
     <Setting Name="LC10_STATS_ZM" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0,0,0,0,0,0,0</Value>
+    </Setting>
+    <Setting Name="PPSH41_LEVEL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="PPSH41_CAMO_MP" Type="System.String" Scope="User">
+      <Value Profile="(Default)">00000000000000000000000000000000000000</Value>
+    </Setting>
+    <Setting Name="PPSH41_CAMO_ZM" Type="System.String" Scope="User">
+      <Value Profile="(Default)">00000000000000000000000000000000000000</Value>
+    </Setting>
+    <Setting Name="PPSH41_STATS_MP" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0,0,0,0,0,0,0</Value>
+    </Setting>
+    <Setting Name="PPSH41_STATS_ZM" Type="System.String" Scope="User">
       <Value Profile="(Default)">0,0,0,0,0,0,0</Value>
     </Setting>
   </Settings>
